@@ -1,0 +1,270 @@
+% Define the document class:
+\documentclass[12pt, a4paper, twoside]{article} % sometimes {report} might be better
+% Set default font to sans serif
+\renewcommand{\familydefault}{\sfdefault}
+% Import any packages
+\usepackage{graphicx} % for images
+\usepackage{natbib}
+\bibliographystyle{ctrH}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage[left=2cm, right=2cm, bottom=2.5cm, top=2cm]{geometry}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{svg}
+\usepackage{enumitem}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+
+% Define Title and authors
+\title{MSc Enterprise IT Management Research Proposal}
+\author{Mark Collins}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Project Working Title}
+Post‑MDT Oncology Workflow Bottlenecks: A Data‑Driven Analysis and Dashboard Prototype to Reduce Delays from MDT Outcome to Treatment Start
+
+\section{Significance / Contribution to the Discipline / Research Problem}
+
+Timely progression from Multidisciplinary Team (MDT) decision to oncology clinic appointment and treatment initiation is critical for patient outcomes and experience. The NHS cancer waiting time framework now focuses on three outcome‑oriented standards—the 28‑day Faster Diagnosis Standard (FDS), 31‑day decision‑to‑treatment, and 62‑day referral‑to‑treatment — to prioritise faster diagnosis and treatment starts \citep{johnson2024, nhsengland2023}. While many improvement efforts concentrate on pre‑MDT diagnostic phases, post‑MDT steps (MDT outcome → first oncology clinic → decision to treat → treatment start) continue to present bottlenecks due to scheduling backlogs, clinic capacity constraints, variable MDT processes, and workforce shortages in oncology services \citep{aggarwal2024, roques2024}. 
+
+Policy analyses and national guidance highlight system‑level pressures — workforce, diagnostics and treatment capacity, and unwarranted variation — arguing for data‑driven operational improvements rather than technocentric fixes alone \citep{aggarwal2024, sullivan2024}. In parallel, evidence and guidance on MDT streamlining suggest that prioritising complex cases and standardising straightforward ones can release time and reduce downstream delays, but implementation has been mixed and slow across the NHS \citep{al-hammouri2024, greatermanchestercanceralliance, greatermanchestercanceralliance2023}.
+
+Although diagnostic bottlenecks (e.g., abnormal screen → biopsy; biopsy → pathology report) are well documented and contribute to breaches of the 28‑ and 62‑day standards \citep{oluyemi2024, lawson2022}, treatment‑capacity constraints and clinic scheduling remain prominent post‑diagnosis issues, especially for SACT delivery and clinic throughput \citep{roques2024, nhsengland}. National resources now provide operational data and improvement tools for cancer managers and MDT coordinators—underlining the importance of operational management intelligence to meet FDS and treatment‑time ambitions \citep{nhsengland, grift2024}.
+
+\textbf{Problem in focus:} The Trust lacks a consolidated, actionable view of post‑MDT delays and their drivers. Operational data exist across MDT coordination, clinic scheduling, and treatment systems (available via SQL extracts), but remain siloed. The service requires an integrated analytics and dashboard solution that reveals where post‑MDT delays accumulate, how they impact 31‑ and 62‑day performance, and where to target capacity and process improvements \citep{nhsengland2023, johnson2024}.
+
+
+\section{Research Question}
+\textbf{Primary RQ:}
+
+Where do delays occur between MDT outcome and the first oncology clinic appointment, and to what extent do these delays influence decision‑to‑treatment and referral‑to‑treatment performance?
+
+\textbf{Secondary RQs:} 
+
+\begin{enumerate}[leftmargin=*]
+\item Which operational factors (e.g., clinic slot capacity, consultant caseload distribution, booking intervals) are most strongly associated with extended MDT→clinic waits? 
+\item How do tumour groups differ in post‑MDT delay patterns and breach risk? 
+\item Can a dashboard that integrates MDT, clinic, and treatment data improve managers’ ability to identify, prioritise, and monitor post‑MDT bottleneck‑removal actions? 
+\end{enumerate}
+
+\section{Aims and Objectives}
+\subsection{Aim}
+To analyse and visualise post‑MDT oncology workflow performance—identifying bottlenecks from MDT outcome to clinic appointment and on to treatment start—and to develop a dashboard prototype that supports operational decision‑making and pathway optimisation. 
+\subsection{Objectives}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Map} the Trust’s post‑MDT pathway using timestamped events (MDT decision, first oncology clinic, decision to treat, treatment start) in line with NCWTMDS definitions where applicable \citep{nhsengland2023, johnson2024}. 
+\item \textbf{Ingest and model} de‑identified SQL extracts (MDT outcomes, clinic bookings, treatment start) to compute stage‑to‑stage intervals and identify variation and hotspots \citep{nhsengland, grift2024}. 
+\item \textbf{Quantify} the contribution of MDT→clinic and clinic→DTT intervals to 31‑ and 62‑day performance and breach risk \citep{nhsengland2023, johnson2024} . 
+\item \textbf{Develop} a dashboard with breach‑risk alerts, slot‑utilisation views, and consultant/caseload analytics to guide operational choices \citep{grift2024, nhsengland2024}. 
+\item \textbf{Evaluate} the dashboard’s usability and utility with service stakeholders (heuristic evaluation) and refine accordingly \citep{al-hammouri2024, greatermanchestercanceralliance}. 
+\end{enumerate}
+\section{Key Literature Related to the Project}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Standards and policy context.} The shift to three standards (FDS 28‑day, 31‑day decision‑to‑treatment, 62‑day referral‑to‑treatment) underscores outcome‑focused performance and the need for integrated pathway management \citep{nhsengland2023, johnson2024}. 
+\item \textbf{System pressures and variation.} UK policy reviews identify workforce and capacity constraints, and variations in quality and access, calling for system‑level improvement strategies \citep{aggarwal2024, sullivan2024}. 
+\item \textbf{MDT efficiency.} Evidence‑based streamlining frameworks prioritise complex cases for full discussion and standardise straightforward ones; slow implementation hampers benefits \citep{al-hammouri2024, greatermanchestercanceralliance}. 
+\item \textbf{Diagnostic and pathology delays.} Diagnostic intervals (e.g., evaluation→biopsy) show wide variability, and pathology turnaround time is a known constraint; NHS case studies demonstrate practical turn around time (TAT) improvements via workflow redesign \citep{oluyemi2024, nhsengland2024}. 
+\item \textbf{Treatment capacity constraints.} SACT and oncology workforce pressures affect timely treatment starts even after timely diagnosis \citep{roques2024, aggarwal2024}. 
+\item \textbf{Operational data infrastructure.} NHS resources for cancer operations provide data, guidance, and benchmarking tools to support improvement programmes \citep{nhsengland, grift2024}. 
+Collectively, this literature supports a post‑MDT focus: aligning operational analytics with national standards and MDT reforms to close the gap between decision‑making and treatment commencement. 
+\end{itemize}
+\section{Methodology / Development Strategy / Research Design}
+\subsection{Overall approach}
+A Design Science Research (DSR) methodology will be used: problem identification → data modelling/analysis → artefact (dashboard) design → demonstration → evaluation and reflection \citep{nhsengland2023, grift2024}. 
+\subsection{Data and variables}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Sources (via SQL extracts):} 
+\item \textbf{MDT outcomes}: unique pathway ID, MDT date, decision (e.g., refer to medical oncology/radiotherapy/surgery), responsible consultant/team. 
+\item \textbf{Clinic scheduling}: first oncology clinic appointment date/time, clinic type/session, consultant, slot capacity and utilisation. 
+\item \textbf{Treatment events}: decision‑to‑treat (DTT) date (or earliest clinically appropriate date), first definitive treatment start (SACT/RT/surgery). 
+\item \textbf{Key intervals:} 
+\end{itemize}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{MDT} → \textbf{Clinic} (days) 
+\item \textbf{Clinic} → \textbf{DTT} (days) 
+\item \textbf{DTT} → \textbf{Treatment start} (days) 
+\item \textbf{Referral} → \textbf{Treatment start} (62‑day context) where available and appropriate 
+\end{enumerate}
+\begin{itemize}[leftmargin=*]
+\item \textbf{KPIs and benchmarks:} performance against 31‑day and 62‑day standards; proportion approaching breach thresholds; capacity utilisation \citep{nhsengland2023, johnson2024}). 
+\end{itemize}
+\subsection{Data handling}
+\begin{itemize}[leftmargin=*]
+\item \textbf{De‑identification at source} with unique pseudonymous pathway IDs; conform to local data sharing agreements and IG controls \citep{nhsengland2023, nhsengland}. 
+\item \textbf{Event alignment} using NCWTMDS definitions to improve consistency of interval measurement \citep{nhsengland2023, grift2024}. 
+\end{itemize}
+\subsection{Analysis plan}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Descriptive analytics:} medians/IQRs and control charts of post‑MDT intervals by tumour group, clinic, consultant, and time. 
+\item \textbf{Variation and capacity:} funnel plots and utilisation heatmaps to identify under/over‑capacity sessions and mismatch between demand and slots \citep{grift2024, nhsengland}. 
+\item \textbf{Association modelling:} regression/time‑to‑event models to examine predictors of extended MDT→clinic delays (e.g., clinic capacity, caseload, tumour site), and consequent impact on 31‑/62‑day standards \citep{johnson2024, nhsengland2023}. 
+\item \textbf{Scenario testing:} simulate effects of operational changes (e.g., prioritised booking of post‑MDT patients within X days; additional clinic sessions) on breach risk \citep{al-hammouri2024, greatermanchestercanceralliance}. 
+\end{enumerate}
+\subsection{Artefact development (dashboard)}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Technology:} Power BI or Python Dash (final choice based on Trust tooling and data pipeline). 
+\item \textbf{Views:} 
+\item \textbf{Post‑MDT tracker:} real‑time view of MDT→clinic waits; breach‑risk flags tied to 31‑/62‑day clocks \citep{nhsengland2023, johnson2024}. 
+\item \textbf{Capacity pane:} slot supply vs demand; utilisation by clinic/consultant; next‑available capacity for post‑MDT bookings \citep{grift2024, nhsengland}. 
+\item \textbf{Interval heatmap:} MDT→clinic, clinic→DTT, DTT→treatment, by tumour group. 
+\item \textbf{Pathway compliance:} run charts vs standards; cohort drill‑downs. 
+\end{itemize}
+\subsection{Evaluation}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Heuristic usability} review with operational managers/MDT coordinators (non‑participant, no identifiable data). 
+\item \textbf{Utility} assessment: number/clarity of “actionable” bottlenecks surfaced, and perceived usefulness for planning clinics and sessions \citep{al-hammouri2024, greatermanchestercanceralliance}. 
+\item \textbf{Validity checks}: reconcile a sample of dashboard metrics with underlying SQL queries; cross‑check interval definitions with NCWTMDS \citep{nhsengland2023}. 
+\end{itemize}
+\section{Ethical Considerations and Risk Assessment}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Data type \& approvals:} Secondary operational service data, de‑identified before analysis. The project will seek local approval as service evaluation/operational improvement where appropriate and comply with University ethical procedures before any data handling begins \citep{nhsengland2023, johnson2024}. 
+\item \textbf{Information governance:} Compliance with UK GDPR and Data Protection Act 2018; alignment with NHS IG and Cancer Programme guidance on data use for performance improvement \citep{nhsengland, nhsengland2023}. 
+\item \textbf{Risks \& mitigations:} 
+\item \emph{Data quality/incomplete timestamps:} early data profiling; clear event definitions (NCWTMDS); iterative query refinement \citep{nhsengland2023}. 
+\item \emph{Scope creep across tumour sites:} start with 1–2 high‑volume tumour groups; scale once the model stabilises \citep{grift2024}. 
+\item \emph{Adoption risk:} co‑design visuals with stakeholders; map outputs to operational decisions (clinic rostering, slot release, booking rules) \citep{nhsengland, al-hammouri2024}. 
+\end{itemize}
+\section{Description of Artefact(s) to be Created}
+A decision‑support dashboard for post‑MDT workflow, including: 
+\begin{itemize}[leftmargin=*]
+\item \textbf{KPI panels} for MDT→clinic, clinic→DTT, DTT→treatment; real‑time breach‑risk indicators for 31‑/62‑day standards. 
+\item \textbf{Capacity \& utilisation} views (sessions, slots, consultants) to guide clinic planning and prioritisation of post‑MDT bookings. 
+\item \textbf{Drill‑downs} by tumour site and consultant; exportable reports for governance meetings. 
+\item \textbf{Documentation}: data model, definitions, and governance notes for reproducibility \citep{nhsengland2023, grift2024}. 
+\end{itemize}
+\section{Timeline of Proposed Activities (Aligned to Module Deadlines)}
+\begin{quote}
+**Research Proposal \& Ethical Application \textbf{Due: 23:55, Monday 9 March 2026}
+\end{quote}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Weeks 1–8 (to 9 Mar 2026):} Confirm scope and ethics route; pathway mapping (post‑MDT focus); agree SQL fields; initial literature synthesis; draft \& submit proposal \citep{johnson2024, nhsengland2023}. 
+\end{itemize}
+\begin{quote}
+\textbf{Dissertation Submission} \textbf{Due: 23:55, Monday 10 August 2026}
+\end{quote}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Weeks 9–12 (Mar–Apr 2026):} Data extraction, de‑identification, cleaning; build unified post‑MDT dataset \citep{nhsengland2023}. 
+\item \textbf{Weeks 13–18 (Apr–May 2026):} Quantitative analysis of MDT→clinic, clinic→DTT, DTT→treatment; variation and capacity profiling \citep{grift2024, nhsengland}. 
+\item \textbf{Weeks 19–24 (May–Jul 2026):} Dashboard development (v1→v2); breach‑risk logic and capacity pages; stakeholder heuristic evaluation; iterate \citep{al-hammouri2024}. 
+\item \textbf{Weeks 25–28 (Jul–Aug 2026):} Final analyses; integrate figures/tables; write‑up and internal QA against marking criteria. 
+\end{itemize}
+\begin{quote}
+\textbf{Artefact Presentation \& Review} \textbf{Presentation upload:} 23:55, \textbf{Thursday 13 August 2026} \textbf{Review \& comments:} 23:55, \textbf{Monday 17 August 2026} \textbf{Online presentation:} 23:55, \textbf{Monday 24 August 2026}
+\end{quote}
+\begin{itemize}[leftmargin=*]
+\item \textbf{Weeks 29–30 (Aug 2026):} Finalise demo assets (dashboard walk through, slides), record/present; respond to review comments. 
+\end{itemize}
+
+
+% ========== PAGE 1 (LANDSCAPE) ==========
+\begin{landscape}
+\section*{Project Timeline (Part 1/3)}
+\begin{center}
+\begin{ganttchart}[
+  time slot format=isodate,
+  y unit chart=0.6cm,
+  x unit=0.25cm,
+  vgrid,hgrid,
+  bar label font=\small,
+  group label font=\small\bfseries,
+  milestone label font=\small\bfseries,
+  bar height=0.5,
+  group height=0.5,
+]{2026-01-28}{2026-04-13}
+  \gantttitlecalendar{year, month=name} \\
+  % Research Proposal & Ethical Application
+  \ganttgroup{Research Proposal \& Ethical Application}{2026-01-28}{2026-03-09} \\
+  \ganttbar{(W1--W2) Scoping \& ethics route}{2026-01-28}{2026-02-10} \\
+  \ganttbar{(W3--W4) Pathway mapping \& agree SQL fields}{2026-02-11}{2026-02-24} \\
+  \ganttbar{(W3--W5) Initial literature synthesis}{2026-02-11}{2026-03-02} \\
+  \ganttbar{(W5--W6) Draft \& finalise proposal / ethics docs}{2026-02-25}{2026-03-09} \\
+  \ganttmilestone{Proposal due}{2026-03-09} \\
+  % Dissertation Submission (part 1)
+  \ganttgroup{Dissertation Submission (part 1/3)}{2026-03-10}{2026-04-13} \\
+  \ganttbar{(W7) Data approvals \& pulls}{2026-03-10}{2026-03-16} \\
+  \ganttbar{(W8) De-ID pipeline}{2026-03-17}{2026-03-23} \\
+  \ganttbar{(W9) Cleaning \& normalisation}{2026-03-24}{2026-03-30} \\
+  \ganttbar{(W10) Unified dataset build}{2026-03-31}{2026-04-06} \\
+  \ganttbar{(W10) Validation \& QC}{2026-03-31}{2026-04-06} \\
+  \ganttbar{(W11) Define metrics \& plan}{2026-04-07}{2026-04-13}
+\end{ganttchart}
+\end{center}
+\end{landscape}
+\clearpage
+
+% ========== PAGE 2 (LANDSCAPE) ==========
+\begin{landscape}
+\section*{Project Timeline (Part 2/3)}
+\begin{center}
+\begin{ganttchart}[
+  time slot format=isodate,
+  y unit chart=0.6cm,
+  x unit=0.25cm,
+  vgrid,hgrid,
+  bar label font=\small,
+  group label font=\small\bfseries,
+  milestone label font=\small\bfseries,
+  bar height=0.5,
+  group height=0.5,
+]{2026-04-14}{2026-06-29}
+  \gantttitlecalendar{year, month=name} \\
+  % Dissertation Submission (part 2)
+  \ganttgroup{Dissertation Submission (part 2/3)}{2026-04-14}{2026-06-29} \\
+  \ganttbar{(W12) Descriptives \& baselines}{2026-04-14}{2026-04-20} \\
+  \ganttbar{(W13--W14) Interval calculations}{2026-04-21}{2026-05-04} \\
+  \ganttbar{(W15) Outliers \& data quality}{2026-05-05}{2026-05-11} \\
+  \ganttbar{(W16) Variation \& capacity profiling}{2026-05-12}{2026-05-18} \\
+  \ganttbar{(W17) Dashboard v1 prototype}{2026-05-19}{2026-05-25} \\
+  \ganttbar{(W18) Data plumbing \& performance}{2026-05-26}{2026-06-01} \\
+  \ganttbar{(W19) Breach-risk logic}{2026-06-02}{2026-06-08} \\
+  \ganttbar{(W20) Capacity pages}{2026-06-09}{2026-06-15} \\
+  \ganttbar{(W21) Heuristic evaluation}{2026-06-16}{2026-06-22} \\
+  \ganttbar{(W22) Iterate to v2}{2026-06-23}{2026-06-29}
+\end{ganttchart}
+\end{center}
+\end{landscape}
+\clearpage
+
+% ========== PAGE 3 (LANDSCAPE) ==========
+\begin{landscape}
+\section*{Project Timeline (Part 3/3)}
+\begin{center}
+\begin{ganttchart}[
+  time slot format=isodate,
+  y unit chart=0.6cm,
+  x unit=0.25cm,
+  vgrid,hgrid,
+  bar label font=\small,
+  group label font=\small\bfseries,
+  milestone label font=\small\bfseries,
+  bar height=0.5,
+  group height=0.5,
+]{2026-06-30}{2026-08-24}
+  \gantttitlecalendar{year, month=name} \\
+  % Dissertation Submission (part 3)
+  \ganttgroup{Dissertation Submission (part 3/3)}{2026-06-30}{2026-08-10} \\
+  \ganttbar{(W23) Lock analyses}{2026-06-30}{2026-07-06} \\
+  \ganttbar{(W24) Methods \& results}{2026-07-07}{2026-07-13} \\
+  \ganttbar{(W25) Discussion \& implications}{2026-07-14}{2026-07-20} \\
+  \ganttbar{(W26) Integration pass}{2026-07-21}{2026-07-27} \\
+  \ganttbar{(W27) Internal QA \& revisions}{2026-07-28}{2026-08-03} \\
+  \ganttbar{(W28) Final checks \& submission}{2026-08-04}{2026-08-10} \\
+  \ganttmilestone{Dissertation due}{2026-08-10} \\
+  % Artefact Presentation & Review
+  \ganttgroup{Artefact Presentation \& Review}{2026-08-11}{2026-08-24} \\
+  \ganttbar{(W29--W30) Demo assets \& responses}{2026-08-11}{2026-08-24} \\
+  \ganttmilestone{Presentation upload}{2026-08-13} \\
+  \ganttmilestone{Review \& comments}{2026-08-17} \\
+  \ganttmilestone{Online presentation}{2026-08-24}
+\end{ganttchart}
+\end{center}
+\end{landscape}
+
+
+\bibliography{./Project}
+
+\end{document}

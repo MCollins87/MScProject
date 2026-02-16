@@ -11,6 +11,9 @@ Currently workimg for the Oncology department, data is fragmented and duplicated
 
 All _live_ documentation will be managed using a local instalation of `Obsidian`, with Zotero and Pandoc Plugins, therfore some files may not render correctly in GitHub. 
 
+## Key Documents
+- [Research Proposal](./LatexFiles/Proposal.pdf)
+
 ## Resources
 
 - [MSc Project Handbook](./Resources/MScProjectModuleHandbook-ComputingProject.pdf)
