@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "tasks": [
+    { "title": "Define project scope and objectives", "notes": "Week 1–2", "projectId": "proposal" },
+    { "title": "Draft initial research proposal structure", "notes": "Week 1–2", "projectId": "proposal" },
+    { "title": "Identify key stakeholders", "notes": "Week 1–2", "projectId": "proposal" },
+
+    { "title": "Confirm ethics route", "notes": "Week 3–4", "projectId": "proposal" },
+    { "title": "Map post‑MDT workflow", "notes": "Week 3–4", "projectId": "proposal" },
+    { "title": "Agree required SQL fields with data teams", "notes": "Week 3–4", "projectId": "proposal" },
+
+    { "title": "Conduct literature review", "notes": "Week 5–6", "projectId": "proposal" },
+    { "title": "Refine research questions", "notes": "Week 5–6", "projectId": "proposal" },
+    { "title": "Finalise methodology and data requirements", "notes": "Week 5–6", "projectId": "proposal" },
+
+    { "title": "Finalise proposal and ethics documents", "notes": "Week 7–8", "projectId": "proposal" },
+    { "title": "Submit proposal and ethics application", "notes": "Week 7–8", "projectId": "proposal" },
+    { "title": "Ensure Trust approvals progressing", "notes": "Week 7–8", "projectId": "proposal" },
+
+
+    { "title": "Initiate data extraction process", "notes": "Week 9", "projectId": "data" },
+    { "title": "Set up de‑identification pipeline", "notes": "Week 9", "projectId": "data" },
+
+    { "title": "Clean and normalise datasets", "notes": "Week 10", "projectId": "data" },
+    { "title": "Build unified dataset", "notes": "Week 10", "projectId": "data" },
+
+    { "title": "Run validation and quality checks", "notes": "Week 11", "projectId": "data" },
+    { "title": "Align timestamps to NCWTMDS definitions", "notes": "Week 11", "projectId": "data" },
+
+    { "title": "Finalise KPIs and interval calculations", "notes": "Week 12", "projectId": "data" },
+    { "title": "Finalise analysis plan", "notes": "Week 12", "projectId": "data" },
+
+
+    { "title": "Run baseline descriptive analytics", "notes": "Week 13–14", "projectId": "analysis" },
+    { "title": "Profile variation by tumour group/consultant", "notes": "Week 13–14", "projectId": "analysis" },
+
+    { "title": "Calculate MDT→clinic, clinic→DTT, DTT→treatment intervals", "notes": "Week 15", "projectId": "analysis" },
+
+    { "title": "Identify outliers and refine data model", "notes": "Week 16", "projectId": "analysis" },
+
+    { "title": "Variation & capacity profiling (heatmaps, funnels)", "notes": "Week 17", "projectId": "analysis" },
+
+    { "title": "Build Dashboard v1", "notes": "Week 18", "projectId": "dashboard" },
+
+
+    { "title": "Optimise data pipelines and performance", "notes": "Week 19", "projectId": "dashboard" },
+
+    { "title": "Implement breach‑risk logic", "notes": "Week 20", "projectId": "dashboard" },
+
+    { "title": "Build capacity & utilisation pages", "notes": "Week 21", "projectId": "dashboard" },
+
+    { "title": "Conduct heuristic evaluation with stakeholders", "notes": "Week 22", "projectId": "dashboard" },
+
+    { "title": "Iterate dashboard to Version 2", "notes": "Week 23–24", "projectId": "dashboard" },
+
+
+    { "title": "Finalise methods and results", "notes": "Week 25", "projectId": "writeup" },
+
+    { "title": "Write discussion & implications", "notes": "Week 26", "projectId": "writeup" },
+
+    { "title": "Integrate figures, tables, narrative", "notes": "Week 27", "projectId": "writeup" },
+
+    { "title": "Proofreading, QA, revisions", "notes": "Week 28", "projectId": "writeup" },
+    { "title": "Final dissertation submission", "notes": "Week 28", "projectId": "writeup" },
+
+
+    { "title": "Prepare dashboard demo & presentation materials", "notes": "Week 29", "projectId": "presentation" },
+    { "title": "Record walkthrough (if needed)", "notes": "Week 29", "projectId": "presentation" },
+
+    { "title": "Deliver presentation", "notes": "Week 30", "projectId": "presentation" },
+    { "title": "Respond to review comments", "notes": "Week 30", "projectId": "presentation" }
+  ],
+  "projects": [
+    { "id": "proposal", "title": "Proposal & Ethics" },
+    { "id": "data", "title": "Data Preparation" },
+    { "id": "analysis", "title": "Quantitative Analysis" },
+    { "id": "dashboard", "title": "Dashboard Development" },
+    { "id": "writeup", "title": "Dissertation Write‑Up" },
+    { "id": "presentation", "title": "Artefact Presentation" }
+  ]
+}

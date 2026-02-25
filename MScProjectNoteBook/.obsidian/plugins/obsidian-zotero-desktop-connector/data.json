@@ -15,7 +15,16 @@
       "cslStyle": "harvard-cite-them-right"
     }
   ],
-  "exportFormats": [],
+  "exportFormats": [
+    {
+      "name": "Create Literature Notes",
+      "outputPathTemplate": "LiteratureNotes/{{citekey}}.md",
+      "imageOutputPathTemplate": "Assets/{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "LiteratureNotes/LiteratureTemplate.md",
+      "cslStyle": "harvard-cite-them-right"
+    }
+  ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
   "openNoteAfterImport": false,
   "whichNotesToOpenAfterImport": "first-imported-note"
