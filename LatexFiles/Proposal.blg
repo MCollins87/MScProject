@@ -3,45 +3,54 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Proposal.aux
 The style file: ctrH.bst
 Database file #1: ./Project.bib
+I was expecting a `,' or a `}'---line 2 of file ./Project.bib
+ :   title 
+ :         = {Reporting Feedback on Healthcare Outcomes to Improve Quality in Care: A Scoping Review},
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 21 of file ./Project.bib
+ :   title 
+ :         = {Audit and Feedback: Effects on Professional Practice},
+I'm skipping whatever remains of this entry
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 13 entries,
+You've used 7 entries,
             3108 wiz_defined-function locations,
-            724 strings with 7888 characters,
-and the built_in function-call counts, 7662 in all, are:
-= -- 578
-> -- 386
-< -- 13
-+ -- 150
-- -- 136
-* -- 590
-:= -- 1219
-add.period$ -- 10
-call.type$ -- 13
-change.case$ -- 109
-chr.to.int$ -- 14
-cite$ -- 13
-duplicate$ -- 580
-empty$ -- 535
-format.name$ -- 160
-if$ -- 1483
+            706 strings with 6742 characters,
+and the built_in function-call counts, 4717 in all, are:
+= -- 345
+> -- 254
+< -- 6
++ -- 99
+- -- 91
+* -- 388
+:= -- 730
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 65
+chr.to.int$ -- 8
+cite$ -- 7
+duplicate$ -- 357
+empty$ -- 324
+format.name$ -- 105
+if$ -- 916
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 111
-newline$ -- 46
-num.names$ -- 52
-pop$ -- 234
+missing$ -- 69
+newline$ -- 28
+num.names$ -- 28
+pop$ -- 133
 preamble$ -- 1
-purify$ -- 97
+purify$ -- 58
 quote$ -- 0
-skip$ -- 239
+skip$ -- 148
 stack$ -- 0
-substring$ -- 263
-swap$ -- 312
-text.length$ -- 4
+substring$ -- 150
+swap$ -- 212
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 117
+type$ -- 63
 warning$ -- 0
-while$ -- 47
+while$ -- 28
 width$ -- 0
-write$ -- 148
+write$ -- 85
+(There were 2 error messages)

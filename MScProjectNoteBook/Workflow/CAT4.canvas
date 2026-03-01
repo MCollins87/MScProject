@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"id":"ac45a9e8ab3429b0","x":-180,"y":-320,"width":250,"height":60,"type":"text","text":"Treatment managed in Aria RO"},
+		{"id":"6664d4a02d51b815","x":-180,"y":-180,"width":250,"height":50,"type":"text","text":"Register episode in PAS"},
+		{"id":"afea7cfe3a80fc02","x":-180,"y":-80,"width":250,"height":60,"type":"text","text":"Attach to Clinic code of CCO "}
+	],
+	"edges":[
+		{"id":"a6673c8a7c2aa7ab","fromNode":"ac45a9e8ab3429b0","fromSide":"bottom","toNode":"6664d4a02d51b815","toSide":"top"},
+		{"id":"54262e0a58779f2f","fromNode":"6664d4a02d51b815","fromSide":"bottom","toNode":"afea7cfe3a80fc02","toSide":"top"}
+	]
+}

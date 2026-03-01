@@ -7,7 +7,8 @@
   "citeFormats": [
     {
       "name": "Format #2",
-      "format": "formatted-citation"
+      "format": "formatted-citation",
+      "cslStyle": "harvard-cite-them-right"
     },
     {
       "name": "Format #1",

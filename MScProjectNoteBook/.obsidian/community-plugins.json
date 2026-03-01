@@ -3,5 +3,6 @@
   "obsidian-pandoc",
   "obsidian-pandoc-reference-list",
   "dataview",
-  "obsidian-admonition"
+  "obsidian-admonition",
+  "print"
 ]

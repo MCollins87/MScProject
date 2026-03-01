@@ -1,89 +1,54 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{7}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 
-\bibitem[{Aggarwal \textit{et~al.}(2024)Aggarwal, Simcock, Price, Rachet,
-  Lyratzopoulos, Walker, Spencer, Roques and Sullivan}]{aggarwal2024}
-Aggarwal, Ajay, Simcock, Richard, Price, Pat, Rachet, Bernard, Lyratzopoulos,
-  Georgios, Walker, Kate, Spencer, Katie, Roques, Tom and Sullivan, Richard
-  (2024) \enquote{{{NHS}} cancer services and systems---ten pressure points a
-  {{UK}} cancer control plan needs to address,} \textit{The Lancet Oncology},
-  25(8), pp. e363--e373,
-  \urlprefix\url{http://dx.doi.org/10.1016/S1470-2045(24)00345-0}
+\bibitem[{Gagalova \textit{et~al.}(2020)Gagalova, Elizalde, {Portales-Casamar}
+  and G{\"o}rges}]{gagalova2020}
+Gagalova, Kristina~K., Elizalde, M. Angelica~Leon, {Portales-Casamar}, Elodie
+  and G{\"o}rges, Matthias (2020) \enquote{What {{You Need}} to {{Know Before
+  Implementing}} a {{Clinical Research Data Warehouse}}: {{Comparative Review}}
+  of {{Integrated Data Repositories}} in {{Health Care Institutions}},}
+  \textit{JMIR Formative Research}, 4(8), p. e17687,
+  \urlprefix\url{http://dx.doi.org/10.2196/17687}
 
-\bibitem[{{Al-Hammouri} \textit{et~al.}(2024){Al-Hammouri}, {Almeida-Magana},
-  Soukup and Lamb}]{al-hammouri2024}
-{Al-Hammouri}, Tarek, {Almeida-Magana}, Ricardo, Soukup, Tayana and Lamb,
-  Benjamin (2024) \enquote{Implementation of streamlining measures in selecting
-  and prioritising complex cases for the cancer multidisciplinary team meeting:
-  A mini review of the recent developments,} \textit{Frontiers in Health
-  Services}, 4, \urlprefix\url{http://dx.doi.org/10.3389/frhs.2024.1340320}
+\bibitem[{Hevner \textit{et~al.}(2004)Hevner, March, Park and Ram}]{hevner2004}
+Hevner, Alan~R, March, Salvatore~T, Park, Jinsoo and Ram, Sudha (2004)
+  \enquote{Design {{Science}} in {{Information Systems Research}},} \textit{MIS
+  Quarterly}, 28(1)
 
-\bibitem[{{Greater Manchester Cancer
-  Alliance}(2023)}]{greatermanchestercanceralliance2023}
-{Greater Manchester Cancer Alliance} (2023) \textit{Greater {{Manchester Cancer
-  MDT Meeting Standards}}}, Tech. rep., Greater Manchester Cancer Alliance
+\bibitem[{{ISO 9241}(2020)}]{ISO9241-2020}
+{ISO 9241} (2020) \enquote{{{ISO}} 9241-110:2020,}
+  https://www.iso.org/standard/75258.html
 
-\bibitem[{{Greater Manchester Cancer
-  Alliance}(n.d)}]{greatermanchestercanceralliance}
-{Greater Manchester Cancer Alliance} (n.d) \enquote{The {{Multidiciplanary
-  Team}} ({{MDT}}) {{Meeting Reform Toolkit}},}
-  https://gmcancer.org.uk/wp-content/uploads/2023/05/MDT-Reform-Toolkit.pdf
-
-\bibitem[{{GRIFT} and {NHS England}(2024)}]{grift2024}
-{GRIFT} and {NHS England} (2024) \textit{Best {{Practice Timed Diagnostic
-  Cancer Pathways}}}, Tech. rep., NHS Impact
+\bibitem[{Jackson \textit{et~al.}(2018)Jackson, Kartoglu, Stringer, Gorrell,
+  Roberts, Song, Wu, Agrawal, Lui, Groza, Lewsley, Northwood, Folarin, Stewart
+  and Dobson}]{jackson2018}
+Jackson, Richard, Kartoglu, Ismail, Stringer, Clive, Gorrell, Genevieve,
+  Roberts, Angus, Song, Xingyi, Wu, Honghan, Agrawal, Asha, Lui, Kenneth,
+  Groza, Tudor, Lewsley, Damian, Northwood, Doug, Folarin, Amos, Stewart,
+  Robert and Dobson, Richard (2018) \enquote{{{CogStack}} - experiences of
+  deploying integrated information retrieval and extraction services in a large
+  {{National Health Service Foundation Trust}} hospital,} \textit{BMC Medical
+  Informatics and Decision Making}, 18(1), p.~47,
+  \urlprefix\url{http://dx.doi.org/10.1186/s12911-018-0623-9}
 
 \bibitem[{Johnson(2024)}]{johnson2024}
 Johnson, Peter (2024) \enquote{Updating the {{NHS}} cancer waiting time
   standards,} \textit{BMJ Oncology}, 3(1),
   \urlprefix\url{http://dx.doi.org/10.1136/bmjonc-2024-000337}
 
-\bibitem[{Lawson \textit{et~al.}(2022)Lawson, Bissell, Miglioretti, Eavey,
-  Chapman, Mandelblatt, Onega, Henderson, Rauscher, Kerlikowske, Sprague,
-  Bowles, Gard, Parsian and Lee}]{lawson2022}
-Lawson, Marissa~B., Bissell, Michael C.~S., Miglioretti, Diana~L., Eavey,
-  Joanna, Chapman, Christina~H., Mandelblatt, Jeanne~S., Onega, Tracy,
-  Henderson, Louise~M., Rauscher, Garth~H., Kerlikowske, Karla, Sprague,
-  Brian~L., Bowles, Erin J.~A., Gard, Charlotte~C., Parsian, Sana and Lee,
-  Christoph~I. (2022) \enquote{Multilevel {{Factors Associated With Time}} to
-  {{Biopsy After Abnormal Screening Mammography Results}} by {{Race}} and
-  {{Ethnicity}},} \textit{JAMA Oncology}, 8(8), pp. 1115--1126,
-  \urlprefix\url{http://dx.doi.org/10.1001/jamaoncol.2022.1990}
+\bibitem[{{NHS Digital}(2026)}]{NHSDigital2026}
+{NHS Digital} (2026) \enquote{Cancer {{Waiting Times Data Collection}}
+  ({{CWT}}),}
+  https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/cancerwaitingtimescwt
 
-\bibitem[{{NHS England}(2023)}]{nhsengland2023}
-{NHS England} (2023) \textit{National {{Cancer Waiting Times Monitoring Dataset
-  Guidance V12}}.0}, Tech. Rep. PRN00654, NHS
-
-\bibitem[{{NHS England}(2024)}]{nhsengland2024}
-{NHS England} (2024) \enquote{Case study: Improving turnaround times in
-  pathology,}
-  https://www.england.nhs.uk/long-read/case-study-improving-turnaround-times-in-pathology/
-
-\bibitem[{{NHS England}(n.d.)}]{nhsengland}
-{NHS England} (n.d.) \enquote{Operational management, administration and
-  performance,}
-  https://www.england.nhs.uk/cancer/operational-management-administration-and-performance/
-
-\bibitem[{Oluyemi \textit{et~al.}(2024)Oluyemi, Grimm, Goldman, Burleson,
-  Simanowith, Yao and Rosenberg}]{oluyemi2024}
-Oluyemi, Eniola~T., Grimm, Lars~J., Goldman, Lenka, Burleson, Judy, Simanowith,
-  Michael, Yao, Katharine and Rosenberg, Robert~D. (2024) \enquote{Rate and
-  {{Timeliness}} of {{Diagnostic Evaluation}} and {{Biopsy After Recall From
-  Screening Mammography}} in the {{National Mammography Database}},}
-  \textit{Journal of the American College of Radiology}, 21(3), pp. 427--438,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.jacr.2023.09.002}
-
-\bibitem[{Roques(2024)}]{roques2024}
-Roques, Tom (2024) \enquote{Addressing the capacity crisis in oncology,
-  progress and ongoing concerns \textbar{} {{The Royal College}} of
-  {{Radiologists}},}
-
-\bibitem[{Sullivan(2024)}]{sullivan2024}
-Sullivan, Richard (2024) \enquote{10 cancer challenges facing the new
-  government,}
-  https://www.kcl.ac.uk/news/the-10-cancer-challenges-facing-the-new-government
+\bibitem[{Peffers \textit{et~al.}(2007)Peffers, Tuunanen, Rothenberger and
+  Chatterjee}]{Peffers2007}
+Peffers, Ken, Tuunanen, Tuure, Rothenberger, Marcus~A. and Chatterjee, Samir
+  (2007) \enquote{A design science research methodology for information systems
+  research,} \textit{Journal of Management Information Systems}, 24(3), pp.
+  45--77, \urlprefix\url{http://dx.doi.org/10.2753/MIS0742-1222240302}
 
 \end{thebibliography}

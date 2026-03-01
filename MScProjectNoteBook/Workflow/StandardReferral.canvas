@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"d1b124bdfd14ee3e","type":"text","text":"Referral Source\n- Internal email\n- Internal Paper form\n- External email\n- External letter","x":-680,"y":-380,"width":250,"height":180},
+		{"id":"f003ce1380a02e13","type":"text","text":"Secretaries inbox","x":-320,"y":-380,"width":250,"height":60},
+		{"id":"79ac51a8c85cca9b","type":"text","text":"Check for minimum dataset","x":-320,"y":-260,"width":250,"height":60},
+		{"id":"07fdd22737f0f0b2","type":"text","text":"Update Somerset with \"referral received\"","x":-147,"y":40,"width":250,"height":60},
+		{"id":"2779e0e724bf4dfc","type":"text","text":"Register on R-number spreadsheet","x":-340,"y":-40,"width":250,"height":60},
+		{"id":"74fc342bcadd8b1d","type":"text","text":"Register episode on PAS","x":-640,"y":-40,"width":250,"height":60},
+		{"id":"b10862d2318b35f7","type":"text","text":"Register in Referral Database","x":0,"y":-40,"width":260,"height":55},
+		{"id":"af34089699c0a393","type":"text","text":"Email/print for Dr to Triage","x":-320,"y":180,"width":250,"height":60},
+		{"id":"80efe968be56d314","type":"text","text":"==Need to obtain minimum dataset==","x":0,"y":-260,"width":250,"height":60},
+		{"id":"690bd9d75d6c780d","type":"text","text":"Reply from Dr to book/not with time frame to be seen","x":-320,"y":320,"width":250,"height":60},
+		{"id":"f86909778ae356f5","type":"text","text":"Update Somerset with OPA date","x":16,"y":462,"width":250,"height":60},
+		{"id":"e933c9751148799e","type":"text","text":"Book OPA on PAS","x":-320,"y":462,"width":250,"height":60},
+		{"id":"9f1b3ac27103b8d8","type":"text","text":"If Chemo, book second OPA to coincide with second cycle","x":-319,"y":591,"width":250,"height":89},
+		{"id":"2a1f5d5e48ffd9f7","x":-1040,"y":-86,"width":250,"height":156,"type":"text","text":"- Demographics\n- Oncologist\n- Speciality code\n\t- 370 MedOnc\n\t- 800 ClinOnc"}
+	],
+	"edges":[
+		{"id":"071457e531c04246","fromNode":"d1b124bdfd14ee3e","fromSide":"right","toNode":"f003ce1380a02e13","toSide":"left"},
+		{"id":"b0d30b2ecd71ebdf","fromNode":"f003ce1380a02e13","fromSide":"bottom","toNode":"79ac51a8c85cca9b","toSide":"top"},
+		{"id":"216ee48fd9ef6b40","fromNode":"79ac51a8c85cca9b","fromSide":"right","toNode":"80efe968be56d314","toSide":"left"},
+		{"id":"5eb24fa12f56a0f7","fromNode":"79ac51a8c85cca9b","fromSide":"bottom","toNode":"2779e0e724bf4dfc","toSide":"top"},
+		{"id":"aa9789e28ba9aae8","fromNode":"79ac51a8c85cca9b","fromSide":"bottom","toNode":"74fc342bcadd8b1d","toSide":"top"},
+		{"id":"50c333bfda215a06","fromNode":"2779e0e724bf4dfc","fromSide":"left","toNode":"74fc342bcadd8b1d","toSide":"right"},
+		{"id":"d207fdd8c6646ec2","fromNode":"79ac51a8c85cca9b","fromSide":"bottom","toNode":"b10862d2318b35f7","toSide":"top"},
+		{"id":"11dc5f450b6c2703","fromNode":"79ac51a8c85cca9b","fromSide":"bottom","toNode":"07fdd22737f0f0b2","toSide":"top"},
+		{"id":"c3b3238a453988db","fromNode":"74fc342bcadd8b1d","fromSide":"bottom","toNode":"af34089699c0a393","toSide":"top"},
+		{"id":"597b9e59f3101444","fromNode":"2779e0e724bf4dfc","fromSide":"bottom","toNode":"af34089699c0a393","toSide":"top"},
+		{"id":"048b94e6d4ef23be","fromNode":"07fdd22737f0f0b2","fromSide":"bottom","toNode":"af34089699c0a393","toSide":"top"},
+		{"id":"a1a1980a03db3763","fromNode":"b10862d2318b35f7","fromSide":"bottom","toNode":"af34089699c0a393","toSide":"right"},
+		{"id":"7bb9ffcbe4cc2847","fromNode":"af34089699c0a393","fromSide":"bottom","toNode":"690bd9d75d6c780d","toSide":"top"},
+		{"id":"f085defd360faf5d","fromNode":"690bd9d75d6c780d","fromSide":"bottom","toNode":"e933c9751148799e","toSide":"top"},
+		{"id":"96a23cbf81bd39c3","fromNode":"e933c9751148799e","fromSide":"right","toNode":"f86909778ae356f5","toSide":"left"},
+		{"id":"0dcab4a696c7e0d9","fromNode":"e933c9751148799e","fromSide":"bottom","toNode":"9f1b3ac27103b8d8","toSide":"top"},
+		{"id":"99be6affdf9494c4","fromNode":"74fc342bcadd8b1d","fromSide":"left","toNode":"2a1f5d5e48ffd9f7","toSide":"right"}
+	]
+}
