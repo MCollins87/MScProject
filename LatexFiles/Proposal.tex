@@ -15,6 +15,7 @@
 \usepackage{enumitem}
 \usepackage{pgfgantt}
 \usepackage{pdflscape}
+\usepackage{amssymb}
 
 % Define Title and authors
 \title{MSc Enterprise IT Management Research Proposal}
@@ -29,20 +30,20 @@ Post-MDT Oncology Workflow Bottlenecks: A Design-Science Study of an NHS Integra
 
 \section{Problem and Significance}
 
-Timely progression from multidisciplinary team (MDT) decision to first Oncology clinic and treatment start is central to the three NHS Cancer Waiting Time Standards implemented from 1st October 2023: 1. 28-day Faster Diagnosis Standard (FDS); 2. 31-day decision-to-treat (DTT) to treatment; and 3. 62-day referral-to-treatment. The updated framework prioritises outcomes over process targets and explicitly emphasises rapid diagnosis and starts for the referral routes  \citep{johnson2024, NHSDigital2026}. 
+Timely progression from multidisciplinary team (MDT) decision to first Oncology clinic and treatment start is central to the three NHS Cancer Waiting Time Standards implemented from 1st October 2023: (a) 28-day Faster Diagnosis Standard (FDS); (b) 31-day decision-to-treat (DTT) to treatment; and (c) 62-day referral-to-treatment. The updated framework prioritises outcomes over process targets and explicitly emphasises rapid diagnosis and starts for the referral routes  \citep{johnson2024, NHSDigital2026}. 
 
-Within this context, many Trusts still lack a consolidated, actionable view of post-MDT delays (MDT outcome -> first oncology clinic -> DTT -> first definitive treatment). Data exists in siloed systems (MDT coordination, clinic scheduling, treatment), but are rarely integrated for operational decision support. 
+Within this context, many Trusts still lack a consolidated, actionable view of post-MDT delays (MDT outcome $\rightarrow$ first oncology clinic $\rightarrow$ DTT $\rightarrow$ first definitive treatment). Data exists in siloed systems (MDT coordination, clinic scheduling, treatment), but are rarely integrated for operational decision support. 
 
-This study addresses that gap by designing, implementing and evaluating a lightweight Integrated Data Repository (IDR) pus a decision-support dashboard tailored to the post-MDT pathway. The IDR is scoped to the Trust setting and informed by contemporary IDR architecture reviews and NHS-proven integration patterns (e.g. CogStack's "right data, right place, right time") \citep{gagalova2020, jackson2018}
+This study addresses that gap by designing, implementing and evaluating a lightweight Integrated Data Repository (IDR) pus a decision-support dashboard tailored to the post-MDT pathway. The IDR is scoped to the Trust setting and informed by contemporary IDR architecture reviews and NHS-proven integration patterns (e.g. CogStack's ``right data, right place, right time'') \citep{gagalova2020, jackson2018}
 
 \section{Academic Contribution}
 
 The project is framed as Design Science Research (DSR). It contributes:
 
 \begin{enumerate}
-  \item An IDR reference design for NHS oncology operations (a general IDR with a staging layer and central warehouse), including practical choices for terminology mapping, updates cadence, privacy/pseudonymisation, and and an evaluation-ready data model aligned to post-MDT events \citep{gagalova2020}. 
+  \item An IDR reference design for NHS oncology operations (a general IDR with a staging layer and central warehouse), including practical choices for terminology mapping, updates cadence, privacy / pseudonymisation, and and an evaluation-ready data model aligned to post-MDT events \citep{gagalova2020}. 
   \item A set of actionable design principles for operational cancer dashboards in NHS settings (e.g. breach-risk surfacing; capacity-demand alignment; time-to-action information architecture), explicitly grounded in ISO 9241-110 interaction principles for usability and decision support \citep{ISO9241-2020}.
-  \item An evaluation protocol that measures utility (task performance and decision quality), usibility (SUS/heuristics), and technical validity (metric reconciliation to source SQL/NCWTMDS rules), providing empirical evidence of improvement over current practice \citep{johnson2024}. 
+  \item An evaluation protocol that measures utility (task performance and decision quality), usibility (SUS / heuristics), and technical validity (metric reconciliation to source SQL / NCWTMDS rules), providing empirical evidence of improvement over current practice \citep{johnson2024}. 
   \item A synthesis of DSR guidance applied to NHS operational analytics (Henver's DSR guidelines; Peffers' six-activity DSRM) demonstrating a rigorous and replicable pathway from problem to artefact to evaluation \citep{hevner2004, Peffers2007}.
 \end{enumerate}
 
@@ -56,11 +57,11 @@ Where do delays occur between MDT outcome and first oncology clinic appointment,
 
 \textbf{RQ2 (explanatory):}
 
-Which operational factors (e.g., clinic slot availability, consultant caseload distribution, booking intervals) most strongly predict extended MDT->clinic waits and increased breach risk?
+Which operational factors (e.g., clinic slot availability, consultant caseload distribution, booking intervals) most strongly predict extended MDT $\rightarrow$ clinic waits and increased breach risk?
 
 \textbf{RQ3 (intervention / measurable):}
 
-To what extent does the IDR‑backed dashboard improve managers’ ability to (a) identify bottlenecks, (b) prioritise actions, and (c) monitor impact—measured by time‑to‑answer key pathway questions, accuracy of breach‑risk identification, and decision quality in task‑based testing versus current practice?
+To what extent does the IDR‑backed dashboard improve managers’ ability to (a) identify bottlenecks, (b) prioritise actions, and (c) monitor impact-measured by time‑to‑answer key pathway questions, accuracy of breach‑risk identification, and decision quality in task‑based testing versus current practice?
 
 \textbf{RQ4 (design knowledge):}
 
@@ -74,46 +75,47 @@ The project follows \cite{hevner2004} (design-science guidance) and \cite{Peffer
 \subsection{Operational analytics and IDR foundations}
 
 \begin{itemize}
-  \item \textbf{DR architecture models:} general (centralised with staging), biobank‑driven, user‑controlled application layer, federated; small/medium institutions typically succeed with the general model plus a staging layer for ETL and harmonisation \citep{gagalova2020}.
-  \item \textbf{Terminologies \& CDMs:} widespread use of ICD‑10, SNOMED CT, LOINC, CPT/RxNorm; common data models include i2b2 and OMOP (emerging adoption), aiding interoperability and queryability \citep{gagalova2020}.
+  \item \textbf{IDR architecture models:} general (centralised with staging), biobank‑driven, user‑controlled application layer, federated; small/medium institutions typically succeed with the general model plus a staging layer for ETL and harmonisation \citep{gagalova2020}.
+  \item \textbf{Terminologies \& CDMs:} widespread use of ICD‑10, SNOMED CT, LOINC, CPT / RxNorm; common data models include i2b2 and OMOP (emerging adoption), aiding interoperability and queryability \citep{gagalova2020}.
   \item \textbf{Update cadence:} varies from daily to near real‑time depending on use case (near real‑time for CDSS; 15‑minute syncs observed in some i2b2 deployments) \citep{gagalova2020}.
-  \item \textbf{Governance and privacy:} honest‑broker patterns, de‑identification/pseudonymisation with parallel identifiable stores where appropriate; strong data‑flow controls in federated settings \citep{gagalova2020}.
+  \item \textbf{Governance and privacy:} honest‑broker patterns, de‑identification / pseudonymisation with parallel identifiable stores where appropriate; strong data‑flow controls in federated settings \citep{gagalova2020}.
 \end{itemize}
 
 \subsection{NHS-proven integration patterns for unstructured/operational data}
 
-CogStack \citep{jackson2018} demonstrates cost‑effective ingestion of structured and unstructured clinical data with de‑identification and Elasticsearch/Kibana for rapid retrieval and dashboards—the “3R” principle: right data, right place, right time. Lessons include batch/near‑real‑time synchronisation, OCR limits, and governance tiers (identifiable/pseudonymised/anonymised).
+CogStack \citep{jackson2018} demonstrates cost‑effective ingestion of structured and unstructured clinical data with de‑identification and Elasticsearch / Kibana for rapid retrieval and dashboards—the “3R” principle: right data, right place, right time. Lessons include batch / near‑real‑time synchronisation, OCR limits, and governance tiers (identifiable / pseudonymised / anonymised).
 
 \section{Scope, Setting and Participant Involvement}
 
 \begin{itemize}
   \item \textbf{Setting:} Portsmouth Hospitals University NHS Trust (post‑MDT oncology pathways).
-  \item \textbf{Stakeholders:} oncology service managers, MDT coordinators, booking teams; an interested Clinical Oncologist (informal interview plus task‑based evaluation).
-  \item \textbf{Systems landscape:} MDT coordination, clinic scheduling/diary, treatment systems; scope to consider Oracle EBS (where relevant) at a high level for integration boundaries (master data; resource/rota interfaces).
+  \item \textbf{Stakeholders:} Oncology service managers, MDT coordinators, booking teams; an interested Clinical Oncologist (informal interview plus task‑based evaluation).
+  \item \textbf{Systems landscape:} MDT coordination, clinic scheduling/diary, treatment systems; scope to consider Oracle EBS (where relevant) at a high level for integration boundaries (master data; resource / rota interfaces).
 \end{itemize}
 
 \section{Artefact: IDR-Backed Post-MDT Dashboard}
 
 \subsection{IDR architecture (target state)}
 
-Adopt the general IDR model with staging/ETL → central warehouse → application layer (dashboard/API). This matches the study’s single‑institution scope, supports terminologies, and enables controlled sync frequencies \citep{gagalova2020}.
+Adopt the general IDR model with staging / ETL $\rightarrow$ central warehouse $\rightarrow$ application layer (dashboard/API). This matches the study’s single‑institution scope, supports terminologies, and enables controlled sync frequencies \citep{gagalova2020}.
 
 \begin{itemize}
-  \item \textbf{Data types:} timestamped pathway events (MDT date \& outcome, first oncology clinic, DTT, first treatment), clinic session/slot capacity and utilisation, basic demographics (de‑identified).
+  \item \textbf{Data types:} timestamped pathway events (MDT date \& outcome, first oncology clinic, DTT, first treatment), clinic session / slot capacity and utilisation, basic demographics (de‑identified).
 \item \textbf{Terminology \& definitions:} align event definitions and codes to NCWTMDS and national guidance for consistency with the 28/31/62‑day standards \citep{NHSDigital2026}.
 \item \textbf{CDM options:} pragmatic star schema for the dissertation, with mapping “stubs” to i2b2/OMOP to support portability (documented as design principle rather than full migration) \citep{gagalova2020}.
 \item \textbf{Update cadence:} daily baseline; capability to prototype hourly sync for the MDT→clinic tracker page if feasible \citep{gagalova2020}
-\item \textbf{Privacy \& governance:} de‑identification/pseudonymisation at source with unique pathway IDs; honest‑broker pattern separating research/operational access; per‑role access control \citep{gagalova2020}.
-\item \textbf{Unstructured data (optional extension):} if useful, apply CogStack‑style ingestion for free‑text MDT notes (de‑identified) to surface reasons for deferment/case complexity (time permitting) \citep{jackson2018}.
+\item \textbf{Privacy \& governance:} de‑identification / pseudonymisation at source with unique pathway IDs; honest‑broker pattern separating research / operational access; per‑role access control \citep{gagalova2020}.
+\item \textbf{Unstructured data (optional extension):} if useful, apply CogStack‑style ingestion for free‑text MDT notes (de‑identified) to surface reasons for deferment / case complexity (time permitting) \citep{jackson2018}.
 \end{itemize}
 
 \subsection{Dashboard design (views and principles)}
 
 \begin{itemize}
-\item \textbf{Post‑MDT tracker:} live cohort of patients with MDT->clinic elapsed days, colour‑coded risk against 31/62‑day clocks \citep{johnson2024}.
+\item \textbf{Post‑MDT tracker:} live cohort of patients with MDT $\rightarrow$ clinic elapsed days, colour‑coded risk against 31/62‑day clocks \citep{johnson2024}.
 \item \textbf{Capacity pane:} slot supply vs demand; utilisation by clinic/consultant; next available capacity for post‑MDT bookings.
-\item \textbf{Interval heatmaps/control charts:} MDT→clinic, clinic→DTT, DTT→treatment by tumour site/consultant/time.
+\item \textbf{Interval heatmaps/control charts:} MDT $\rightarrow$ clinic, clinic→DTT, DTT $\rightarrow$ treatment by tumour site / consultant / time.
 \item \textbf{Standards panel:} run charts for 31/62‑day performance.  
+\item \textbf{Common FOI requests}: Administered drugs per diagnosis / staging / Aadjuvant therapy.
 \end{itemize}
 
 Design adheres to ISO 9241‑110 (task appropriateness, self‑descriptiveness, controllability, error tolerance, expectation conformity, customisability, learnability) \citep{ISO9241-2020}.
@@ -124,7 +126,7 @@ Design adheres to ISO 9241‑110 (task appropriateness, self‑descriptiveness, 
 \subsection{Key intervals and KPI's}
 
 \begin{itemize}
-\item \textbf{Intervals:} MDT→Clinic; Clinic→DTT; DTT→Treatment; Referral→Treatment (where available).
+\item \textbf{Intervals:} MDT $\rightarrow$ Clinic; Clinic $\rightarrow$ DTT\footnote{Decision to treat is often made in Clinic appointment, however a useful metric to measure would be how often this is not the case.}; DTT $\rightarrow$ Treatment; Referral $\rightarrow$ Treatment (where available).
 \item \textbf{KPIs:} 31‑day and 62‑day standards; proportion near breach thresholds.\citep{johnson2024}
 \end{itemize}
 
@@ -132,58 +134,56 @@ Design adheres to ISO 9241‑110 (task appropriateness, self‑descriptiveness, 
 
 \begin{itemize}
 \item \textbf{Conformance:} enforce NCWTMDS event rules; reject/flag invalid date orders; derive canonical event per pathway \citep{NHSDigital2026}.
-\item \textbf{Completeness:} quantify \% missing per field/event; escalate >X\% missing for a tumour group; no silent imputation for regulatory events \citep{NHSDigital2026}.
-\item \textbf{Consistency \& de‑duplication:} deterministic rules to reconcile duplicates across booking/treatment systems; audit trail of resolution steps.
-\item \textbf{Timestamp reliability:} sensitivity analyses excluding incomplete timestamp subsets; report effect sizes with/without exclusions.
-\item \textbf{Provenance:} per‑record data lineage to source table/refresh cycle.
+\item \textbf{Completeness:} quantify \% missing per field / event; escalate \> X\% missing for a tumour group; no silent imputation for regulatory events \citep{NHSDigital2026}.
+\item \textbf{Consistency \& de‑duplication:} deterministic rules to reconcile duplicates across booking / treatment systems; audit trail of resolution steps.
+\item \textbf{Timestamp reliability:} sensitivity analyses excluding incomplete timestamp subsets; report effect sizes with / without exclusions.
+\item \textbf{Provenance:} per‑record data lineage to source table / refresh cycle.
 \end{itemize}
 
 \section{Analysis Plan (specific and measurable)}
 
 \begin{enumerate}
-  \item \textbf{Descriptive and SPC:} medians/IQRs; XmR/p‑charts of interval stability by tumour group/consultant/time.
-  \item \textbf{Variation \& capacity:} funnel plots (clinic/session‑level) and utilisation heatmaps to find under/over‑capacity and demand‑slot mismatch.
+  \item \textbf{Descriptive and SPC:} medians / IQRs; XmR / p‑charts of interval stability by tumour group / consultant / time.
+  \item \textbf{Variation \& capacity:} funnel plots (clinic / session‑level) and utilisation heatmaps to find under / over‑capacity and demand‑slot mismatch.
   \item \textbf{Associations:}
   \begin{itemize}
-    \item \textbf{Predictors of long MDT->clinic waits:} GLM/quantile regression with clinic capacity, caseload dispersion, tumour site, MDT load, week effects.
+    \item \textbf{Predictors of long MDT $\rightarrow$ clinic waits:} GLM/quantile regression with clinic capacity, caseload dispersion, tumour site, MDT load, week effects.
     \item \textbf{Impact on breaches:} logistic or time‑to‑event models for 31/62‑day breach risk given observed intervals.
   \end{itemize}
-  \item \textbf{Exploratory scenario testing (clearly labelled):} booking rules (e.g., auto‑prioritise post‑MDT within N days), or add X clinic sessions -> simulated change in breach risk; results framed as what‑if not causal claims.
+  \item \textbf{Exploratory scenario testing (clearly labelled):} booking rules (e.g., auto‑prioritise post‑MDT within N days), or add X clinic sessions $\rightarrow$ simulated change in breach risk; results framed as what‑if not causal claims.
 \end{enumerate}
 
 (Standards backdrop supplies cohort definitions and performance context for all analyses \citep{johnson2024}.)
 
 \section{Evaluation (multi-method, beyond heuristics}
 
-\textbf{E1. Usability (formative):} heuristic review and SUS anchored in **ISO 9241‑110**; think‑aloud with 3–5 users to fix issues early \citep{ISO9241-2020}.
+\textbf{E1. Usability (formative):} heuristic review and SUS anchored in ISO 9241‑110; think‑aloud with 3–5 users to fix issues early \citep{ISO9241-2020}.
 
-\textbf{E2. Utility \& effectiveness (summative):} ask‑based experiment with operational users (within‑subjects: current tools -> dashboard).
+\textbf{E2. Utility \& effectiveness (summative):} ask‑based experiment with operational users (within‑subjects: current tools $\rightarrow$ dashboard).
 
 \begin{itemize}
 \item \textbf{Primary endpoints:}
 \begin{itemize}
     \item Time‑to‑answer (e.g., “Which clinics next week risk X\% breaches for tumour group Y?”),
     \item Accuracy of breach‑risk identification,
-    \item Decision quality** in a constrained scheduling scenario (measured against a gold‑standard rule set).
+    \item Decision quality in a constrained scheduling scenario (measured against a gold‑standard rule set).
 \end{itemize}
-\item Secondary endpoints:** perceived usefulness and intention to use (short TAM items).
+\item Secondary endpoints: perceived usefulness and intention to use (short TAM items).
 \end{itemize}
 
 
-\textbf{E3. Technical validity:} reconcile a stratified sample of dashboard metrics with underlying SQL/warehouse tables; cross‑check event derivations against NCWTMDS \citep{NHSDigital2026}.
+\textbf{E3. Technical validity:} reconcile a stratified sample of dashboard metrics with underlying SQL / warehouse tables; cross‑check event derivations against NCWTMDS \citep{NHSDigital2026}.
 
 \textbf{E4. Contribution capture:} extract design principles from artefact and user feedback (e.g., “surface lead time to breach” as a first‑class signal; “pair risk with capacity actionability”).  
-
-(This evaluation framing responds to MSc‑level rigour requirements for measurable utility, not just usability.)
 
 \section{Ethical, IG and Risk Management}
 
 \begin{itemize}
   \item \textbf{Ethics route:} University submission via supervisor; local classification as service evaluation where applicable; DPIA and data sharing agreements appended.
-  \item \textbf{IG \& privacy:} UK GDPR/DPA 2018; de‑identification/pseudonymisation at source; honest‑broker access separation; role‑based controls. (Patterns align with IDR literature on privacy for clinical data reuse.) \citep{gagalova2020}
+  \item \textbf{IG \& privacy:} UK GDPR/DPA 2018; de‑identification / pseudonymisation at source; honest‑broker access separation; role‑based controls. (Patterns align with IDR literature on privacy for clinical data reuse.) \citep{gagalova2020}
   \item \textbf{Risks \& mitigations:}
   \begin{itemize}
-    \item \emph{Data access/quality:} eTimes New Roman font, size 12 with 1.5 line spacing arly availability check; staged pull with profiling; clear event definitions. \citep{NHSDigital2026}
+    \item \emph{Data access / quality:} early availability check; staged pull with profiling; clear event definitions. \citep{NHSDigital2026}
     \item \emph{Scope creep:} start with 1–2 high‑volume tumour groups; extend only after model stability.
     \item \emph{Adoption risk:} co‑design sessions; map outputs directly to rostering/slot release/booking rules.
   \end{itemize}
@@ -202,11 +202,11 @@ Design adheres to ISO 9241‑110 (task appropriateness, self‑descriptiveness, 
 (DSR framing per \cite{Peffers2007}; design‑science evaluation stance per \cite{hevner2004}.) 
 
 \section{Timeline (aligned to module dates)}
-
+Detals are in appendices, however this is a highlevel overview of the proposed timeline. 
 \begin{itemize}
   \item \textbf{By 9th March:} Finalise literature review; ethics/DPIA; confirm data items and availability.
   \item \textbf{March - April:} ETL build; de-ID pipeline, warehouse schema, data profiling/QC \citep{gagalova2020}.
-  \item \textbf{April - May:} Analysis (descriptives, regression), scenario exploration; dashboard v1 -> v2.
+  \item \textbf{April - May:} Analysis (descriptives, regression), scenario exploration; dashboard v1 $\rightarrow$ v2.
   \item \textbf{May - July:} Evaluation (E1-E3); extract/compile design principles.
   \item \textbf{July - August:} Final analysis; dissertation writing; artefact packing.
 \end{itemize}
@@ -222,13 +222,184 @@ Design adheres to ISO 9241‑110 (task appropriateness, self‑descriptiveness, 
 
 \bibliography{./Project}
 
-\section{Appendix A - Data Items and Mapping (Summary)}
+\appendix
+\section{Data Items and Mapping (Summary)}
 \begin{itemize}
-  \item \textbf{Core events:} MDT date \& outcome -> first oncology clinic -> DTT (or earliest clinically appropriate date) -> first definitive treatment (SACT/RT/surgery).
+  \item \textbf{Core events:} MDT date \& outcome $\rightarrow$ first oncology clinic $\rightarrow$  DTT (or earliest clinically appropriate date) $\rightarrow$  first definitive treatment (SACT/RT/surgery).
   \item \textbf{Operational:} clinic session calendar, planned slots, slot utilisation, consultant/rota, cancellation reasons.
   \item \textbf{Derived metrics:} days per interval; risk‑to‑breach counters; lead‑time‑to‑breach; capacity vs demand ratios.
 \end{itemize}
 
 (Aligned to NCWTMDS where applicable; mappings documented for transparency and replication.) \citep{NHSDigital2026} 
+
+\section{Timeline}
+The following timeline is structured using two-week sprints.
+
+\subsection{Sprint 1: 18th Feb. $\rightarrow$ 9th March}
+\emph{Focus: Project Foundation and Scoping}
+
+\begin{itemize}
+  \item[$\square$] Finalise research questions and scope.
+  \item[$\square$] Begin structured literature search.
+  \item[$\square$] Draft early DPIA.
+  \item[$\square$] Draft proposal and ethics materials.
+  \item[$\square$] Supervisor check-in.
+  \item[$\square$] \textbf{Submit Research Proposal \& Ethics: 9th March 2026 @ 23:55}.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 2: 10th March $\rightarrow$ 24th March}
+\emph{Focus: Literature Review Deepening}
+
+\begin{itemize}
+  \item[$\square$] Conduct deeper literature review (IDR, DSR, MDT efficiency).
+  \item[$\square$] Extract candidate design principles.
+  \item[$\square$] Refine methodology and evaluation framework.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 3: 25th March $\rightarrow$ 7th April}
+\emph{Focus: Data Access \& Profiling Preparation}
+
+\begin{itemize}
+  \item[$\square$] Confirm data access with Trust information teams.
+  \item[$\square$] Request test extracts.
+  \item[$\square$] Prepare profiling scripts and data dictionary structure.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 4: 8th April $\rightarrow$ 21st April}
+\emph{Focus: Data Profiling \& Definitions}
+
+\begin{itemize}
+  \item[$\square$] Profile data (missingness, timestamps, IDs).
+  \item[$\square$] Validate event definitions against NCWTMDS.
+  \item[$\square$] Produce data dictionary v1.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 5: 22nd April $\rightarrow$ 5th May}
+\emph{Focus: IDR Schema \& ETL (v1)}
+
+\begin{itemize}
+  \item[$\square$] Design IDR staging + warehouse schema.
+  \item[$\square$] Build ETL transformations.
+  \item[$\square$] Implement interval derivations.
+  \item[$\square$] Produce data quality logs.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 6: 6th May $\rightarrow$ 19th May}
+\emph{Focus: Quantitative Analysis (Core)}
+
+\begin{itemize}
+  \item[$\square$] Run descriptive + SPC analyses.
+  \item[$\square$] Perform capacity and utilisation analyses.
+  \item[$\square$] Build regression/time-to-event models.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 7: 20th May $\rightarrow$ 2nd June}
+\emph{Focus: Dashboard Prototype (v1)}
+
+\begin{itemize}
+  \item[$\square$] Build Post-MDT tracker.
+  \item[$\square$] Add capacity, heatmaps, breach-risk views.
+  \item[$\square$] Apply ISO 9241-110 principles.
+  \item[$\square$] Early stakeholder walkthrough.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 8: 3rd June $\rightarrow$ 16th June}
+\emph{Focus: Dashboard v2 \& Evaluation Preparation}
+
+\begin{itemize}
+  \item[$\square$] Improve layout and clarity.
+  \item[$\square$] Draft task-based evaluation scenarios.
+  \item[$\square$] Prepare evaluation materials.
+  \item[$\square$] Recruit participants.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 9: 17th June $\rightarrow$ 30th June}
+\emph{Focus: Evaluation Execution}
+
+\begin{itemize}
+  \item[$\square$] Conduct SUS + heuristic evaluation.
+  \item[$\square$] Run task-based utility testing.
+  \item[$\square$] Validate dashboard against SQL metrics.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 10: 1st July $\rightarrow$ 14th July}
+\emph{Focus: Evaluation Integration}
+
+\begin{itemize}
+  \item[$\square$] Analyse evaluation data.
+  \item[$\square$] Extract final design principles.
+  \item[$\square$] Write Results + Evaluation sections.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 11: 15th July $\rightarrow$ 28th July}
+\emph{Focus: Dissertation Draft}
+
+\begin{itemize}
+  \item[$\square$] Draft all dissertation chapters.
+  \item[$\square$] Write appendices (ETL, DPIA summary, data dictionary).
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 12: 29th July $\rightarrow$ 10th August}
+\emph{Focus: Dissertation Finalisation}
+
+\begin{itemize}
+  \item[$\square$] Integrate supervisor feedback.
+  \item[$\square$] Proofreading and formatting.
+  \item[$\square$] \textbf{Submit Dissertation: 10th August 2026 @ 23:55}.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 13: 11th August $\rightarrow$ 13th August}
+\emph{Focus: Presentation Preparation}
+
+\begin{itemize}
+  \item[$\square$] Prepare slides and recording.
+  \item[$\square$] \textbf{Presentation Submission: 13th August 2026 @ 23:55}.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 14: 14th August $\rightarrow$ 17th August}
+\emph{Focus: Review \& Comments}
+
+\begin{itemize}
+  \item[$\square$] Review peer presentations.
+  \item[$\square$] Submit feedback. \\
+  \item[$\square$] \textbf{Review \& Comments Submission: 17th August 2026 @ 23:55}.
+\end{itemize}
+
+% -------------------------------------------------------------------
+
+\subsection{Sprint 15: 18th August $\rightarrow$ 24th August}
+\emph{Focus: Final Presentation Delivery}
+
+\begin{itemize}
+  \item[$\square$] Prepare for live presentation session.
+  \item[$\square$] \textbf{Online Presentation: 24th August 2026 @ 23:55}.  
+  \item[$\square$] Wrap-up and project closure.
+\end{itemize}
 
 \end{document}
