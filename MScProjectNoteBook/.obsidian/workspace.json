@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "6c61381fa6872b5a",
+        "id": "7667bbc8d4e35d49",
         "type": "tabs",
         "children": [
           {
-            "id": "10ebd887c285112a",
+            "id": "1a9b6633c3d9eda8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Planning/Timeline.md",
+                "file": "Chapters/Chapter02_LiteratureReview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Timeline"
-            }
-          },
-          {
-            "id": "b390af3c9892c133",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Untitled.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Chapter02_LiteratureReview"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3e3bcaa9c4b5d6d5",
@@ -209,9 +195,28 @@
       "print:Print note": false
     }
   },
-  "active": "b390af3c9892c133",
+  "active": "1a9b6633c3d9eda8",
   "lastOpenFiles": [
+    "LiteratureNotes/peck2023.md",
+    "Chapters/Chapter02_LiteratureReview.md",
+    "Chapters/Chapter01_Introduction.md",
+    "LiteratureNotes/nhsengland.md",
+    "LiteratureNotes/liu2026.md",
+    "LiteratureNotes/chang2025.md",
+    "LiteratureSummary/Theme 3.md",
+    "LiteratureSummary/Theme 2.md",
+    "LiteratureNotes/huser2017.md",
+    "LiteratureNotes/wade2014.md",
+    "LiteratureNotes/law2024.md",
     "Planning/Timeline.md",
+    "LiteratureSummary/Theme 1.md",
+    "LiteratureNotes/degregorio2025.md",
+    "LiteratureSummary",
+    "LiteratureNotes/soukup2022.md",
+    "soukup2022.md",
+    "LiteratureNotes/Literature Strategy.md",
+    "Chapters",
+    "LiteratureNotes/LiteratureTemplate.md",
     "Untitled.md",
     "Planning/Proposalv3.md",
     "Planning/Proposalv2.md",
@@ -223,12 +228,9 @@
     "Meetings/2026-02-16_ClinicianInterview_DB.md",
     "Workflow",
     "LiteratureNotes/saberi2025.md",
-    "Meetings/2026-02-18_Meeting_1.md",
-    "LiteratureNotes/LiteratureTemplate.md",
     "LiteratureNotes",
     "Meetings",
     "Untitled.base",
-    "Welcome.md",
     "Planning"
   ]
 }
