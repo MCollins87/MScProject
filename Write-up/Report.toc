@@ -1,0 +1,30 @@
+\contentsline {chapter}{\numberline {1}Introduction}{3}{}%
+\contentsline {section}{\numberline {1.1}Problem Statement}{3}{}%
+\contentsline {section}{\numberline {1.2}Research Aim and Objectives}{4}{}%
+\contentsline {section}{\numberline {1.3}Design Science Methodology}{5}{}%
+\contentsline {section}{\numberline {1.4}Academic and Practical Significance}{5}{}%
+\contentsline {chapter}{\numberline {2}Literature Review}{7}{}%
+\contentsline {section}{\numberline {2.1}Introduction}{7}{}%
+\contentsline {subsection}{\numberline {2.1.1}Method}{8}{}%
+\contentsline {section}{\numberline {2.2}The NHS Cancer Pathway and MDT Framework}{8}{}%
+\contentsline {subsection}{\numberline {2.2.1}MDTs as the Backbone of UK Cancer Care}{8}{}%
+\contentsline {subsection}{\numberline {2.2.2}Evidence of MDT Operational Pressures}{9}{}%
+\contentsline {subsection}{\numberline {2.2.3}National policy direction and waiting time standards}{9}{}%
+\contentsline {section}{\numberline {2.3}Operational Delays in Cancer Pathways}{10}{}%
+\contentsline {subsection}{\numberline {2.3.1}Diagnosis-to-Treatment Interval (DTI) as a Critical Metric}{10}{}%
+\contentsline {subsection}{\numberline {2.3.2}Hospital/System Factors Influencing Delay}{10}{}%
+\contentsline {subsection}{\numberline {2.3.3}MDT-specific drivers of post-decision delays}{10}{}%
+\contentsline {section}{\numberline {2.4}Data Fragmentation and the Need for Integrated Data Repositories}{11}{}%
+\contentsline {subsection}{\numberline {2.4.1}Fragmentation Across NHS Systems}{11}{}%
+\contentsline {subsection}{\numberline {2.4.2}Clinical Data Warehouses (CDWs) and the Evolution Toward IDRs}{11}{}%
+\contentsline {subsection}{\numberline {2.4.3}Need for IDRs in NHS Operational Oncology}{11}{}%
+\contentsline {section}{\numberline {2.5}Dashboards, Operational Analytics, and Decision-Support Systems}{12}{}%
+\contentsline {subsection}{\numberline {2.5.1}The Role of Dashboards in Performance Management}{12}{}%
+\contentsline {subsection}{\numberline {2.5.2}Clinical Decision-Support Dashboards and Multimodal Data}{12}{}%
+\contentsline {subsection}{\numberline {2.5.3}Data Quality and Informatics Challenges}{12}{}%
+\contentsline {section}{\numberline {2.6}Usability, HCI, and ISO 9241‑110}{12}{}%
+\contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{13}{}%
+\contentsline {section}{\numberline {2.8}Synthesis of Gaps}{13}{}%
+\contentsline {section}{\numberline {2.9}Summary}{14}{}%
+\contentsline {chapter}{References}{15}{}%
+\contentsline {chapter}{List of Acronyms}{20}{}%

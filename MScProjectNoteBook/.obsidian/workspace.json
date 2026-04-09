@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chapters/Chapter02_LiteratureReview.md",
+                "file": "Planning/Proposal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter02_LiteratureReview"
+              "title": "Proposal"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3e3bcaa9c4b5d6d5",
@@ -197,8 +196,10 @@
   },
   "active": "1a9b6633c3d9eda8",
   "lastOpenFiles": [
-    "LiteratureNotes/peck2023.md",
+    "Planning/Proposalv3.md",
+    "Planning/Proposal.md",
     "Chapters/Chapter02_LiteratureReview.md",
+    "LiteratureNotes/peck2023.md",
     "Chapters/Chapter01_Introduction.md",
     "LiteratureNotes/nhsengland.md",
     "LiteratureNotes/liu2026.md",
@@ -218,10 +219,8 @@
     "Chapters",
     "LiteratureNotes/LiteratureTemplate.md",
     "Untitled.md",
-    "Planning/Proposalv3.md",
     "Planning/Proposalv2.md",
     "LiteratureNotes/gagalova2020.md",
-    "Planning/Proposal.md",
     "Workflow/StandardReferral.canvas",
     "Workflow/ReferralWorkshop.md",
     "Workflow/CAT4.canvas",

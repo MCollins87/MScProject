@@ -1,0 +1,60 @@
+\chapter{Introduction}
+Delivering timely cancer care remains a critical priority within the NHS, where delays at any stage of the diagnostic and treatment pathway can negatively affect patient outcomes, experience, and service performance. Recent policy reforms have consolidated the NHS Cancer Waiting Time (CWT) framework into three outcome-focused standards: the 28-day Faster Diagnosis Standard (FDS), the 31-day decision-to-treat to treatment (DTT) standard, and the 62-day referral-to-treatment (RTT) standard—implemented nationally from October 2023 \citep{johnson2024, NHSDigital2026}. These standards place increased emphasis on operational viability, rapid decision-making, and efficient progression of patients through the post-MDT (multidisciplinary team) stages of the oncology pathway. However, many Trusts continue to face systemic challenges in generating timely, accurate, and actionable insights from fragmented data sources.
+
+Within Portsmouth Hospitals University NHS Trust, as in many NHS institutions, key operational data concerning MDT outcomes, clinic scheduling, booking practices, and treatment initiation remain dispersed across siloed systems. Although these systems individually support MDT coordination, outpatient clinic management, and treatment delivery, they lack a consolidated view of pathway performance. This fragmentation makes it difficult for operational managers to detect bottlenecks, identify emerging breach risks, or allocate clinical capacity efficiently. As a result, delays between \textbf{MDT outcomes, first oncology clinic, decision-to-treat}, and \textbf{first definitive treatment} remain insufficiently visible, impairing the Trust's ability to monitor compliance with the 31- and 62-day standards and to respond rapidly to operational pressures.
+
+\section{Problem Statement}
+
+The central problem addressed in this research is the absence of an integrated, operationally focused data infrastructure and decision-support interface to illuminate post-MDT workflow delays and guide timely interventions within an NHS oncology service. Despite the availability of relevant data, the lack of integration and harmonisation across MDT, clinic, and treatment systems results in manual workarounds, inconsistent performance monitoring, and delayed insights. This gap diminishes the ability of operational teams to identify patients at risk of breaching national cancer standards, understand the factors driving variability in pathway intervals, and proactively manage capacity-constrained environments.
+
+Moreover, existing reporting solutions tend to focus on aggregate compliance metrics rather than providing real-time or near–real-time visibility of operational bottlenecks. Without a unified source of truth that aligns event definitions, timestamps, and clinical coding standards \citep{NHSDigital2026}, it becomes difficult to execute performance analysis or support day-to-day decision-making. Literature on Integrated Data Repositories (IDRs) similarly highlights that many institutions struggle with data harmonisation, terminological alignment, and the creation of analytics-ready architectures capable of supporting both research and operational use cases \citep{gagalova2020}.
+
+This study therefore seeks to design, develop, and evaluate a \textbf{lightweight Integrated Data Repository (IDR)} and accompanying \textbf{decision-support dashboard} tailored specifically to the post-MDT oncology workflow. By integrating key pathway events, clinic capacity information, and national standard definitions, the artefact aims to surface bottlenecks, highlight breach risks, and support operational teams in prioritising actions that improve pathway performance.
+
+\section{Research Aim and Objectives}
+
+The overarching aim of this research is to apply Design Science Research (DSR) methods to create and evaluate an IDR-backed dashboard that enhances operational decision-making in post-MDT oncology pathways. The study seeks to generate both a practical artefact—an integrated warehouse plus a usable dashboard—and generalised design knowledge concerning IDR architectures and decision-support principles suitable for NHS operational analytics.
+
+The specific objectives are to:
+\begin{enumerate}
+    \item identify, quantify, and interpret delays within the MDT-to-treatment pathway;
+    \item design and implement an IDR architecture that consolidates and harmonises data from MDT, clinic scheduling, and treatment systems;
+    \item develop a decision-support dashboard aligned with ISO 9241-110 usability principles to surface actionable operational insights;
+    \item evaluate the artefact's usability, utility, and technical validity through task-based experiments, heuristic analysis, and metric reconciliation;
+    \item derive transferable design principles and architecture guidance for NHS oncology operational analytics.
+\end{enumerate}
+
+\section{Design Science Methodology}
+
+This dissertation adopts the Design Science Research (DSR) paradigm, a well-established approach for solving complex, real-world problems through the creation and evaluation of innovative artefacts \citep{hevner2004}. DSR is especially suited to healthcare informatics contexts where organisational, data, and process challenges intersect, and where practical solutions must be both rigorously designed and empirically evaluated.
+
+The research follows the six-activity Design Science Research Methodology (DSRM) proposed by \cite{Peffers2007}:
+\begin{enumerate}
+    \item \textbf{Problem identification and motivation} – identifying post-MDT workflow delays and the need for integrated information;
+    \item \textbf{Define objectives of the solution} – specifying analytic, architectural, and usability requirements for an IDR-backed dashboard;
+    \item \textbf{Design and development} – constructing the IDR, data transformation pipelines, and dashboard view;
+    \item \textbf{Demonstration} – deploying the artefact with real Trust data to show how it addresses operational problems;
+    \item \textbf{Evaluation} – measuring usability, utility, and technical accuracy using multi-method evaluation;
+    \item \textbf{Communication} – producing a dissertation delivering both artefact and design knowledge contributions.
+\end{enumerate}
+
+This structured methodology ensures that the work moves beyond a local service-improvement project to make a scholarly contribution to the fields of operational analytics, IDR design, and health informatics within NHS settings.
+
+\section{Academic and Practical Significance}
+
+Academically, the research contributes to the limited body of DSR-grounded studies focusing on NHS operational analytics, offering:
+\begin{itemize}
+    \item an IDR reference architecture for oncology operations;
+    \item a set of design principles for NHS-appropriate decision-support dashboards;
+    \item an evaluation protocol combining usability metrics, decision-quality testing, and technical verification.
+\end{itemize}
+
+Practically, the artefact provides operational teams with a tool that can:
+\begin{itemize}
+    \item reduce time-to-insight;
+    \item support rapid identification of bottlenecks and breach risks;
+    \item align capacity planning with demand;
+    \item improve pathway monitoring in line with the 28-, 31-, and 62-day standards.
+\end{itemize}
+
+Ultimately, the study aims to support faster, more reliable progression from MDT decision to treatment initiation, directly contributing to improved patient care and more effective management of oncology services.

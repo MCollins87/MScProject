@@ -1,0 +1,54 @@
+% Define the document class:
+\documentclass[12pt, a4paper, twoside]{report}
+%import packages
+\usepackage{graphicx} % for images
+\usepackage{natbib} % for citation
+\bibliographystyle{ctrH} % custom Cite Them Right Harvard referencing
+\renewcommand{\bibname}{References} % change name of Bibliography to References
+\usepackage{setspace} % allow line spacing to be defined
+\onehalfspacing
+\usepackage[left=2cm, right=2cm, bottom=2.5cm, top=2cm]{geometry} %define margines
+\usepackage{textcomp} % for additional fonts and symbols
+\usepackage{tabularx} % for tables
+\usepackage{enumitem} % for numbered lists
+\usepackage{amssymb} % for additional fonts and symbols
+\usepackage{acronym} % for list of acronyms
+\raggedbottom
+
+\title{Post-MDT Oncology Workflow Bottlenecks: A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start}
+\author{Mark Collins}
+\date{\today}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    {\Large University of Essex Online\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Post-MDT Oncology Workflow Bottlenecks: A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start.\par}
+    \vspace{2cm}
+    {\Large Mark Collins}
+    \vfill
+    A dissertation dubmitted in partial fulfilment\\
+    of the requirements for the degree of\\
+    MSc Enterprise IT Management\\
+    \vspace{1cm}
+    {\large \today\par}
+\end{titlepage}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\include{Intro}
+\include{Literature}
+
+\addcontentsline{toc}{chapter}{References}
+\bibliography{./Project}
+
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\input{acronym}
+
+\end{document}
+    
