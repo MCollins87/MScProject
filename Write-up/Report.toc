@@ -26,5 +26,23 @@
 \contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{13}{}%
 \contentsline {section}{\numberline {2.8}Synthesis of Gaps}{13}{}%
 \contentsline {section}{\numberline {2.9}Summary}{14}{}%
-\contentsline {chapter}{References}{15}{}%
-\contentsline {chapter}{List of Acronyms}{20}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{15}{}%
+\contentsline {section}{\numberline {3.1}Overview of Research Design}{15}{}%
+\contentsline {section}{\numberline {3.2}Design Science Research Framework}{15}{}%
+\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{15}{}%
+\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{16}{}%
+\contentsline {subsection}{\numberline {3.2.3}Design and Development}{16}{}%
+\contentsline {subsection}{\numberline {3.2.4}Demonstration}{16}{}%
+\contentsline {subsection}{\numberline {3.2.5}Evaluation}{17}{}%
+\contentsline {subsection}{\numberline {3.2.6}Communication}{17}{}%
+\contentsline {section}{\numberline {3.3}Research Questions and Method Alignment}{17}{}%
+\contentsline {section}{\numberline {3.4}Design Principles}{17}{}%
+\contentsline {section}{\numberline {3.5}Evaluation Strategy}{18}{}%
+\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{19}{}%
+\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{19}{}%
+\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{19}{}%
+\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{19}{}%
+\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{19}{}%
+\contentsline {section}{\numberline {3.7}Summary}{19}{}%
+\contentsline {chapter}{References}{20}{}%
+\contentsline {chapter}{List of Acronyms}{25}{}%

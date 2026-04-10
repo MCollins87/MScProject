@@ -1,0 +1,146 @@
+\chapter{Methodology}
+
+\section{Overview of Research Design}
+
+This research adopts a Design Science Research (DSR) methodology to address an operational problem in NHS oncology services: the lack of integrated, actionable visibility of delays between MDT outcomes and treatment initiation. DSR is particuarly suitable for this study because it explicitly focuses on the design, construction, and evaluation of an artefact intended to improve a real-world organisational context, while generating transferable design knowledge \citep{hevner2004}.
+
+The primary artefact developed in this study is a lightweight integrated data repository (IDR) ad decision-support dashboard, designed to consolidate post-MDT pathway data and support operational decision-making. In addition to the artefact itself, the research produces a set of evaluated design principles for oncology operational analytics, constituting a contribution to knowledge beyond the local implementation. 
+
+\section{Design Science Research Framework}
+The study follows the Design Science Research Methodology (DSRM) proposed by \cite{Peffers2007}, which structures DSR into six interrelated activities. These activities are applied iteratively rather than strictly linearly. 
+
+\subsection{Problem Identification and Motivation}
+The problem was identified through:
+\begin{itemize}
+    \item analysis of NHS Cancer waiting time standards and performance pressures \citep{johnson2024, NHSDigital2026},
+    \item eview of literature on MDT operational inefficiencies and pathway delays,
+    \item practical experience with Portsmouth Hospitals University NHS Trust.
+\end{itemize}
+The central problem is the absence of an integrated, operationally focused data infrastructure that aligns MDT outcome, clinic scheduling, and treatment delivery data into a single, trusted view capable of supporting proactive action. 
+
+\subsection{Objectives of a Solution}
+The objectives of the solution were derived from both literature synthesis and stakeholder needs, and include:
+\begin{itemize}
+    \item consolidating post-MDT pathway events into a harmonised, analytics-ready data model;
+    \item enabling early identification of patients at risk of breaching the 31- and 62-day standards;
+    \item aligning operational risk signals with actionable capacity information;
+    \item supporting rapid, routine decision-making through a usable dashboard interface;
+    \item complying with NHS data governance and national metric definitions.
+\end{itemize}
+These objectives directly inform the design principles articulated in Section \ref{DP} and implemented in the artefact.
+
+\subsection{Design and Development}
+The design and development activity involved two tightly coupled components:
+\begin{enumerate}
+    \item Integrated Data Repository (IDR)
+    \item Decision-Support Dashboard
+\end{enumerate}
+The IDR adopts a general-model architecture consisting of a staging layer for ETL and harmonisation, a central warehouse, and an application layer for analytics and visualisation, consistent with IDR literature for single-institution deployments \citep{gagalova2020}.
+
+The dashboard is designed to support operational tasks rather than retrospective reporting, aligning with the role of operational dashboards in healthcare performance management \citep{buttigieg2017}. 
+
+Both components were developed iteratively, guided by explicit design principles derived from prior research and refined during prototyping. 
+
+\subsection{Demonstration}
+The artefact is demonstrated using:
+\begin{itemize}
+    \item retrospective Trust data covering MDT decisions, clinic appointments, and treatment initiation;
+    \item realistic operational scenarios reflecting common management tasks (e.g., identifying upcoming breach risks, assessing clinic capacity).
+\end{itemize}
+Demonstration focuses on illustrating how the artefact supports decision-making that was previously manual, fragmented, or retrospective.
+
+\subsection{Evaluation}
+Evaluation is multi-method and aligned with \cite{hevner2004}'s guidance that DSR artefacts must be assessed for utility, quality, and efficacy. Evaluation methods are detailed in Section \ref{EvalStrat}.
+
+\subsection{Communication}
+The final activity consists of communicating:
+\begin{itemize}
+    \item the artefact,
+    \item its measured effects, and
+    \item the derived design principles,
+\end{itemize}
+through this dissertation, targeting both academic and and practitioner audiences. 
+
+\section{Research Questions and Method Alignment}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ c c c}
+        \hline
+        \textbf{Research Question} & \textbf{DSR Activity} & \textbf{Primary Methods} \\
+        \hline\hline
+        \textbf{RQ1}: Where do delays occur between MDT outcome and treatment? & Problem identification & Descriptive statistics, interval analysis \\
+        \hline
+        \textbf{RQ2}: What operational factors predict extended delays? & Problem analysis & Regression and capacity analysis\\
+        \hline
+        \textbf{RQ3}: Does the artefact improve operational decision-making? & Evaluation & Task-based testing, time-to-answer, accuracy\\
+        \hline
+        \textbf{RQ4}: What design principles support post-MDT operational analytics? & Design knowledge & Literature synthesis and evaluation synthesis\\
+        \hline
+    \end{tabular}
+    \caption{This mapping ensures methodological coherence between the research questions, artefact, and evaluation.}
+    \label{table:1}
+\end{table}
+
+\section{Design Principles} \label{DP}
+Design principles represent the design knowledge contribution of this study. They are formulated using a standard DSR structure: \emph{context, intervention}, and \emph{rationale}. These initial principles are refined following evaluation.
+
+\subsection*{DP1: Surface Breach Risks as a Leading Indicator}
+If operational teams must prioritise actions in time-constrained cancer pathways, then dashboards should surface leading indicators of breach risk (e.g. days remaining to breach thresholds), because prospective visibility enables earlier and more effective intervention than retrospective compliance metrics. 
+
+\subsection*{DP2: Pair Risk Information with Actionable Capacity Data}
+If users are expected to act on identified risks, then risk indicators should be presented alongside relevant capacity and demand information, because risk awareness without visible operational levers does not support decision-making.
+
+\subsection*{DP3: Use Canonical, Standard-Aligned Pathway Events}
+If pathway metrics are to be trusted and comparable, then all intervals should be derived from canonical event definitions aligned to NCWTMDS rules, because inconsistent definitions undermine credibility and evaluation validity. 
+
+\subsection*{DP4: Match Data Refresh Cadence to the Action Horizon}
+If decisions depend on short operational windows, then data refresh frequency should be aligned to the decision horizon (e.g. daily or near–real-time where feasible), because stale information degrades decision quality.
+
+\subsection*{DP5: Preserve Data Provenance and Auditability}
+If analytics are deployed in regulated healthcare environments, then all derived metrics must maintain transparent provenance to source systems, because trust, governance, and reconciliation are essential for adoption.
+
+\subsection*{DP6: Align Interaction Design with Real Operational Tasks}
+If dashboards are intended to support complex operational work, then interaction design should reflect users’ real task sequences, because task-aligned interfaces reduce cognitive load and improve decision quality \citep{internationalorganizationforstandardization2020}.
+
+These principles directly inform both the IDR architecture and the dashboard design, and serve as evaluation criteria in Section \ref{EvalStrat}.
+
+\section{Evaluation Strategy} \label{EvalStrat}
+
+Evaluation combines formative and summative methods across four dimensions.
+
+\subsection{Usability Evaluation}
+\begin{itemize}
+    \item System Usability Scale (SUS)
+    \item Heuristic review grounded in ISO 9241-110
+    \item Think-aloud walkthroughs
+\end{itemize}
+
+\subsection{Utility and Effectiveness}
+\begin{itemize}
+    \item Task-based experiment with operational users
+    \item Primary measures:
+    \begin{itemize}
+        \item time-to-answer key operational questions,
+        \item accuracy of breach-risk identification,
+        \item decision quality in constrained scheduling scenarios
+    \end{itemize}
+\end{itemize}
+
+\subsection{Technical Validity}
+\begin{itemize}
+    \item Reconciliation of dashboard metrics with source SQL queries
+    \item Validation of interval derivations against NCWTMDS rules
+\end{itemize}
+
+\subsection{Design Knowledge Evaluation}
+\begin{itemize}
+    \item Synthesis of user feedback and performance outcomes
+    \item Refinement and confirmation of final design principles
+\end{itemize}
+
+\section{Ethical and Governance Considerations}
+The study operates within UK GDPR and NHS data governance requirements. All data are de-identified or pseudonymised, with access controls and separation between operational and research use. The project follows university ethics procedures and local Trust information governance guidance.
+
+\section{Summary}
+This chapter has outlined a rigorous, design-science-based methodology that supports both artefact creation and theory-driven knowledge contribution. By embedding explicit design principles within the DSR framework and evaluating the artefact using multiple complementary methods, the study ensures methodological robustness, practical relevance, and academic contribution.

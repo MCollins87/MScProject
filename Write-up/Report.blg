@@ -4,11 +4,13 @@ The top-level auxiliary file: Report.aux
 The style file: ctrH.bst
 A level-1 auxiliary file: Intro.aux
 A level-1 auxiliary file: Literature.aux
+A level-1 auxiliary file: Method.aux
 Database file #1: ./Project.bib
+Warning--I didn't find a database entry for "ISO9241-2020"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 You've used 38 entries,
             3108 wiz_defined-function locations,
-            921 strings with 16322 characters,
+            924 strings with 16356 characters,
 and the built_in function-call counts, 32006 in all, are:
 = -- 2315
 > -- 1945
@@ -47,3 +49,4 @@ warning$ -- 0
 while$ -- 179
 width$ -- 0
 write$ -- 445
+(There was 1 warning)
