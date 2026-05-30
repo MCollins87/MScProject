@@ -8,20 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a9b6633c3d9eda8",
+            "id": "9cf72650ada59951",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Workflow/StandardReferral.canvas",
-                "viewState": {
-                  "x": -322,
-                  "y": 120,
-                  "zoom": -0.3464336852798203
-                }
+                "file": "Chapters/Chapter03_Methodology.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "StandardReferral"
+              "icon": "lucide-file",
+              "title": "Chapter03_Methodology"
             }
           }
         ]
@@ -81,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3e3bcaa9c4b5d6d5",
@@ -197,8 +195,11 @@
       "print:Print note": false
     }
   },
-  "active": "1a9b6633c3d9eda8",
+  "active": "9cf72650ada59951",
   "lastOpenFiles": [
+    "Artefact/Artefact design.md",
+    "Workflow/StandardReferral.canvas",
+    "Artefact",
     "Workflow/ReferralWorkshop.md",
     "Chapters/Chapter03_Methodology.md",
     "Planning/Proposal.md",
@@ -225,10 +226,7 @@
     "LiteratureNotes/LiteratureTemplate.md",
     "Untitled.md",
     "Planning/Proposalv2.md",
-    "LiteratureNotes/gagalova2020.md",
-    "Workflow/StandardReferral.canvas",
     "Workflow/CAT4.canvas",
-    "Meetings/2026-02-16_ClinicianInterview_DB.md",
     "Workflow",
     "LiteratureNotes",
     "Meetings",
