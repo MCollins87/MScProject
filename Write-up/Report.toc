@@ -6,43 +6,44 @@
 \contentsline {chapter}{\numberline {2}Literature Review}{7}{}%
 \contentsline {section}{\numberline {2.1}Introduction}{7}{}%
 \contentsline {subsection}{\numberline {2.1.1}Method}{8}{}%
-\contentsline {section}{\numberline {2.2}The NHS Cancer Pathway and MDT Framework}{8}{}%
-\contentsline {subsection}{\numberline {2.2.1}MDTs as the Backbone of UK Cancer Care}{8}{}%
+\contentsline {section}{\numberline {2.2}The NHS Cancer Pathway and MDT Framework}{9}{}%
+\contentsline {subsection}{\numberline {2.2.1}MDTs as the Backbone of UK Cancer Care}{9}{}%
 \contentsline {subsection}{\numberline {2.2.2}Evidence of MDT Operational Pressures}{9}{}%
-\contentsline {subsection}{\numberline {2.2.3}National policy direction and waiting time standards}{9}{}%
+\contentsline {subsection}{\numberline {2.2.3}National policy direction and waiting time standards}{10}{}%
 \contentsline {section}{\numberline {2.3}Operational Delays in Cancer Pathways}{10}{}%
 \contentsline {subsection}{\numberline {2.3.1}Diagnosis-to-Treatment Interval (DTI) as a Critical Metric}{10}{}%
-\contentsline {subsection}{\numberline {2.3.2}Hospital/System Factors Influencing Delay}{10}{}%
-\contentsline {subsection}{\numberline {2.3.3}MDT-specific drivers of post-decision delays}{10}{}%
+\contentsline {subsection}{\numberline {2.3.2}Hospital/System Factors Influencing Delay}{11}{}%
+\contentsline {subsection}{\numberline {2.3.3}MDT-specific drivers of post-decision delays}{11}{}%
+\contentsline {subsection}{\numberline {2.3.4}Crititcal synthesis of delay literature}{11}{}%
 \contentsline {section}{\numberline {2.4}Data Fragmentation and the Need for Integrated Data Repositories}{11}{}%
 \contentsline {subsection}{\numberline {2.4.1}Fragmentation Across NHS Systems}{11}{}%
-\contentsline {subsection}{\numberline {2.4.2}Clinical Data Warehouses (CDWs) and the Evolution Toward IDRs}{11}{}%
-\contentsline {subsection}{\numberline {2.4.3}Need for IDRs in NHS Operational Oncology}{11}{}%
+\contentsline {subsection}{\numberline {2.4.2}Clinical Data Warehouses (CDWs) and the Evolution Toward IDRs}{12}{}%
+\contentsline {subsection}{\numberline {2.4.3}Need for IDRs in NHS Operational Oncology}{12}{}%
 \contentsline {section}{\numberline {2.5}Dashboards, Operational Analytics, and Decision-Support Systems}{12}{}%
 \contentsline {subsection}{\numberline {2.5.1}The Role of Dashboards in Performance Management}{12}{}%
-\contentsline {subsection}{\numberline {2.5.2}Clinical Decision-Support Dashboards and Multimodal Data}{12}{}%
-\contentsline {subsection}{\numberline {2.5.3}Data Quality and Informatics Challenges}{12}{}%
-\contentsline {section}{\numberline {2.6}Usability, HCI, and ISO 9241‑110}{12}{}%
-\contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{13}{}%
-\contentsline {section}{\numberline {2.8}Synthesis of Gaps}{13}{}%
-\contentsline {section}{\numberline {2.9}Summary}{14}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{15}{}%
-\contentsline {section}{\numberline {3.1}Overview of Research Design}{15}{}%
-\contentsline {section}{\numberline {3.2}Design Science Research Framework}{15}{}%
-\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{15}{}%
-\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{16}{}%
-\contentsline {subsection}{\numberline {3.2.3}Design and Development}{16}{}%
-\contentsline {subsection}{\numberline {3.2.4}Demonstration}{16}{}%
-\contentsline {subsection}{\numberline {3.2.5}Evaluation}{17}{}%
-\contentsline {subsection}{\numberline {3.2.6}Communication}{17}{}%
-\contentsline {section}{\numberline {3.3}Research Questions and Method Alignment}{17}{}%
-\contentsline {section}{\numberline {3.4}Design Principles}{17}{}%
-\contentsline {section}{\numberline {3.5}Evaluation Strategy}{18}{}%
-\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{19}{}%
-\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{19}{}%
-\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{19}{}%
-\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{19}{}%
-\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{19}{}%
-\contentsline {section}{\numberline {3.7}Summary}{19}{}%
-\contentsline {chapter}{References}{20}{}%
-\contentsline {chapter}{List of Acronyms}{25}{}%
+\contentsline {subsection}{\numberline {2.5.2}Clinical Decision-Support Dashboards and Multimodal Data}{13}{}%
+\contentsline {subsection}{\numberline {2.5.3}Data Quality and Informatics Challenges}{13}{}%
+\contentsline {section}{\numberline {2.6}Usability, HCI, and ISO 9241‑110}{13}{}%
+\contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{14}{}%
+\contentsline {section}{\numberline {2.8}Synthesis of Gaps}{14}{}%
+\contentsline {section}{\numberline {2.9}Summary}{15}{}%
+\contentsline {chapter}{\numberline {3}Methodology}{16}{}%
+\contentsline {section}{\numberline {3.1}Overview of Research Design}{16}{}%
+\contentsline {section}{\numberline {3.2}Design Science Research Framework}{16}{}%
+\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{16}{}%
+\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{17}{}%
+\contentsline {subsection}{\numberline {3.2.3}Design and Development}{17}{}%
+\contentsline {subsection}{\numberline {3.2.4}Demonstration}{17}{}%
+\contentsline {subsection}{\numberline {3.2.5}Evaluation}{18}{}%
+\contentsline {subsection}{\numberline {3.2.6}Communication}{18}{}%
+\contentsline {section}{\numberline {3.3}Research Questions and Method Alignment}{18}{}%
+\contentsline {section}{\numberline {3.4}Design Principles}{19}{}%
+\contentsline {section}{\numberline {3.5}Evaluation Strategy}{20}{}%
+\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{20}{}%
+\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{20}{}%
+\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{20}{}%
+\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{20}{}%
+\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{20}{}%
+\contentsline {section}{\numberline {3.7}Summary}{21}{}%
+\contentsline {chapter}{References}{22}{}%
+\contentsline {chapter}{List of Acronyms}{27}{}%

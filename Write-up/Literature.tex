@@ -16,9 +16,11 @@ The review is organised around five interrelated themes:
 Collectively, this literature forms the conceptual foundation (kernel theory) for the artefact developed in this study. The following sections provide a detailed account of these themes, integrating high-quality evidence from the UK, international datasets, clinical oncology, health informatics, and organisational science.
 
 \subsection{Method}
-An iterative literature review was conducted, as outlined in Chapter 5 of \cite{dawson2015} (Figure \ref{fig:LitProc}). An innitial search of open acces web pages and Google Scholar for terms such as ``Data Management'', ``NHS'', ``Health Care'', ``Cancer Bottlenecks'', and ``Design Science Research''.
+An iterative literature review was adopted, following the guidance outlined by  \cite{dawson2015} (Figure \ref{fig:LitProc}). An initial search was conducted using Google Scholar and open-access repositories to identify foundationa concepts and terminology related to Integrated Data Repositories, cancer pathways, MDT operations, dashboards, and Design Science Research. These preliminary results infirmed a more structured search strategy applied to ScienceDirect, IEEEXplore, and PubMed.
 
-This open access search then provided refinement in search terms to use in additional databases such as ScienceDirect, IEEEXplore, and PubMed, as well as \emph{seed articles}, where their list of references were followed to the original source.
+Searches were limited to peer-reviewed journals, systematic reviews, national audits, and authoritative policy documents published primerily between 2010 and 2026, with earlier seminal works retained where conceptually relevant (e.g. Calman-Hine and Design Science Science foundations). Studies were included if they addressed MDT processes, oncology pathway delays, health data integration, dashboards, usability standards, or operational analytics. Articles focused exclusivly in molecular biology, single-modality clinical trials, or nomn-healthcare data systems were excluded. 
+
+Appoximately 90 sources were reviewed during the processm with around 55 core studies retained for detailed analysis based on relevance, methodological quality, and applicability to NHS operational contexts. Backward citation tracking was used to identify influential seed papers and ensure conceptual completeness.
 
 \begin{figure}
     \includegraphics[width=\linewidth]{LitProc.png}
@@ -44,6 +46,8 @@ Several studies provide evidence of the challenges affecting MDT functioning:
     \item \cite{chakravarty2023} demonstrated that patients referred from secondary-care outpatient pathways experienced significantly longer delays to MDT discussion and treatment (mean 102 vs. 88 days). These patients were also more likely to receive palliative rather than curative treatment.
     \item \cite{law2024} identified a decade of known MDT barriers including time pressures, communication challenges, inconsistent attendance, information deficits, and increasing clinical complexity.
 \end{itemize}
+
+While these studies consistently demonstrate operational strain within MDT processes, important limitations remain. Much of the evidence is observational and focuses primarily on decision quality or meeting efficiency rather than downstream operational consequences following MDT outcomes. Moreover, studies such as \cite{soukup2022} and \cite{law2024} emphasise human and organisational factors but do not address how data infrastructure or real-time operational visibility might mitigate these pressures. Large scale cohort analysis (e.g. \cite{lim2025}) quantify non-compliance with national standards but offer limited insights into the specific post-MDT workflow stages where delays emerge. As a result, although MDT pressures are well documented, the mechanisms by which MDT decisions translate into subsequent pathway delays remain poorly illuminated from an operational analytics perspective.  
 
 \subsection{National policy direction and waiting time standards}
 
@@ -82,6 +86,9 @@ Large-scale evidence shows that delays are driven not only by tumour characteris
     \item Secondary‑care referrals introduce additional diagnostic delays \citep{chakravarty2023}.
     \item Capacity constraints (radiotherapy, theatres, oncology clinics) generate downstream bottlenecks.
 \end{itemize}
+
+\subsection{Crititcal synthesis of delay literature}
+Collectively, the literature provides compelling evidence that prolonged diagnosis-to-treatment intervals adversely affect survival accross multiple cancer types.. However, most studies treat delay as a single agregated interval rather than decomposing it into discrete operational stages. This limits their usefulness for operational improvement, as pathway delays arising from MDT decision latency, clinic availability, scheduling practices, or treatment capacity constraintsare rarely distinguished. Furthermore, while organisational factors such as hospital volume and service configuration are identified as contributors, few studies examine how real-time operational data could be leveraged to predict, prevent, or mitigate delays. This analytical gap constrains the translation of epidemiological evidence into actionable service-level interventions. 
 
 \section{Data Fragmentation and the Need for Integrated Data Repositories}
 
@@ -184,6 +191,10 @@ Examples include:
 A key insight: AI systems require structured, linked, high‑quality data—yet most NHS operational systems lack it.
 
 \section{Synthesis of Gaps}
+
+The reviewed literature reveals several interlocking gaps that collectively motivate this research. First, despite clear evidence of clinically significant delays between MDT decision and treatment initiation, NHS oncology services lack granular, operationally focused visibility of post-MDT pathway stages. Second, although dashboards are widely promoted as performance management tools, many NHS implementations remain dependent on retrospective, aggregate reporting derived from fragmented and inconsistently defined datasets. As a result, existing dashboards often identify breaches only after they have occurred, limiting their utility for proactive intervention.
+Third, while clinical data warehouses and integrated repositories have demonstrated feasibility in research and tertiary settings, their designs typically prioritise longitudinal research use cases rather than real-time operational decision-making. Consequently, issues of event harmonisation, timeliness, and alignment with national cancer waiting time definitions remain unresolved in day-to-day service management. Finally, emerging AI-enabled MDT systems highlight future opportunities for decision automation but simultaneously expose a foundational dependency on structured, integrated, and operationally reliable data infrastructures that are currently absent in most NHS Trusts.
+Together, these gaps indicate the need for an artefact that integrates operational oncology data across MDT, clinic, and treatment domains, and presents this information through a user-centred dashboard explicitly designed to support proactive post-MDT workflow management.
 
 \begin{itemize}
     \item \textbf{Gap 1} — Lack of integrated operational visibility
