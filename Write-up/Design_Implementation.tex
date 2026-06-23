@@ -1,0 +1,59 @@
+\chapter{Design and Implementation}
+
+\section{Overview of Artefact}
+% Brief recap: IDR + dashboard
+% Link back to DSR (Design -> instantiation)
+
+The artefact developed in this study consists of a lightweight Integrated Data Repository (IDR) and associated data processing pipeline designed to support operational analysis of post-MDT oncology workflows. The implementation translates to the conceptual archetecture proposed in \ref{Chapter 3} into a functioning system capable of integrating data from multiple operational sources and producing am analytics-ready dataset. 
+
+The system adopts a staged archetecture comprising: 
+\begin{enumerate}
+    \item Data ingestion from multiple NHS operational systems,
+    \item A file-based staging layer,
+    \item A transformation and integration layer, and
+    \item A central analytical data store implemented in PostgreSQL. 
+\end{enumerate}
+
+This design reflects the ``general model'' of IDR archetectures, incorporating a staging layer to support extract-transform-load (ETL) processes and harmonisation accross heterogeneous data sources, as reccomended in healthcare informatics literature. 
+
+\section{Data Sources and Ingestion}
+
+
+\section{IDR Architecture}
+% As built - not just proposed
+%% Staging → warehouse → dashboard layer
+%Actual technologies used (SQL Server? Power BI? Python ETL?)
+%Data flow diagram (strongly recommended)
+% Add explicit reflection:
+%What changed from your proposed “target state IDR”?
+
+
+
+\section{Data Engineering and ETL}
+%Add:
+%Source systems used (MDT, PAS, etc.)
+%Data extraction approach
+%Transformations:
+%interval derivations (MDT→clinic etc.)
+%breach-risk calculations
+%Data quality handling (link to your section 8.2 in proposal)
+%Include:
+%Example transformation logic (pseudo-SQL is fine)
+%Data dictionary excerpt
+
+\section{Dashboard Design and Features}
+%For each view:
+%Post-MDT tracker
+%Capacity panel
+%Interval visualisations
+%Explain:
+%What it shows
+%Why it exists (tie to DP1–DP6)
+%How users interact with it
+
+\section{Tools and Technologies}
+%Example:
+%SQL / ETL tooling
+%Power BI / Tableau
+%Data modelling approach
+%Any scripting
