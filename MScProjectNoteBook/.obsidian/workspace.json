@@ -11,10 +11,14 @@
             "id": "7434ca345e7a551c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Meetings/2026-06-30 Update Meeting.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026-06-30 Update Meeting"
             }
           }
         ]
@@ -192,6 +196,7 @@
   },
   "active": "7434ca345e7a551c",
   "lastOpenFiles": [
+    "Meetings/2026-06-30 Update Meeting.md",
     "Artefact/Artefact design.md",
     "Artefact/Python_import.md",
     "Artefact/Aria reports to build.md",
@@ -221,7 +226,6 @@
     "soukup2022.md",
     "LiteratureNotes/Literature Strategy.md",
     "Chapters",
-    "LiteratureNotes/LiteratureTemplate.md",
     "Workflow/CAT4.canvas",
     "Workflow",
     "LiteratureNotes",
