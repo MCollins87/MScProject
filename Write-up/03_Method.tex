@@ -1,4 +1,4 @@
-\chapter{Methodology}
+\chapter{Methodology} \label{method}
 
 \section{Overview of Research Design}
 
@@ -6,28 +6,23 @@ This research adopts a Design Science Research (DSR) methodology to address an o
 
 The primary artefact developed in this study is a lightweight integrated data repository (IDR) ad decision-support dashboard, designed to consolidate post-MDT pathway data and support operational decision-making. In addition to the artefact itself, the research produces a set of evaluated design principles for oncology operational analytics, constituting a contribution to knowledge beyond the local implementation. 
 
+\subsection{Justification for Design Science Research}
+Several methodological approaches were considered. A case study methodology would have enabled detailed examination of post-MDT operational processes but woud not have provided a structured framework for the design and evaluation of an intervention. Action Research was also considered because of its focus on organisational change and practitioner involvement. However, Action Research typically requires repeated cycles of intervention and measurement within live operational environments. In cancer pathway management, allowing breaches to occur in order to evaluate an intervention would be ethically and operationally undesirable given the known relationship between treatment delays and patient outcomes. 
+
+Design Science Research was therfore selected because it provides a rigorous framework for designing, developing, and evaluating an artefact intended to solve a real-world organisational problem while simultaneously generating transferable knowledge. DSR has been widely applied within healthcare informatics, clinical decision support, and data integration research where new technological artefacts are required to address operational challenges \citep{hevner2004, peffers2007}.
+
+Unlike traditional continuous-improvement approaches such as Plan-Do-Check-Act (PDCA), cancer pathway management cannot rely solely on post-hoc measurement of outcomes. A breach of the 31-day or 62-day standard represents a clinically meaningful delay that may adversely affect patient outcomes. Consequently, operational management must emphasise proactive identification and mitigation of risk rather than retrospective evaluation alone. The design objective of the proposed dashboard is therefore not simply to identify breaches after they occur, but to provide leading indicators that enable intervention before delays become clinically significant.
+
+Case study research was rejected because the objective of this study extends beyond understanding operational delays to designing and evaluating a technological intervention intended to address them. Similarly, Action Research was considered unsuitable because it emphasises organisational change through repeated intervention cycles, whereas the primary contribution of this study is the creation and evaluation of an information systems artefact.
+
 \section{Design Science Research Framework}
-The study follows the Design Science Research Methodology (DSRM) proposed by \cite{Peffers2007}, which structures DSR into six interrelated activities. These activities are applied iteratively rather than strictly linearly. 
+The study follows the Design Science Research Methodology (DSRM) proposed by \cite{peffers2007}, which structures DSR into six interrelated activities. These activities are applied iteratively rather than strictly linearly. 
 
 \subsection{Problem Identification and Motivation}
-The problem was identified through:
-\begin{itemize}
-    \item analysis of NHS Cancer waiting time standards and performance pressures \citep{johnson2024, NHSDigital2026},
-    \item eview of literature on MDT operational inefficiencies and pathway delays,
-    \item practical experience with Portsmouth Hospitals University NHS Trust.
-\end{itemize}
-The central problem is the absence of an integrated, operationally focused data infrastructure that aligns MDT outcome, clinic scheduling, and treatment delivery data into a single, trusted view capable of supporting proactive action. 
+The problem identification phase was undertaken using a combination of retrospective pathway analysis, operational observations, and literature synthesis. Local cancer waiting time reports and patient tracking data were reviewed to identify recurring delays between MDT outcomes, first oncology consultation, decision-to-treat, and treatment initiation. Findings were triagulated with evidence from the literature review, which demonstrated similar challenges accross NHS organisations. This process established the need for an integrated operational analytics solution capable of identifying bottlenecks before breaches occur. 
 
 \subsection{Objectives of a Solution}
-The objectives of the solution were derived from both literature synthesis and stakeholder needs, and include:
-\begin{itemize}
-    \item consolidating post-MDT pathway events into a harmonised, analytics-ready data model;
-    \item enabling early identification of patients at risk of breaching the 31- and 62-day standards;
-    \item aligning operational risk signals with actionable capacity information;
-    \item supporting rapid, routine decision-making through a usable dashboard interface;
-    \item complying with NHS data governance and national metric definitions.
-\end{itemize}
-These objectives directly inform the design principles articulated in Section \ref{DP} and implemented in the artefact.
+Solution objectives were derived through a requirements elicitation process combining literature-derived design requirements, operational needs identified through pathway review, and information requirements associated with national cancer waiting time standards. Requirements were grouped into data integration, operational monitoring, decision support, and usability domains.
 
 \subsection{Design and Development}
 The design and development activity involved two tightly coupled components:
@@ -61,26 +56,7 @@ The final activity consists of communicating:
 \end{itemize}
 through this dissertation, targeting both academic and and practitioner audiences. 
 
-\section{Research Questions and Method Alignment}
 
-\begin{table}[h]
-    \centering
-    \begin{tabular}{|p{5cm}|p{3cm}|p{5cm}|}
-        \hline
-        \textbf{Research Question} & \textbf{DSR Activity} & \textbf{Primary Methods} \\
-        \hline\hline
-        \textbf{RQ1}: Where do delays occur between MDT outcome and treatment? & Problem identification & Descriptive statistics, interval analysis \\
-        \hline
-        \textbf{RQ2}: What operational factors predict extended delays? & Problem analysis & Regression and capacity analysis\\
-        \hline
-        \textbf{RQ3}: Does the artefact improve operational decision-making? & Evaluation & Task-based testing, time-to-answer, accuracy\\
-        \hline
-        \textbf{RQ4}: What design principles support post-MDT operational analytics? & Design knowledge & Literature synthesis and evaluation synthesis\\
-        \hline
-    \end{tabular}
-    \caption{This mapping ensures methodological coherence between the research questions, artefact, and evaluation.}
-    \label{tab:rq-dsr-mapping}
-\end{table}
 
 \section{Design Principles} \label{DP}
 Design principles represent the design knowledge contribution of this study. They are formulated using a standard DSR structure: \emph{context, intervention}, and \emph{rationale}. These initial principles are refined following evaluation.
@@ -142,5 +118,15 @@ Evaluation combines formative and summative methods across four dimensions.
 \section{Ethical and Governance Considerations}
 The study operates within UK GDPR and NHS data governance requirements. All data are de-identified or pseudonymised, with access controls and separation between operational and research use. The project follows university ethics procedures and local Trust information governance guidance.
 
+\subsection{Research Limitations}
+
+\begin{itemize}
+    \item \textbf{Single-site study:} The artefact will be developed and evaluated within a single NHS Trust, which may limit generalisability.
+    \item \textbf{Data quality and availability:} Findings depend on the completeness and accuracy of source systems.
+    \item \textbf{Retrospective data:} Restrospective data may not fully represent future operational conditions.
+    \item \textbf{Usability sample size:} Evaluation participants are likely to represent a relatively small operational user population. 
+    \item \textbf{Artificial evaluation environment:} Demonstration scenarios may not fully replicate live decision-making environments.
+    \item \textbf{DSR limitation:} Evaluation assesses utility and usability rather than directly measuring improvements in patient outcomes.
+\end{itemize}
 \section{Summary}
 This chapter has outlined a rigorous, design-science-based methodology that supports both artefact creation and theory-driven knowledge contribution. By embedding explicit design principles within the DSR framework and evaluating the artefact using multiple complementary methods, the study ensures methodological robustness, practical relevance, and academic contribution.

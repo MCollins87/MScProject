@@ -1,0 +1,534 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.30)  10 JUL 2026 19:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**00_Report.tex
+(./00_Report.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip50
+\bibsep=\skip51
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count196
+)
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen151
+\ar@mcellbox=\box51
+\extrarowheight=\dimen152
+\NC@list=\toks19
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box52
+)
+\TX@col@width=\dimen153
+\TX@old@table=\dimen154
+\TX@old@col=\dimen155
+\TX@target=\dimen156
+\TX@delta=\dimen157
+\TX@cols=\count266
+\TX@ftn=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen158
+\enit@toks=\toks21
+\enit@inbox=\box53
+\enit@count@id=\count267
+\enitdp@description=\count268
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks22
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
+Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+
+(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count269
+\xs_countb=\count270
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+\AC@clearlist=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/draftwatermark/draftwatermark.sty
+Package: draftwatermark 2020/12/08 3.0 Put a gray textual watermark on document
+ pages
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)))
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count271
+\l__pdf_internal_box=\box54
+)
+(./00_Report.aux (./01_Intro.aux) (./02_Literature.aux) (./03_Method.aux))
+\openout1 = `00_Report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count272
+\scratchdimen=\dimen159
+\scratchbox=\box55
+\nofMPsegments=\count273
+\nofMParguments=\count274
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count275
+\MPscratchDim=\dimen160
+\MPnumerator=\count276
+\makeMPintoPDFobject=\count277
+\everyMPtoPDFconversion=\toks25
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 717.00946pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=717.00946pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <149.37697> not available
+(Font)              size <24.88> substituted on input line 42.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] (./00_Report.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
+\tf@toc=\write3
+\openout3 = `00_Report.toc'.
+
+ [2
+
+]
+\openout2 = `01_Intro.aux'.
+
+ (./01_Intro.tex
+Chapter 1.
+[3
+
+
+]
+Underfull \hbox (badness 2197) in paragraph at lines 37--37
+[]|\OT1/cmr/bx/n/12 RQ2\OT1/cmr/m/n/12 : What op-er-a-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+[]|\OT1/cmr/m/n/12 Regression and ca-pac-ity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[]|\OT1/cmr/m/n/12 Literature syn-the-sis and
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4] [5{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) [6]
+\openout2 = `02_Literature.aux'.
+
+
+(./02_Literature.tex
+Chapter 2.
+[7
+
+
+
+
+]
+<LitProc.png, id=30, 841.1425pt x 558.085pt>
+File: LitProc.png Graphic file (type png)
+<use LitProc.png>
+Package pdftex.def Info: LitProc.png  used on input line 26.
+(pdftex.def)             Requested size: 483.69687pt x 320.93045pt.
+ [8 <./LitProc.png>] [9] [10]
+Overfull \hbox (8.16191pt too wide) in paragraph at lines 88--89
+[]\OT1/cmr/m/n/12 Missing di-ag-nos-tic in-for-ma-tion and ad-min-is-tra-tive e
+r-rors cause re-discussion de-lays (Soukup
+ []
+
+[11] [12] [13] [14] [15] [16]) [17]
+\openout2 = `03_Method.aux'.
+
+ (./03_Method.tex
+Chapter 3.
+[18
+
+
+
+
+]
+Overfull \hbox (1.2259pt too wide) in paragraph at lines 14--15
+[]\OT1/cmr/m/n/12 Unlike tra-di-tional continuous-improvement ap-proaches such 
+as Plan-Do-Check-Act (PDCA),
+ []
+
+
+Overfull \hbox (0.26755pt too wide) in paragraph at lines 25--26
+\OT1/cmr/m/n/12 Solution ob-jec-tives were de-rived through a re-quire-ments el
+ic-i-ta-tion pro-cess com-bin-ing literature-
+ []
+
+[19] [20] [21] [22]) [23] (./00_Report.bbl
+Underfull \hbox (badness 7326) in paragraph at lines 8--11
+[]\OT1/cmr/m/n/12 Ash, D., Bar-rett, A., Hinks, A. and Squire, C. (2004) `Re-au
+dit of ra-dio-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--11
+\OT1/cmr/m/n/12 ther-apy wait-ing times 2003,' \OT1/cmr/m/it/12 Clin-i-cal On-c
+ol-ogy\OT1/cmr/m/n/12 , 16(6), pp. 387--394, URL
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 16--24
+\OT1/cmr/m/n/12 ment Data Repos-i-tory,' \OT1/cmr/m/it/12 ESMO Real World Data 
+and Dig-i-tal On-col-ogy\OT1/cmr/m/n/12 , 9(C), URL
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 68--75
+[]\OT1/cmr/m/n/12 Conway, Alicia-Marie, Con-can-non, Matthew, Brown, Steven, Hu
+s-sain, Humera, Mar-
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 68--75
+\OT1/cmr/m/n/12 lenges in on-col-ogy re-search: Lessons from an NHS, in-dus-try
+, tech-nol-ogy start-up
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 68--75
+\OT1/cmr/m/n/12 and aca-demic col-lab-o-ra-tion,' \OT1/cmr/m/it/12 Eu-ro-pean J
+our-nal of Can-cer\OT1/cmr/m/n/12 , 228, p. 115705, URL
+ []
+
+[24
+
+
+
+]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+25.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+
+Underfull \hbox (badness 4913) in paragraph at lines 124--126
+[]\OT1/cmr/m/n/12 HealthOrbit (2025) `AI So-lu-tions for Real Clin-i-cal Work-f
+lows \OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 HealthOr-bit AI,'
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+[]\OT1/cmr/m/n/12 Hunkirchen, Pe-ter () `Guide-lines and Stan-dards,' https://w
+ww.usability-
+ []
+
+[25]
+Underfull \hbox (badness 1496) in paragraph at lines 184--190
+[]\OT1/cmr/m/n/12 Liu, Yun-you, Wang, Fei, Wang, Peng, Zhou, Zhen, Wang, Hongqi
+an, Li, Jingyao,
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 184--190
+\OT1/cmr/m/n/12 Qiu, Yang, Wang, Haidong and Miao, Si-wei (2026b) `AI-MDT: An a
+u-to-matic
+ []
+
+
+Underfull \hbox (badness 2197) in paragraph at lines 184--190
+\OT1/cmr/m/n/12 and in-tel-li-gent mul-ti-dis-ci-plinary team con-sul-ta-tions 
+plat-form for lung can-cer di-ag-
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 184--190
+\OT1/cmr/m/n/12 no-sis,' \OT1/cmr/m/it/12 Jour-nal of Can-cer Re-search and Cli
+n-i-cal On-col-ogy\OT1/cmr/m/n/12 , 152(1), p. 32, URL
+ []
+
+
+Underfull \hbox (badness 1112) in paragraph at lines 193--198
+\OT1/cmr/m/n/12 pact of the Calman--Hine re-port on the pro-cesses and out-come
+s of care for York-
+ []
+
+
+Underfull \hbox (badness 1831) in paragraph at lines 201--206
+[]\OT1/cmr/m/n/12 Morris, E., Haward, R. A., Gilthorpe, M. S., Craigs, C. and F
+or-man, D. (2008)
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 201--206
+\OT1/cmr/m/n/12 York-shire's breast can-cer pa-tients,' \OT1/cmr/m/it/12 An-nal
+s of On-col-ogy\OT1/cmr/m/n/12 , 19(2), pp. 284--291, URL
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+[]\OT1/cmr/m/n/12 NHS Dig-i-tal (2026) `Can-cer Wait-ing Times Data Col-lec-tio
+n (CWT),'
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--211
+\OT1/cmr/m/n/12 https://digital.nhs.uk/data-and-information/data-collections-an
+d-data-sets/data-
+ []
+
+
+Underfull \hbox (badness 4001) in paragraph at lines 221--225
+[]\OT1/cmr/m/n/12 Peffers, Ken, Tu-u-na-nen, Tu-ure, Rothen-berger, Mar-cus A. 
+and Chat-ter-jee, Samir
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--225
+\OT1/cmr/m/n/12 (2007) `A de-sign sci-ence re-search method-ol-ogy for in-for-m
+a-tion sys-tems re-
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 221--225
+\OT1/cmr/m/n/12 search,' \OT1/cmr/m/it/12 Jour-nal of Man-age-ment In-for-ma-ti
+on Sys-tems\OT1/cmr/m/n/12 , 24(3), pp. 45--77, URL
+ []
+
+
+Underfull \hbox (badness 7415) in paragraph at lines 247--253
+[]\OT1/cmr/m/n/12 Sharma, Sonam, Bekel-man, Justin, Lin, Alexan-der, Lukens, J.
+ Nicholas, Ro-
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 247--253
+\OT1/cmr/m/n/12 man, Ben-jamin R., Mi-tra, Nan-dita and Swisher-McClure, Samuel
+ (2016) `Clin-
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 247--253
+\OT1/cmr/m/n/12 i-cal im-pact of pro-longed di-ag-no-sis to treat-ment in-ter-v
+al (DTI) among pa-tients
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 247--253
+\OT1/cmr/m/n/12 with oropha-ryn-geal squa-mous cell car-ci-noma,' \OT1/cmr/m/it
+/12 Oral On-col-ogy\OT1/cmr/m/n/12 , 56, pp. 17--24, URL
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 263--269
+\OT1/cmr/m/n/12 Viren, Gan-dami-hardja, Tasha, Gior-dano, Pasquale, Darzi, Ara,
+ Sev-dalis, Nick and
+ []
+
+[27]) [28] (./acronym.tex [29
+
+]) [30] (./00_Report.aux (./01_Intro.aux)
+(./02_Literature.aux) (./03_Method.aux))
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 124.49696pt have occurred.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4708 strings out of 474222
+ 73632 string characters out of 5748732
+ 1933975 words of memory out of 5000000
+ 26875 multiletter control sequences out of 15000+600000
+ 565691 words of font info for 64 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,13n,65p,976b,370s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfrm1200.pfb>
+Output written on 00_Report.pdf (30 pages, 297742 bytes).
+PDF statistics:
+ 139 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+
