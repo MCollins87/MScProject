@@ -38,14 +38,13 @@ However, the complexity of modern cancer care has increased dramatically alongsi
 
 \subsection{Evidence of MDT Operational Pressures}
 
-Several studies provide evidence of the challenges affecting MDT functioning:
+Collectively, the literature demonstrates that MDTs are experiencing growing operational pressure resulting from increasing cancer incidence, expanding diagnostic complexity, and constrained service capacity. Across multiple studies, common themes emerge including administrative inefficiencies, information deficits, scheduling pressures, and resource limitations.
 
-\begin{itemize}
-    \item \cite{soukup2022} conducted a detailed observational analysis of 822 case discussions across three UK MDTs. Administrative and process issues occurred in 30\% of cases, attendance problems in 16\%, and equipment issues in 5\%. These logistical challenges significantly reduced the quality of information and decision-making, demonstrating how operational inefficiencies detract from MDT effectiveness.
-    \item \cite{lim2025} analysed 1,488 UK Head and Neck Cancer patients across 50 MDTs and found extremely low compliance with national cancer pathway standards: 32.8\% (FDS), 33.3\% (31‑day), and 34.6\% (62‑day). Median DTT-to-treatment was 42 days.
-    \item \cite{chakravarty2023} demonstrated that patients referred from secondary-care outpatient pathways experienced significantly longer delays to MDT discussion and treatment (mean 102 vs. 88 days). These patients were also more likely to receive palliative rather than curative treatment.
-    \item \cite{law2024} identified a decade of known MDT barriers including time pressures, communication challenges, inconsistent attendance, information deficits, and increasing clinical complexity.
-\end{itemize}
+\cite{soukup2022} identified logistical challenges affecting almost one-third of MDT discussions, while \cite{law2024} highlighted persistent barriers relating to communication, attendance, information availability, and workload. These findings suggest that operational inefficiencies are not isolated incidents but recurring characteristics of contemporary MDT environments.
+
+Evidence from pathway-performance studies reinforces this position. \cite{lim2025} reported poor national compliance with cancer waiting-time standards across UK head and neck services, while \cite{chakravarty2023} demonstrated that additional complexity within referral pathways was associated with significantly longer treatment delays. Together, these studies indicate that operational challenges extend beyond MDT meetings themselves and influence downstream stages of the cancer pathway.
+
+A recurring theme across the literature is therefore the lack of visibility between MDT decision-making and subsequent treatment delivery. While studies identify operational pressures and poor pathway performance, relatively little attention has been given to how integrated operational data might support earlier identification of emerging bottlenecks.
 
 While these studies consistently demonstrate operational strain within MDT processes, several limitations should be acknowledged. Much of the existing evidence is observational and focuses primarily on meeting effectiveness, communication quality, or decision-making processes rather than downstream operational consequences following MDT outcomes.For example, \cite{soukup2022} identify logistical and administrative barriers that impair MDT performance, yet the study does not examine whether these issues translate into measurable delays in treatment initiation. Similarly, the scoping review proposed by \cite{law2024} aggregates a broad range of organisational challenges but provides limited insight into which barriers exert the greatest influence on pathway performance.   
 
@@ -71,14 +70,11 @@ Key findings include:
     \item \cite{saleh2024}: Cervical cancer survival drops dramatically after 30 days.
 \end{itemize}
 
+Despite differences in cancer type, geography, and study design, the evidence consistently demonstrates that treatment delay is associated with poorer clinical outcomes. Systematic reviews and large cohort studies identify remarkably similar trends, with survival deteriorating as diagnosis-to-treatment intervals increase. However, the magnitude of effect varies between tumour groups, suggesting that pathway urgency may differ according to tumour biology and disease progression rates. This consistency across studies strengthens the argument that reducing operational delay is clinically important, while variation in effect size highlights the need for pathway-specific operational management strategies.
+
 \subsection{Hospital/System Factors Influencing Delay}
 
-Large-scale evidence shows that delays are driven not only by tumour characteristics but also by organisational inefficiencies:
-
-\begin{itemize}
-    \item \cite{yun2012}: Delays over one month worsened outcomes, especially in low-volume hospitals.
-    \item UK audits (e.g., \cite{lim2025}) highlight delays in biopsies, imaging, scheduling, and treatment booking.
-\end{itemize}
+Across the reviewed studies, organisational influences on delay can be grouped into three broad categories: diagnostic bottlenecks, administrative coordination challenges, and capacity constraints. Diagnostic delays frequently arise from imaging and biopsy availability, while administrative delays result from scheduling inefficiencies, incomplete information, or pathway handovers. Capacity-related delays emerge where demand exceeds available clinic, theatre, chemotherapy, or radiotherapy resources. Although studies differ in emphasis, all point towards organisational processes rather than purely clinical factors as major contributors to pathway delay.
 
 A further limitation of the current literature is the tendency to treat organisational performance as a static characteristic rather than a dynamic process. Factors such as hospital volume, resource availability, and service configuration are frequently associated with treatment delays; however, there is comparatively little exploration of how these risks evolve over time or how operational teams can intervene before delays become breaches. This reinforces the distinction between retrospective performance measurement and proactive pathway management.
 
@@ -125,6 +121,10 @@ Examples:
     \item HN‑XNAT: federated imaging and radiotherapy repository \citep{butterworth2025}.
 \end{itemize}
 
+Despite differing objectives, several common characteristics can be observed across these repository implementations. All seek to integrate heterogeneous oncology datasets, establish consistent data models, and improve data accessibility for downstream analysis. However, important differences also exist. ROOT prioritises real-time operational data aggregation, whereas ONCO-FAIR focuses on interoperability and standards compliance through FHIR extensions. The NHS–industry data lake emphasises large-scale multimodal research integration, while HN-XNAT adopts a federated model centred on imaging and radiotherapy data.
+
+Collectively, these implementations demonstrate that successful repositories require data harmonisation, governance frameworks, and scalable integration architectures. However, few have been designed specifically to support operational cancer pathway management. This distinction directly informs the proposed artefact, which prioritises workflow visibility, breach-risk identification, and operational decision support rather than research-oriented data reuse.
+
 While these examples demonstrate the technical feasibility of large-scale oncology data repositories, their transferability to routine NHS operational environments warrants careful consideration. Many reported implementations originate from digitally mature organisations with substantial informatics capability, dedicated technical teams, and highly structured data environments. Such conditions may not be representative of NHS Trusts where operational data are frequently distributed across legacy systems, locally developed databases, spreadsheets, and departmental applications.
 
 Furthermore, the majority of published repositories prioritise research, population health, or precision medicine objectives. Although these use cases require extensive data integration, they often place less emphasis on the timeliness, operational responsiveness, and workflow visibility required for day-to-day pathway management. Consequently, a gap exists between the design of many clinical data repositories and the practical needs of operational cancer services.
@@ -164,6 +164,13 @@ Examples:
     \item Multimodal CDSS supporting 170,000+ patients, using ETL + NLP + 140 data quality checks \citep{chang2025}.
     \item ROOT CDW: automated ingestion, structured/unstructured data integration \citep{jung2021}.
 \end{itemize}
+
+\subsection{Comparative Analysis of Dashboard Implementations}
+The reviewed dashboard implementations share several common design objectives, including improved information visibility, support for timely decision-making, and reduction of administrative burden. Both ROOT and multimodal CDSS environments rely upon integrated data architectures to provide trustworthy analytics, emphasising the dependency between dashboard performance and underlying data quality.
+
+However, notable differences exist regarding intended usage. Clinical decision-support dashboards are primarily oriented towards patient-level treatment decisions, whereas operational dashboards focus on service performance, capacity management, and workflow optimisation. The latter perspective receives comparatively less attention within the literature despite its importance for achieving national waiting-time standards.
+
+These observations suggest that an effective oncology operational dashboard should combine characteristics of both approaches: robust data integration, user-centred visualisation, and proactive decision-support capabilities tailored to pathway management.
 
 \subsection{Data Quality and Informatics Challenges}
 
@@ -222,9 +229,29 @@ Importantly, the effectiveness of AI applications appears dependent upon the exi
 
 The literature reveals a common pattern across otherwise diverse research domains. Studies examining MDT performance identify increasing operational pressure but provide limited visibility of downstream workflow delays. Research linking treatment delays to survival demonstrates the importance of timely treatment but offers limited guidance regarding how delays should be managed operationally. Similarly, data repository research demonstrates integration capability while dashboard studies emphasise information presentation; however, few studies combine these strands into a coherent operational solution.
 
-The review therefore identifies three interconnected deficiencies. First, there is insufficient operational visibility across the post-MDT pathway. Second, existing approaches remain largely reactive, identifying problems after performance deterioration has already occurred. Third, there is limited evidence regarding how integrated operational data repositories and user-centred dashboards can be combined to support proactive cancer pathway management.
+The lierature review identifies four principle gaps.
 
-These gaps directly inform the design objectives of this study and provide the rationale for the Design Science Research approach described in Chapter \ref{method}.
+\textbf{Gap 1: Limited visibility of post-MDT workflow delays.}
+While existing studies identify treatment delays and MDT inefficiencies, few provide mechanisms for analysing delay accumulation between MDT outcome and treatment initiation. This gap directly informs Objective 1 (identify and quantify post-MDT pathway delays) and Objective 2 (determine operational factors associated with delay).
+
+\textbf{Gap 2: Predominantly reactive performance management.}
+Most existing reporting approaches focus on retrospective compliance measurement rather than proactive intervention. This gap informs DP1 (Surface Breach Risks as a Leading Indicator) and DP2 (Pair Risk Information with Actionable Capacity Data).
+
+\textbf{Gap 3: Limited operational application of Integrated Data Repositories.}
+Existing repository research focuses primarily on research, genomics, and population health use cases rather than pathway operations. This gap directly supports Objective 3 (design an integrated data architecture) and DP3 (Use Canonical Standard-Aligned Pathway Events).
+
+\textbf{Gap 4: Insufficient evidence regarding user-centred operational dashboards.}
+Although dashboard research demonstrates value for healthcare monitoring, limited attention has been given to oncology pathway management and task-oriented operational decision support. This gap informs Objective 4 (develop a user-centred dashboard) and DP6 (Align Interaction Design with Real Operational Tasks).
+
+Collectively, these gaps establish the need for an artefact that combines integrated operational data, proactive pathway monitoring, and user-centred decision support. These requirements form the foundation of the Design Science Research approach outlined in Chapter \ref{method}.
+
+\begin{figure}
+    \includegraphics[width=\linewidth]{ConceptualDiagram.png}
+    \caption{Conceptual model linking literature-derived gaps, research objectives, design principles, artefact development, and evaluation}
+    \label{fig:ConceptualDiagram}
+\end{figure}
+
+Figure \ref{fig:ConceptualDiagram} synthesises the findings of the literature review and illustrates how the identified research gaps inform the objectives and design principles underpinning the artefact. The model demonstrates that challenges relating to MDT operational pressures, pathway delays, data fragmentation, reactive management practices, and usability deficiencies collectively motivate the development of an Integrated Data Repository and decision-support dashboard. These gaps are translated into explicit objectives and design principles which guide artefact development and subsequently form part of the evaluation framework. The resulting design knowledge contributes both a practical solution for NHS oncology services and transferable principles for operational analytics in healthcare.
 
 \section{Summary}
 

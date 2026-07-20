@@ -240,3 +240,37 @@ NHS oncology services require a robust, user‑centred, IDR‑backed operational
 
 This gap motivates the design and development of the artefact in this study and strengthens the methodological justification for a Design Science Research (DSR) approach.
 
+
+```mermaid
+flowchart TD
+    A["MDT Operational Pressure<br/>Soukup, Lim, Law, Chakravarty"]
+    B["Pathway Delay Literature<br/>Hanna, Sharma, Villemure-Poliquin"]
+    A ==> G1
+    B ==> G1
+    G1["Research Gap 1<br/>Limited Visibility of<br/>Post-MDT Delays"]
+    G1 ==> O12["Objectives 1 & 2<br/>Identify Delays and<br/>Operational Factors"]
+    C["Data Fragmentation<br/>IDR Literature"]
+    C ==> G2
+    G2["Research Gap 2<br/>Fragmented Operational Data"]
+    G2 ==> O3["Objective 3<br/>Design Integrated Data Repository"]
+    G2 ==> DP35["DP3: Canonical Events<br/>DP5: Data Provenance"]
+    D[Dashboard & Decision Support Literature]
+    D ==> G3
+    G3["Research Gap 3<br/>Reactive Operational Management"]
+    G3 ==> DP12["DP1: Breach Risk Indicators<br/>DP2: Capacity-Aware Analytics"]
+    E["Usability & HCI<br/>ISO 9241-110"]
+    E ==> G4
+    G4["Research Gap 4<br/>Lack of User-Centred Oncology<br/>Operational Dashboards"]
+    G4 ==> O4["Objective 4<br/>Develop Dashboard"]
+    G4 ==> DP46["DP4: Timely Refresh<br/>DP6: Task-Oriented Design"]
+    O12 ==> ART
+    O3 ==> ART
+    O4 ==> ART
+    DP12 ==> ART
+    DP35 ==> ART
+    DP46 ==> ART
+    ART["Integrated Data Repository<br/>+<br/>Decision-Support Dashboard"]
+    ART ==> EV
+    EV["Evaluation<br/>Utility<br/>Usability<br/>Decision Quality<br/>Technical Validity"]
+    EV ==> DK["Design Knowledge<br/>Refined Design Principles<br/>for NHS Oncology Analytics"]
+```

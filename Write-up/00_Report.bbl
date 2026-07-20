@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{39}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -291,14 +291,5 @@ Varma, Raghav, Mayne, Emily, Parry, Marina~A., Nathan, Arjun, {van der Meulen},
   treatment interval ({{DTI}}) in head \& neck cancers -- {{A}} systematic
   review and meta-analysis,} \textit{Oral Oncology}, 160, p. 107106,
   \urlprefix\url{http://dx.doi.org/10.1016/j.oraloncology.2024.107106}
-
-\bibitem[{Yun \textit{et~al.}(2012)Yun, Kim, Min, Park, Won, Kim, Choi, Kim,
-  Park, Kim, Lee, Yoon, Jeong, Noh and Heo}]{yun2012}
-Yun, Y.~H., Kim, Y.~A., Min, Y.~H., Park, S., Won, Y.~J., Kim, D.~Y., Choi,
-  I.~J., Kim, Y.~W., Park, S.~J., Kim, J.~H., Lee, D.~H., Yoon, S.~J., Jeong,
-  S.~Y., Noh, D.~Y. and Heo, D.~S. (2012) \enquote{The influence of hospital
-  volume and surgical treatment delay on long-term survival after cancer
-  surgery,} \textit{Annals of Oncology}, 23(10), pp. 2731--2737,
-  \urlprefix\url{http://dx.doi.org/10.1093/annonc/mds101}
 
 \end{thebibliography}

@@ -25,6 +25,38 @@ The problem identification phase was undertaken using a combination of retrospec
 Solution objectives were derived through a requirements elicitation process combining literature-derived design requirements, operational needs identified through pathway review, and information requirements associated with national cancer waiting time standards. Requirements were grouped into data integration, operational monitoring, decision support, and usability domains.
 
 \subsection{Design and Development}
+
+The design and development stage focused on constructing an Integrated Data Repository (IDR) and a suite of operational decision-support dashboards. Development was undertaken iteratively using successive cycles of prototyping, evaluation and refinement with operational stakeholders. 
+
+\subsection{Requirements Elicitation}
+
+Initial requirements were gathered through discussions with operational managers within Portsmouth Oncology Centre, review of existing reporting processes, and analysis of pathway-monitoring activities. Particular attention was paid to identifying operational questions that could not be answered efficiently usng existing systems. 
+
+Key requirements included:
+\begin{itemize}
+    \item identification of patients at risk of breaching national waiting-time standards;
+    \item monitoring active oncology referrals and outstanding clinic activity;
+    \item visibility of radiotherapy demand and capacity;
+    \item identification of bottlenecks between referral and treatment initiation; and
+    \item provision of near-real-time operational decision support.
+\end{itemize}
+
+\subsubsection{Source System Analysis}
+
+Three primary operational datasets were identified.
+
+The oncology referral register consisted of a manually maintained SharePoint list used by administrative staff to track incoming referrals and clinical outcomes. 
+
+Oncology clinic activity was extracted from the Trust's Patient Administrative System (PAS), providing appointment, booking and attendance data.
+
+Radiotherapy operational data comprised referral, CT simulation and treatment events extracted from the local Oncology Information System - Aria for Radiation Oncology. 
+
+Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therfore excluded at this time, but design principles leave including SACT treatments at a later date. 
+
+\subsubsection{Integrated Data Repository Design}
+
+
+
 The design and development activity involved two tightly coupled components:
 \begin{enumerate}
     \item Integrated Data Repository (IDR)
