@@ -5,10 +5,10 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="FZRScpMRFKHuviQNVJMv-18" parent="1" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;startSize=20;html=1;" value="Radiotherapy Pathway" vertex="1">
-          <mxGeometry height="960" width="530" x="520" y="120" as="geometry" />
+          <mxGeometry height="800" width="530" x="520" y="120" as="geometry" />
         </mxCell>
         <mxCell id="FZRScpMRFKHuviQNVJMv-19" parent="FZRScpMRFKHuviQNVJMv-18" style="swimlane;startSize=20;html=1;" value="Event" vertex="1">
-          <mxGeometry height="940" width="170" y="20" as="geometry" />
+          <mxGeometry height="780" width="170" y="20" as="geometry" />
         </mxCell>
         <mxCell id="FZRScpMRFKHuviQNVJMv-26" edge="1" parent="FZRScpMRFKHuviQNVJMv-19" source="FZRScpMRFKHuviQNVJMv-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="FZRScpMRFKHuviQNVJMv-25" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -44,7 +44,7 @@
           <mxGeometry height="60" width="120" x="25" y="660" as="geometry" />
         </mxCell>
         <mxCell id="FZRScpMRFKHuviQNVJMv-20" parent="FZRScpMRFKHuviQNVJMv-18" style="swimlane;startSize=20;html=1;" value="Data Repository" vertex="1">
-          <mxGeometry height="940" width="150" x="170" y="20" as="geometry" />
+          <mxGeometry height="780" width="150" x="170" y="20" as="geometry" />
         </mxCell>
         <mxCell id="FZRScpMRFKHuviQNVJMv-35" parent="FZRScpMRFKHuviQNVJMv-20" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;outlineConnect=0;verticalAlign=top;align=center;shape=mxgraph.office.clouds.cloud_sharepoint;" value="" vertex="1">
           <mxGeometry height="61" width="101" x="24.5" y="60" as="geometry" />
@@ -59,7 +59,7 @@
           <mxGeometry height="420" width="50" x="10" y="300" as="geometry" />
         </mxCell>
         <mxCell id="FZRScpMRFKHuviQNVJMv-21" parent="FZRScpMRFKHuviQNVJMv-18" style="swimlane;startSize=20;html=1;" value="CWT" vertex="1">
-          <mxGeometry height="940" width="210" x="320" y="20" as="geometry" />
+          <mxGeometry height="780" width="210" x="320" y="20" as="geometry" />
         </mxCell>
         <mxCell id="FZRScpMRFKHuviQNVJMv-38" parent="FZRScpMRFKHuviQNVJMv-21" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Date_and_time_-_Fill_outline-2713/Stopwatch_time_timer_clock-512.svg;" value="ECAD&lt;div&gt;31-day clock start&lt;/div&gt;" vertex="1">
           <mxGeometry height="64" width="64" x="60" y="180" as="geometry" />
