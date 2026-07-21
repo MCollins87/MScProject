@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="KzMMPp7Rw4o8Q9-_Xj45">
+    <mxGraphModel dx="1060" dy="1136" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Clinical Source Systems" vertex="1">
+          <mxGeometry height="160" width="840" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-2" parent="_Fj9q_Q4PxHLHJoDabEJ-1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="Aria RO" vertex="1">
+          <mxGeometry height="80" width="60" x="270" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-3" parent="_Fj9q_Q4PxHLHJoDabEJ-1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="PAS" vertex="1">
+          <mxGeometry height="80" width="60" x="590" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-4" parent="_Fj9q_Q4PxHLHJoDabEJ-1" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#505050;labelPosition=center;verticalLabelPosition=bottom;outlineConnect=0;verticalAlign=top;align=center;shape=mxgraph.office.clouds.cloud_sharepoint;" value="Referral Register" vertex="1">
+          <mxGeometry height="61" width="101" x="700" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-5" parent="_Fj9q_Q4PxHLHJoDabEJ-1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;dashed=1;" value="Aria MO" vertex="1">
+          <mxGeometry height="80" width="60" x="10" y="30.5" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-44" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-6" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Data Lake" vertex="1">
+          <mxGeometry height="240" width="840" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-7" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Aria Referral csv" vertex="1">
+          <mxGeometry height="80" width="120" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-8" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Aria Bookings csv" vertex="1">
+          <mxGeometry height="80" width="120" x="320" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-9" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Aria ECAD csv" vertex="1">
+          <mxGeometry height="80" width="120" x="480" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-10" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Aria CT csv" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-11" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Aria First Treatment csv" vertex="1">
+          <mxGeometry height="80" width="120" x="240" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-12" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Aria Machine Appointments csv" vertex="1">
+          <mxGeometry height="80" width="120" x="400" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-19" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Oncology Referrals csv" vertex="1">
+          <mxGeometry height="80" width="120" x="640" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-21" parent="_Fj9q_Q4PxHLHJoDabEJ-6" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" value="Clinic Appointments csv&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="120" x="560" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-20" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-24" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-25" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-26" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.145;exitY=1;exitDx=0;exitDy=-4.35;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-27" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="_Fj9q_Q4PxHLHJoDabEJ-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-28" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.855;exitY=1;exitDx=0;exitDy=-4.35;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-29" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=-15;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-30" edge="1" parent="1" source="_Fj9q_Q4PxHLHJoDabEJ-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=52.5;exitPerimeter=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="_Fj9q_Q4PxHLHJoDabEJ-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-32" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Data Ingestion" vertex="1">
+          <mxGeometry height="200" width="840" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-36" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="load_rt_referral.py" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-37" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="load_booking.py" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-38" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="load_ecad.py" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-39" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="load_ct.py" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-40" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="load_treat.py" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-42" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="load_oncology.py" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-41" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;load_machine&lt;/div&gt;&lt;div&gt;_appointments.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="320" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-43" parent="_Fj9q_Q4PxHLHJoDabEJ-32" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;load_clinic&lt;/div&gt;&lt;div&gt;_appointments.py&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_Fj9q_Q4PxHLHJoDabEJ-45" parent="1" style="swimlane;whiteSpace=wrap;html=1;" value="Staging Layer" vertex="1">
+          <mxGeometry height="200" width="840" y="760" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
