@@ -116,16 +116,55 @@ Togetherm these practices improved operational robustness and facilitated deploy
     \label{fig:RTpath}
 \end{figure}
 
+The purpose of the pathway data model was to transform fragmented operational records into a series of standardised pathway events capable of supporting interval analysis. A key challenge identified during development was individual source systems recorded only portions of the over all oncology pathway. Consequently, no single source provided a complete end-to-end view from referral to treatment initiation. 
+
+The pathway model therefore adopted a canonical event-based approach. Individual operational events were mapped to a common set of pathway milestones including referral receipt, oncology triage, first clinic appointment, radiotherapy referral, CT simulation, and treatment commencement. These events were subsequently linked through patient identifiers and temporal matching logic to create an integrated representation of each patient pathway. 
+
+From these canonical events, a series of operational intervals were derived, including referral-to-triage, triage-to-clinic, clinic-to-radiotherapy referral, radiotherapy referral-to-CT simulation, and CT simulation-to-treatment. These intervals formed the basis of all dashboard metrics and pathway analyses. 
+
+The use of standardised pathway events aligned with Design Principle 3, ensuring that all metrics were derived consistently across source systems and remained traceable to their originating records. Figure \ref{fig:RTpath} illustrates the relationship between pathway events, source systems, and derived performance milestones.
 
 \subsubsection{Dashboard Development}
 
-\subsubsection{Iterative Artefact Refinement}
+Three operational dashboards were developed using Microsoft Power BI. Each dashboard was designed to support a distinct operational management task while sharing a common data repository and data model. 
 
+The Oncology Referrals dashboard focused on referral management activities and provided visibility of active referrals, clinic waiting times, booking lead times, and unresolved clinic outcomes. The dashboard combined referral-register data with clinic activity to provide a current operational view of patients progressing through the oncology pathway. 
+
+The Radiotherapy Service Health dashboard focused on treatment delivery and capacity management. Operational metrics included active patients, expected future referrals, booking backlog, patient risk categorisation, and projected capacity utilisation. Particular emphasis was placed on presenting risk information alongside capacity and demand metrics to support operational intervention. 
+
+The Post-MDT Pathway Overview dashboard integrated data from both oncology and radiotherapy workflows to provide an end-to-end view of patient progression from referral to treatment. The dashboard visualised pathway intervals, operational bottlenecks, and trends in pathway performance over time. 
+
+A fourth dashboard addressing Systemic Anti-Cancer Therapy (SACT) pathways was identified during requirements elicitation. However, due to the lack of a reliable and stable SACT data source during the study period, this component was deferred for future development.
+
+\subsubsection{Iterative Artefact Refinement}
+Artefact development followed an iterative process consistent with Design Science Research principles. Successive prototypes were demonstrated to operational stakeholders, with feedback being incorporated into later design iterations. 
+
+The first development cycle focused on radiotherapy operational management. Initial prototypes concentrated on patient tracking and waiting-time performance; however, stakeholder feedback identified a need for greater visibility of future demand and available treatment capacity. This led to the development of capacity-demand forecasting visuals and booking risk indicators. 
+
+The second development cycle focused on oncology referral management. Early versions primarily reported referral volumes and clinic activity. User feedback indicated a stronger operational requirement for active waiting-list management, prompting the addition of patient-group classifications, current booked waits, and referral worklists prioritised by waiting time. 
+
+The third development cycle focused on integrated pathway analysis. Stakeholders identified a need to understand where delays accumulated across the patient journey rather than within individual operational areas. This resulted in the development of pathway-stage metrics and a cumulative waterfall visual illustrating time spent between referral, triage, clinic attendance, radiotherapy referral, CT simulation, and treatment initiation. 
+
+These iterative refinements ensured that the artefact remained closely aligned with operational requirements while simultaneously providing evidence regarding the effectiveness of the proposed design principles.
 
 \subsubsection{ETL and Data Harmonisation}
-Data harmonisation presented a significant challenge due to variation in identifier quality and referral-recording practices. NHS numbers required standardisation across datasets, while oncology referral records frequently contained duplicate records representing the same clinical episode.
+Data harmonisation presented a significant challenge due to variation in identifier quality, inconsistent recording practices, and differences in operational workflows between source systems. 
 
+NHS numbers were used as the primary identifier wherever possible and were standardised during transformation to remove formatting inconsistencies. Date formats were similarly harmonised to support accurate interval calculations across systems. 
 
+The oncology referral dataset presented particular challenges because it functioned as an operational activity log rather than a controlled referral register. Multiple records were frequently associated with the same oncology episode, reflecting administrative updates, onward referrals, and pathway exceptions. Intermediate transformation views were therefore developed to consolidate records and create a single analytical representation of each referral episode. 
+
+Additional business rules were implemented to identify external-provider referrals, duplicate records, deferred follow-up appointments, and non-standard pathways. These rules allowed operational reporting to focus on patients actively progressing through the pathway while preserving the underlying source data for audit purposes. 
+
+Following transformation and quality-control activities, analytics-ready fact tables were constructed for oncology pathways, radiotherapy pathways, and integrated referral-to-treatment pathways. These fact tables formed the data source for all dashboard visualisations and performance metrics.
+
+\subsection{Data Quality Management}
+
+Exploratory analysis identified several data-quality challenges including duplicate referral records, delayed administrative updates, missing appointment outcomes, and inconsistent coding practices. Rather than modifying source data directly, data-quality controls were implemented within the transformation layer of the repository. 
+
+Business rules were used to identify duplicate referral episodes, exclude non-standard pathways from operational waiting-time calculations, and classify clinician-directed surveillance appointments separately from active patient pathways. This approach preserved the fidelity of source data while improving the validity and interpretability of analytical outputs. 
+
+Data-quality findings were also treated as a research outcome in their own right, providing insight into the operational limitations of existing pathway-monitoring processes and informing recommendations for future pathway digitisation initiatives.
 
 \section{Design Principles} \label{DP}
 Design principles represent the design knowledge contribution of this study. They are formulated using a standard DSR structure: \emph{context, intervention}, and \emph{rationale}. These initial principles are refined following evaluation.

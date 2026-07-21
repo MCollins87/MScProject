@@ -44,17 +44,18 @@
 \contentsline {subsubsection}{\numberline {3.2.3.4}ETL Architecture and Data Harmonisation}{23}{}%
 \contentsline {subsubsection}{\numberline {3.2.3.5}Software Engineering and Operational Design}{24}{}%
 \contentsline {subsection}{\numberline {3.2.4}Pathway Data Model}{24}{}%
-\contentsline {subsubsection}{\numberline {3.2.4.1}Dashboard Development}{24}{}%
-\contentsline {subsubsection}{\numberline {3.2.4.2}Iterative Artefact Refinement}{24}{}%
-\contentsline {subsubsection}{\numberline {3.2.4.3}ETL and Data Harmonisation}{24}{}%
-\contentsline {section}{\numberline {3.3}Design Principles}{24}{}%
-\contentsline {section}{\numberline {3.4}Evaluation Strategy}{27}{}%
-\contentsline {subsection}{\numberline {3.4.1}Usability Evaluation}{28}{}%
-\contentsline {subsection}{\numberline {3.4.2}Utility and Effectiveness}{28}{}%
-\contentsline {subsection}{\numberline {3.4.3}Technical Validity}{28}{}%
-\contentsline {subsection}{\numberline {3.4.4}Design Knowledge Evaluation}{28}{}%
-\contentsline {section}{\numberline {3.5}Ethical and Governance Considerations}{28}{}%
-\contentsline {subsection}{\numberline {3.5.1}Research Limitations}{28}{}%
-\contentsline {section}{\numberline {3.6}Summary}{29}{}%
-\contentsline {chapter}{References}{30}{}%
-\contentsline {chapter}{List of Acronyms}{35}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Dashboard Development}{27}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}Iterative Artefact Refinement}{27}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}ETL and Data Harmonisation}{28}{}%
+\contentsline {subsection}{\numberline {3.2.5}Data Quality Management}{28}{}%
+\contentsline {section}{\numberline {3.3}Design Principles}{29}{}%
+\contentsline {section}{\numberline {3.4}Evaluation Strategy}{30}{}%
+\contentsline {subsection}{\numberline {3.4.1}Usability Evaluation}{30}{}%
+\contentsline {subsection}{\numberline {3.4.2}Utility and Effectiveness}{30}{}%
+\contentsline {subsection}{\numberline {3.4.3}Technical Validity}{30}{}%
+\contentsline {subsection}{\numberline {3.4.4}Design Knowledge Evaluation}{30}{}%
+\contentsline {section}{\numberline {3.5}Ethical and Governance Considerations}{31}{}%
+\contentsline {subsection}{\numberline {3.5.1}Research Limitations}{31}{}%
+\contentsline {section}{\numberline {3.6}Summary}{31}{}%
+\contentsline {chapter}{References}{32}{}%
+\contentsline {chapter}{List of Acronyms}{37}{}%
