@@ -28,7 +28,18 @@ Solution objectives were derived through a requirements elicitation process comb
 
 The design and development stage focused on constructing an Integrated Data Repository (IDR) and a suite of operational decision-support dashboards. Development was undertaken iteratively using successive cycles of prototyping, evaluation and refinement with operational stakeholders. 
 
-\subsection{Requirements Elicitation}
+The design and development activity involved two tightly coupled components:
+\begin{enumerate}
+    \item Integrated Data Repository (IDR)
+    \item Decision-Support Dashboard
+\end{enumerate}
+The IDR adopts a general-model architecture consisting of a staging layer for ETL and harmonisation, a central warehouse, and an application layer for analytics and visualisation, consistent with IDR literature for single-institution deployments \citep{gagalova2020}.
+
+The dashboard is designed to support operational tasks rather than retrospective reporting, aligning with the role of operational dashboards in healthcare performance management \citep{buttigieg2017}. 
+
+Both components were developed iteratively, guided by explicit design principles derived from prior research and refined during prototyping. 
+
+\subsubsection{Requirements Elicitation}
 
 Initial requirements were gathered through discussions with operational managers within Portsmouth Oncology Centre, review of existing reporting processes, and analysis of pathway-monitoring activities. Particular attention was paid to identifying operational questions that could not be answered efficiently usng existing systems. 
 
@@ -43,7 +54,7 @@ Key requirements included:
 
 \subsubsection{Source System Analysis}
 
-Three primary operational datasets were identified.
+Four primary operational datasets were identified, and three were used in the final artefact.
 
 The oncology referral register consisted of a manually maintained SharePoint list used by administrative staff to track incoming referrals and clinical outcomes. 
 
@@ -53,40 +64,66 @@ Radiotherapy operational data comprised referral, CT simulation and treatment ev
 
 Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therfore excluded at this time, but design principles leave including SACT treatments at a later date. 
 
-\subsubsection{Integrated Data Repository Design}
+\subsubsection{Data Integration Strategy}
 
+A key design decision concerned the method by which operational data would be extracted from heterogeneous source systems. Alternative approaches including direct database connections, JSON-based exports, application programming interfaces (APIs), and manual reporting extracts were considered. However, functionality varied considerably between source systems. While some systems supported direct database access and others allowed JSON exports, comma-separated value (CSV) export functionality was available consistently across all source applications.
 
+A CSV-based ingestion strategy was therefore adopted to maximise interoperability and minimise source-system dependencies. This approach allowed a common extraction process to be implemented across all datasets while avoiding the need for system-specific integration methods. The resulting architecture prioritised simplicity, portability, and maintainability over real-time integration, which was considered appropriate for an operational dashboard refreshed on a daily basis.
 
-The design and development activity involved two tightly coupled components:
-\begin{enumerate}
-    \item Integrated Data Repository (IDR)
-    \item Decision-Support Dashboard
-\end{enumerate}
-The IDR adopts a general-model architecture consisting of a staging layer for ETL and harmonisation, a central warehouse, and an application layer for analytics and visualisation, consistent with IDR literature for single-institution deployments \citep{gagalova2020}.
+\subsubsection{ETL Architecture and Data Harmonisation}
 
-The dashboard is designed to support operational tasks rather than retrospective reporting, aligning with the role of operational dashboards in healthcare performance management \citep{buttigieg2017}. 
+Data extraction, transformation and loading processes were developed using Python and PostgreSQL. Individual ETL processes were created for each source dataset and orchestrated through an automated pipeline. The ETL layer was responsible for importing source extracts, performing data quality checks, standardising formats, and loading records into the staging layer of the IDR.
 
-Both components were developed iteratively, guided by explicit design principles derived from prior research and refined during prototyping. 
+The architecture followed a layered design consisting of: 
 
-\subsection{Demonstration}
-The artefact is demonstrated using:
 \begin{itemize}
-    \item retrospective Trust data covering MDT decisions, clinic appointments, and treatment initiation;
-    \item realistic operational scenarios reflecting common management tasks (e.g., identifying upcoming breach risks, assessing clinic capacity).
+    \item Source systems;
+    \item ETL and harmonisation processes;
+    \item Staging tables;
+    \item Intermediate integration views;
+    \item Analytics-ready fact tables; and
+    \item Power BI dashboards.
 \end{itemize}
-Demonstration focuses on illustrating how the artefact supports decision-making that was previously manual, fragmented, or retrospective.
 
-\subsection{Evaluation}
-Evaluation is multi-method and aligned with \cite{hevner2004}'s guidance that DSR artefacts must be assessed for utility, quality, and efficacy. Evaluation methods are detailed in Section \ref{EvalStrat}.
+This seperation of concerns simplified troubleshooting, improved transparency, and preserved data lineage throughout the repository. 
 
-\subsection{Communication}
-The final activity consists of communicating:
-\begin{itemize}
-    \item the artefact,
-    \item its measured effects, and
-    \item the derived design principles,
-\end{itemize}
-through this dissertation, targeting both academic and and practitioner audiences. 
+The architecture deliberately seperated raw operational data from analytical representations. Staging tables preserved source extracts in their original form, intermediate views applied business rules and data-quality controls, and fact tables provided analytics-ready datasets for dashboard consumption. This separationreduced coupling between source systems and reporting outputs while supporting auditability and future extension of the repository (See Figure \ref{fig:LogicalArch}). 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{LogicalArchitecture.png}
+    \caption{Logical Architecture of the Integrated Data Repository}
+    \label{fig:LogicalArch}
+\end{figure}
+
+\subsubsection{Software Engineering and Operational Design}
+
+Although the artefact was developed as a research prototype, several software-engineering practices were incorporated to improve reliability and maintainability.
+
+Logging was implemented throughout the ETL process to support monitoring, troubleshooting, and auditability. All major extractions, transformation and loading activities produced structured log entries allowing operational issues to be investigated retrospectively.
+
+Database credentials and configuration settings were externalised through environment variables rather than being embedded directly within the application code. This approach aligns with principles outlined within the Twelve-Factor App methodology, seperating configuration from code and reducing the risk of credential exposure. 
+
+Togetherm these practices improved operational robustness and facilitated deployment accross development and production environments without modification to application source code. 
+
+
+\subsection{Pathway Data Model}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{RTPathwayDataLineage.png}
+    \caption{Radiotherapy Pathway, Source Systems and Performance Milestones}
+    \label{fig:RTpath}
+\end{figure}
+
+
+\subsubsection{Dashboard Development}
+
+\subsubsection{Iterative Artefact Refinement}
+
+
+\subsubsection{ETL and Data Harmonisation}
+Data harmonisation presented a significant challenge due to variation in identifier quality and referral-recording practices. NHS numbers required standardisation across datasets, while oncology referral records frequently contained duplicate records representing the same clinical episode.
 
 
 

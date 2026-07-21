@@ -38,17 +38,23 @@
 \contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{21}{}%
 \contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{21}{}%
 \contentsline {subsection}{\numberline {3.2.3}Design and Development}{22}{}%
-\contentsline {subsection}{\numberline {3.2.4}Demonstration}{22}{}%
-\contentsline {subsection}{\numberline {3.2.5}Evaluation}{22}{}%
-\contentsline {subsection}{\numberline {3.2.6}Communication}{22}{}%
-\contentsline {section}{\numberline {3.3}Design Principles}{23}{}%
-\contentsline {section}{\numberline {3.4}Evaluation Strategy}{24}{}%
-\contentsline {subsection}{\numberline {3.4.1}Usability Evaluation}{24}{}%
-\contentsline {subsection}{\numberline {3.4.2}Utility and Effectiveness}{24}{}%
-\contentsline {subsection}{\numberline {3.4.3}Technical Validity}{24}{}%
-\contentsline {subsection}{\numberline {3.4.4}Design Knowledge Evaluation}{24}{}%
-\contentsline {section}{\numberline {3.5}Ethical and Governance Considerations}{24}{}%
-\contentsline {subsection}{\numberline {3.5.1}Research Limitations}{25}{}%
-\contentsline {section}{\numberline {3.6}Summary}{25}{}%
-\contentsline {chapter}{References}{26}{}%
-\contentsline {chapter}{List of Acronyms}{31}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Requirements Elicitation}{22}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Source System Analysis}{22}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Data Integration Strategy}{23}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}ETL Architecture and Data Harmonisation}{23}{}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}Software Engineering and Operational Design}{24}{}%
+\contentsline {subsection}{\numberline {3.2.4}Pathway Data Model}{24}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Dashboard Development}{24}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}Iterative Artefact Refinement}{24}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}ETL and Data Harmonisation}{24}{}%
+\contentsline {section}{\numberline {3.3}Design Principles}{24}{}%
+\contentsline {section}{\numberline {3.4}Evaluation Strategy}{27}{}%
+\contentsline {subsection}{\numberline {3.4.1}Usability Evaluation}{28}{}%
+\contentsline {subsection}{\numberline {3.4.2}Utility and Effectiveness}{28}{}%
+\contentsline {subsection}{\numberline {3.4.3}Technical Validity}{28}{}%
+\contentsline {subsection}{\numberline {3.4.4}Design Knowledge Evaluation}{28}{}%
+\contentsline {section}{\numberline {3.5}Ethical and Governance Considerations}{28}{}%
+\contentsline {subsection}{\numberline {3.5.1}Research Limitations}{28}{}%
+\contentsline {section}{\numberline {3.6}Summary}{29}{}%
+\contentsline {chapter}{References}{30}{}%
+\contentsline {chapter}{List of Acronyms}{35}{}%
