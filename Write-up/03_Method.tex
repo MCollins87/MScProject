@@ -9,7 +9,7 @@ The primary artefact developed in this study is a lightweight integrated data re
 \subsection{Justification for Design Science Research}
 Several methodological approaches were considered. A case study methodology would have enabled detailed examination of post-MDT operational processes but woud not have provided a structured framework for the design and evaluation of an intervention. Action Research was also considered because of its focus on organisational change and practitioner involvement. However, Action Research typically requires repeated cycles of intervention and measurement within live operational environments. In cancer pathway management, allowing breaches to occur in order to evaluate an intervention would be ethically and operationally undesirable given the known relationship between treatment delays and patient outcomes. 
 
-Design Science Research was therfore selected because it provides a rigorous framework for designing, developing, and evaluating an artefact intended to solve a real-world organisational problem while simultaneously generating transferable knowledge. DSR has been widely applied within healthcare informatics, clinical decision support, and data integration research where new technological artefacts are required to address operational challenges \citep{hevner2004, peffers2007}.
+Design Science Research was therefore selected because it provides a rigorous framework for designing, developing, and evaluating an artefact intended to solve a real-world organisational problem while simultaneously generating transferable knowledge. DSR has been widely applied within healthcare informatics, clinical decision support, and data integration research where new technological artefacts are required to address operational challenges \citep{hevner2004, peffers2007}.
 
 Unlike traditional continuous-improvement approaches such as Plan-Do-Check-Act (PDCA), cancer pathway management cannot rely solely on post-hoc measurement of outcomes. A breach of the 31-day or 62-day standard represents a clinically meaningful delay that may adversely affect patient outcomes. Consequently, operational management must emphasise proactive identification and mitigation of risk rather than retrospective evaluation alone. The design objective of the proposed dashboard is therefore not simply to identify breaches after they occur, but to provide leading indicators that enable intervention before delays become clinically significant.
 
@@ -19,12 +19,12 @@ Case study research was rejected because the objective of this study extends bey
 The study follows the Design Science Research Methodology (DSRM) proposed by \cite{peffers2007}, which structures DSR into six interrelated activities. These activities are applied iteratively rather than strictly linearly. 
 
 \subsection{Problem Identification and Motivation}
-The problem identification phase was undertaken using a combination of retrospective pathway analysis, operational observations, and literature synthesis. Local cancer waiting time reports and patient tracking data were reviewed to identify recurring delays between MDT outcomes, first oncology consultation, decision-to-treat, and treatment initiation. Findings were triagulated with evidence from the literature review, which demonstrated similar challenges accross NHS organisations. This process established the need for an integrated operational analytics solution capable of identifying bottlenecks before breaches occur. 
+The problem identification phase was undertaken using a combination of retrospective pathway analysis, operational observations, and literature synthesis. Local cancer waiting time reports and patient tracking data were reviewed to identify recurring delays between MDT outcomes, first oncology consultation, decision-to-treat, and treatment initiation. Findings were triangulated with evidence from the literature review, which demonstrated similar challenges accross NHS organisations. This process established the need for an integrated operational analytics solution capable of identifying bottlenecks before breaches occur. 
 
 \subsection{Objectives of a Solution}
 Solution objectives were derived through a requirements elicitation process combining literature-derived design requirements, operational needs identified through pathway review, and information requirements associated with national cancer waiting time standards. Requirements were grouped into data integration, operational monitoring, decision support, and usability domains.
 
-\subsection{Design and Development}
+\section{Design and Development}
 
 The design and development stage focused on constructing an Integrated Data Repository (IDR) and a suite of operational decision-support dashboards. Development was undertaken iteratively using successive cycles of prototyping, evaluation and refinement with operational stakeholders. 
 
@@ -39,9 +39,9 @@ The dashboard is designed to support operational tasks rather than retrospective
 
 Both components were developed iteratively, guided by explicit design principles derived from prior research and refined during prototyping. 
 
-\subsubsection{Requirements Elicitation}
+\subsection{Requirements Elicitation}
 
-Initial requirements were gathered through discussions with operational managers within Portsmouth Oncology Centre, review of existing reporting processes, and analysis of pathway-monitoring activities. Particular attention was paid to identifying operational questions that could not be answered efficiently usng existing systems. 
+Initial requirements were gathered through discussions with operational managers within Portsmouth Oncology Centre, review of existing reporting processes, and analysis of pathway-monitoring activities. Particular attention was paid to identifying operational questions that could not be answered efficiently using existing systems. 
 
 Key requirements included:
 \begin{itemize}
@@ -52,7 +52,7 @@ Key requirements included:
     \item provision of near-real-time operational decision support.
 \end{itemize}
 
-\subsubsection{Source System Analysis}
+\subsection{Source System Analysis}
 
 Four primary operational datasets were identified, and three were used in the final artefact.
 
@@ -64,13 +64,17 @@ Radiotherapy operational data comprised referral, CT simulation and treatment ev
 
 Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therfore excluded at this time, but design principles leave including SACT treatments at a later date. 
 
-\subsubsection{Data Integration Strategy}
+The selected source systems reflected the operational stages of the post-MDT pathway. Together, these systems captured referral management, clinic scheduling, radiotherapy planning, and treatment delivery activities. However, each system was developed independently and used different data structures, identifiers, and reporting mechanisms. Consequently, substantial transformation and harmonisation activities were required before integrated pathway analysis could be performed. 
+
+\subsection{Data Integration Strategy}
 
 A key design decision concerned the method by which operational data would be extracted from heterogeneous source systems. Alternative approaches including direct database connections, JSON-based exports, application programming interfaces (APIs), and manual reporting extracts were considered. However, functionality varied considerably between source systems. While some systems supported direct database access and others allowed JSON exports, comma-separated value (CSV) export functionality was available consistently across all source applications.
 
 A CSV-based ingestion strategy was therefore adopted to maximise interoperability and minimise source-system dependencies. This approach allowed a common extraction process to be implemented across all datasets while avoiding the need for system-specific integration methods. The resulting architecture prioritised simplicity, portability, and maintainability over real-time integration, which was considered appropriate for an operational dashboard refreshed on a daily basis.
 
-\subsubsection{ETL Architecture and Data Harmonisation}
+One exception was the Clinic appointment extract from PAS. Due to attempting to capture appointments booked, which acted as a proxy for triage, and also outcome, two reports were provided weekly in the form of Microsoft Excel workbooks containing separate Booking and Appointment worksheets. The revised ETL process automatically ingested both worksheets, preserving booking events and attendance outcomes independently before combining them within the intermediate integration layer. This approach improved representation of the underlying operational workflow while maintaining compatibility with the existing warehouse architecture.
+
+\subsection{ETL Architecture}
 
 Data extraction, transformation and loading processes were developed using Python and PostgreSQL. Individual ETL processes were created for each source dataset and orchestrated through an automated pipeline. The ETL layer was responsible for importing source extracts, performing data quality checks, standardising formats, and loading records into the staging layer of the IDR.
 
@@ -87,7 +91,7 @@ The architecture followed a layered design consisting of:
 
 This seperation of concerns simplified troubleshooting, improved transparency, and preserved data lineage throughout the repository. 
 
-The architecture deliberately seperated raw operational data from analytical representations. Staging tables preserved source extracts in their original form, intermediate views applied business rules and data-quality controls, and fact tables provided analytics-ready datasets for dashboard consumption. This separationreduced coupling between source systems and reporting outputs while supporting auditability and future extension of the repository (See Figure \ref{fig:LogicalArch}). 
+The architecture deliberately separated raw operational data from analytical representations. Staging tables preserved source extracts in their original form, intermediate views applied business rules and data-quality controls, and fact tables provided analytics-ready datasets for dashboard consumption. This separationreduced coupling between source systems and reporting outputs while supporting auditability and future extension of the repository (See Figure \ref{fig:LogicalArch}). 
 
 \begin{figure}
     \centering
@@ -96,7 +100,20 @@ The architecture deliberately seperated raw operational data from analytical rep
     \label{fig:LogicalArch}
 \end{figure}
 
-\subsubsection{Software Engineering and Operational Design}
+\subsection{Data Harmonisation and Business Rules}
+Data harmonisation presented a significant challenge due to variation in identifier quality, inconsistent recording practices, and differences in operational workflows between source systems. 
+
+NHS numbers were used as the primary identifier wherever possible and were standardised during transformation to remove formatting inconsistencies. Date formats were similarly harmonised to support accurate interval calculations across systems. 
+
+The oncology referral dataset presented particular challenges because it functioned as an operational activity log rather than a controlled referral register. Multiple records were frequently associated with the same oncology episode, reflecting administrative updates, onward referrals, and pathway exceptions. Intermediate transformation views were therefore developed to consolidate records and create a single analytical representation of each referral episode. 
+
+Additional business rules were implemented to identify external-provider referrals, duplicate records, deferred follow-up appointments, and non-standard pathways. These rules allowed operational reporting to focus on patients actively progressing through the pathway while preserving the underlying source data for audit purposes. 
+
+Following transformation and quality-control activities, analytics-ready fact tables were constructed for oncology pathways, radiotherapy pathways, and integrated referral-to-treatment pathways. These fact tables formed the data source for all dashboard visualisations and performance metrics.
+
+Several previously unrecognised data-quality issues were identified during exploratory analysis. These included duplicate referral records, referrals represented by multiple administrative updates, delayed recording of clinic outcomes, and pathway records relating to patients managed by external providers. The identification and resolution of these issues was necessary to ensure that reported pathway metrics reflected true patient progression rather than administrative artefacts. 
+
+\subsection{Software Engineering and Operational Design}
 
 Although the artefact was developed as a research prototype, several software-engineering practices were incorporated to improve reliability and maintainability.
 
@@ -104,7 +121,7 @@ Logging was implemented throughout the ETL process to support monitoring, troubl
 
 Database credentials and configuration settings were externalised through environment variables rather than being embedded directly within the application code. This approach aligns with principles outlined within the Twelve-Factor App methodology, seperating configuration from code and reducing the risk of credential exposure. 
 
-Togetherm these practices improved operational robustness and facilitated deployment accross development and production environments without modification to application source code. 
+Together, these practices improved operational robustness and facilitated deployment across development and production environments without modification to application source code. 
 
 
 \subsection{Pathway Data Model}
@@ -116,7 +133,7 @@ Togetherm these practices improved operational robustness and facilitated deploy
     \label{fig:RTpath}
 \end{figure}
 
-The purpose of the pathway data model was to transform fragmented operational records into a series of standardised pathway events capable of supporting interval analysis. A key challenge identified during development was individual source systems recorded only portions of the over all oncology pathway. Consequently, no single source provided a complete end-to-end view from referral to treatment initiation. 
+The purpose of the pathway data model was to transform fragmented operational records into a series of standardised pathway events capable of supporting interval analysis. A key challenge identified during development was individual source systems recorded only portions of the overall oncology pathway. Consequently, no single source provided a complete end-to-end view from referral to treatment initiation. 
 
 The pathway model therefore adopted a canonical event-based approach. Individual operational events were mapped to a common set of pathway milestones including referral receipt, oncology triage, first clinic appointment, radiotherapy referral, CT simulation, and treatment commencement. These events were subsequently linked through patient identifiers and temporal matching logic to create an integrated representation of each patient pathway. 
 
@@ -124,7 +141,7 @@ From these canonical events, a series of operational intervals were derived, inc
 
 The use of standardised pathway events aligned with Design Principle 3, ensuring that all metrics were derived consistently across source systems and remained traceable to their originating records. Figure \ref{fig:RTpath} illustrates the relationship between pathway events, source systems, and derived performance milestones.
 
-\subsubsection{Dashboard Development}
+\subsection{Dashboard Development}
 
 Three operational dashboards were developed using Microsoft Power BI. Each dashboard was designed to support a distinct operational management task while sharing a common data repository and data model. 
 
@@ -136,7 +153,9 @@ The Post-MDT Pathway Overview dashboard integrated data from both oncology and r
 
 A fourth dashboard addressing Systemic Anti-Cancer Therapy (SACT) pathways was identified during requirements elicitation. However, due to the lack of a reliable and stable SACT data source during the study period, this component was deferred for future development.
 
-\subsubsection{Iterative Artefact Refinement}
+Rather than producing a single all-purpose dashboard, functionality was distributed across multiple focused dashboards. This approach aligned with ISO 9241-110 principles by supporting specific operational tasks while reducing visual complexity. Users were therefore presented with information relevant to individual operational decisions rather than a large collection of unrelated metrics.
+
+\subsection{Iterative Artefact Refinement}
 Artefact development followed an iterative process consistent with Design Science Research principles. Successive prototypes were demonstrated to operational stakeholders, with feedback being incorporated into later design iterations. 
 
 The first development cycle focused on radiotherapy operational management. Initial prototypes concentrated on patient tracking and waiting-time performance; however, stakeholder feedback identified a need for greater visibility of future demand and available treatment capacity. This led to the development of capacity-demand forecasting visuals and booking risk indicators. 
@@ -147,16 +166,7 @@ The third development cycle focused on integrated pathway analysis. Stakeholders
 
 These iterative refinements ensured that the artefact remained closely aligned with operational requirements while simultaneously providing evidence regarding the effectiveness of the proposed design principles.
 
-\subsubsection{ETL and Data Harmonisation}
-Data harmonisation presented a significant challenge due to variation in identifier quality, inconsistent recording practices, and differences in operational workflows between source systems. 
 
-NHS numbers were used as the primary identifier wherever possible and were standardised during transformation to remove formatting inconsistencies. Date formats were similarly harmonised to support accurate interval calculations across systems. 
-
-The oncology referral dataset presented particular challenges because it functioned as an operational activity log rather than a controlled referral register. Multiple records were frequently associated with the same oncology episode, reflecting administrative updates, onward referrals, and pathway exceptions. Intermediate transformation views were therefore developed to consolidate records and create a single analytical representation of each referral episode. 
-
-Additional business rules were implemented to identify external-provider referrals, duplicate records, deferred follow-up appointments, and non-standard pathways. These rules allowed operational reporting to focus on patients actively progressing through the pathway while preserving the underlying source data for audit purposes. 
-
-Following transformation and quality-control activities, analytics-ready fact tables were constructed for oncology pathways, radiotherapy pathways, and integrated referral-to-treatment pathways. These fact tables formed the data source for all dashboard visualisations and performance metrics.
 
 \subsection{Data Quality Management}
 
@@ -166,25 +176,45 @@ Business rules were used to identify duplicate referral episodes, exclude non-st
 
 Data-quality findings were also treated as a research outcome in their own right, providing insight into the operational limitations of existing pathway-monitoring processes and informing recommendations for future pathway digitisation initiatives.
 
+The discovery of these data-quality issues highlighted limitations in existing operational reporting processes. In particular, the distinction between administrative workflow events and true pathway events emerged as a recurring challenge. This finding informed the design of the pathway data model and represents an additional practical contribution of the study.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{7cm}|p{7cm}|}
+        \hline
+        \textbf{Artefact Component} & \textbf{Research Objective} \\
+        \hline\hline
+        IDR Architecture & Objective 3 \\
+        Oncology Dashboard & Objective 4 \\
+        RT Dashboard & Objective 4 \\
+        Pathway Dashboard & Objective 1 \\
+        Evaluation Activities \\ Objective 5 \\
+        Design Principles \\ Objective 6 \\
+        \hline
+    \end{tabular}
+    \caption{Artefact to Research Objective mapping}
+    \label{tab:art-obj-map}
+\end{table}
+
 \section{Design Principles} \label{DP}
 Design principles represent the design knowledge contribution of this study. They are formulated using a standard DSR structure: \emph{context, intervention}, and \emph{rationale}. These initial principles are refined following evaluation.
 
-\subsection*{DP1: Surface Breach Risks as a Leading Indicator}
+\subsubsection*{DP1: Surface Breach Risks as a Leading Indicator}
 If operational teams must prioritise actions in time-constrained cancer pathways, then dashboards should surface leading indicators of breach risk (e.g. days remaining to breach thresholds), because prospective visibility enables earlier and more effective intervention than retrospective compliance metrics. 
 
-\subsection*{DP2: Pair Risk Information with Actionable Capacity Data}
+\subsubsection*{DP2: Pair Risk Information with Actionable Capacity Data}
 If users are expected to act on identified risks, then risk indicators should be presented alongside relevant capacity and demand information, because risk awareness without visible operational levers does not support decision-making.
 
-\subsection*{DP3: Use Canonical, Standard-Aligned Pathway Events}
+\subsubsection*{DP3: Use Canonical, Standard-Aligned Pathway Events}
 If pathway metrics are to be trusted and comparable, then all intervals should be derived from canonical event definitions aligned to NCWTMDS rules, because inconsistent definitions undermine credibility and evaluation validity. 
 
-\subsection*{DP4: Match Data Refresh Cadence to the Action Horizon}
+\subsubsection*{DP4: Match Data Refresh Cadence to the Action Horizon}
 If decisions depend on short operational windows, then data refresh frequency should be aligned to the decision horizon (e.g. daily or near–real-time where feasible), because stale information degrades decision quality.
 
-\subsection*{DP5: Preserve Data Provenance and Auditability}
+\subsubsection*{DP5: Preserve Data Provenance and Auditability}
 If analytics are deployed in regulated healthcare environments, then all derived metrics must maintain transparent provenance to source systems, because trust, governance, and reconciliation are essential for adoption.
 
-\subsection*{DP6: Align Interaction Design with Real Operational Tasks}
+\subsubsection*{DP6: Align Interaction Design with Real Operational Tasks}
 If dashboards are intended to support complex operational work, then interaction design should reflect users’ real task sequences, because task-aligned interfaces reduce cognitive load and improve decision quality \citep{internationalorganizationforstandardization2020}.
 
 These principles directly inform both the IDR architecture and the dashboard design, and serve as evaluation criteria in Section \ref{EvalStrat}.
