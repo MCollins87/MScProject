@@ -4,7 +4,7 @@
 
 This research adopts a Design Science Research (DSR) methodology to address an operational problem in NHS oncology services: the lack of integrated, actionable visibility of delays between MDT outcomes and treatment initiation. DSR is particularly suitable for this study because it explicitly focuses on the design, construction, and evaluation of an artefact intended to improve a real-world organisational context, while generating transferable design knowledge \citep{hevner2004}.
 
-The primary artefact developed in this study is a lightweight-integrated data repository (IDR) and decision-support dashboard, designed to consolidate post-MDT pathway data and support operational decision-making. In addition to the artefact itself, the research produces a set of evaluated design principles for oncology operational analytics, constituting a contribution to knowledge beyond the local implementation. 
+The primary artefact developed in this study is a lightweight Integrated Data Repository (IDR) and decision-support dashboard, designed to consolidate post-MDT pathway data and support operational decision-making. In addition to the artefact itself, the research produces a set of evaluated design principles for oncology operational analytics, constituting a contribution to knowledge beyond the local implementation. 
 
 \subsection{Justification for Design Science Research}
 Several methodological approaches were considered. A case study methodology would have enabled detailed examination of post-MDT operational processes but would not have provided a structured framework for the design and evaluation of an intervention. Action Research was also considered because of its focus on organisational change and practitioner involvement. However, Action Research typically requires repeated cycles of intervention and measurement within live operational environments. In cancer pathway management, allowing breaches to occur in order to evaluate an intervention would be ethically and operationally undesirable given the known relationship between treatment delays and patient outcomes. 
@@ -26,7 +26,7 @@ Solution objectives were derived through a requirements elicitation process comb
 
 \section{Design and Development}
 
-The design and development stage focused on constructing an Integrated Data Repository (IDR) and a suite of operational decision-support dashboards. Development was undertaken iteratively using successive cycles of prototyping, evaluation and refinement with operational stakeholders. 
+The design and development stage focused on constructing an IDR and a suite of operational decision-support dashboards. Development was undertaken iteratively using successive cycles of prototyping, evaluation and refinement with operational stakeholders. 
 
 The design and development activity involved two tightly coupled components:
 \begin{enumerate}
@@ -96,7 +96,7 @@ The architecture deliberately separated raw operational data from analytical rep
 \begin{figure}
     \centering
     \includegraphics[width=0.5\linewidth]{LogicalArchitecture.png}
-    \caption{Logical Architecture of the Integrated Data Repository}
+    \caption{Logical Architecture of the  IDR}
     \label{fig:LogicalArch}
 \end{figure}
 
@@ -160,7 +160,7 @@ Artefact development followed an iterative process consistent with Design Scienc
 
 The first development cycle focused on radiotherapy operational management. Initial prototypes concentrated on patient tracking and waiting-time performance; however, stakeholder feedback identified a need for greater visibility of future demand and available treatment capacity. This led to the development of capacity-demand forecasting visuals and booking risk indicators. 
 
-The second development cycle focused on oncology referral management. Early versions primarily reported referral volumes and clinic activity. User feedback indicated a stronger operational requirement for active waiting-list management, prompting the addition of patient-group classifications, current booked waits, and referral work-lists prioritised by waiting time. 
+The second development cycle focused on oncology referral management. Early versions primarily reported referral volumes and clinic activity. User feedback indicated a stronger operational requirement for active waiting-list management, prompting the addition of patient-group classifications, current booked waits, and referral worklists prioritised by waiting time. 
 
 The third development cycle focused on integrated pathway analysis. Stakeholders identified a need to understand where delays accumulated across the patient journey rather than within individual operational areas. This resulted in the development of pathway-stage metrics and a cumulative waterfall visual illustrating time spent between referral, triage, clinic attendance, radiotherapy referral, CT simulation, and treatment initiation. 
 
