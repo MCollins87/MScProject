@@ -2,16 +2,16 @@
 
 \section{Overview of Research Design}
 
-This research adopts a Design Science Research (DSR) methodology to address an operational problem in NHS oncology services: the lack of integrated, actionable visibility of delays between MDT outcomes and treatment initiation. DSR is particuarly suitable for this study because it explicitly focuses on the design, construction, and evaluation of an artefact intended to improve a real-world organisational context, while generating transferable design knowledge \citep{hevner2004}.
+This research adopts a Design Science Research (DSR) methodology to address an operational problem in NHS oncology services: the lack of integrated, actionable visibility of delays between MDT outcomes and treatment initiation. DSR is particularly suitable for this study because it explicitly focuses on the design, construction, and evaluation of an artefact intended to improve a real-world organisational context, while generating transferable design knowledge \citep{hevner2004}.
 
-The primary artefact developed in this study is a lightweight integrated data repository (IDR) ad decision-support dashboard, designed to consolidate post-MDT pathway data and support operational decision-making. In addition to the artefact itself, the research produces a set of evaluated design principles for oncology operational analytics, constituting a contribution to knowledge beyond the local implementation. 
+The primary artefact developed in this study is a lightweight-integrated data repository (IDR) and decision-support dashboard, designed to consolidate post-MDT pathway data and support operational decision-making. In addition to the artefact itself, the research produces a set of evaluated design principles for oncology operational analytics, constituting a contribution to knowledge beyond the local implementation. 
 
 \subsection{Justification for Design Science Research}
-Several methodological approaches were considered. A case study methodology would have enabled detailed examination of post-MDT operational processes but woud not have provided a structured framework for the design and evaluation of an intervention. Action Research was also considered because of its focus on organisational change and practitioner involvement. However, Action Research typically requires repeated cycles of intervention and measurement within live operational environments. In cancer pathway management, allowing breaches to occur in order to evaluate an intervention would be ethically and operationally undesirable given the known relationship between treatment delays and patient outcomes. 
+Several methodological approaches were considered. A case study methodology would have enabled detailed examination of post-MDT operational processes but would not have provided a structured framework for the design and evaluation of an intervention. Action Research was also considered because of its focus on organisational change and practitioner involvement. However, Action Research typically requires repeated cycles of intervention and measurement within live operational environments. In cancer pathway management, allowing breaches to occur in order to evaluate an intervention would be ethically and operationally undesirable given the known relationship between treatment delays and patient outcomes. 
 
 Design Science Research was therefore selected because it provides a rigorous framework for designing, developing, and evaluating an artefact intended to solve a real-world organisational problem while simultaneously generating transferable knowledge. DSR has been widely applied within healthcare informatics, clinical decision support, and data integration research where new technological artefacts are required to address operational challenges \citep{hevner2004, peffers2007}.
 
-Unlike traditional continuous-improvement approaches such as Plan-Do-Check-Act (PDCA), cancer pathway management cannot rely solely on post-hoc measurement of outcomes. A breach of the 31-day or 62-day standard represents a clinically meaningful delay that may adversely affect patient outcomes. Consequently, operational management must emphasise proactive identification and mitigation of risk rather than retrospective evaluation alone. The design objective of the proposed dashboard is therefore not simply to identify breaches after they occur, but to provide leading indicators that enable intervention before delays become clinically significant.
+Unlike traditional continuous-improvement approaches such as Plan-Do-Check-Act (PDCA), cancer pathway management cannot rely solely on post hoc measurement of outcomes. A breach of the 31-day or 62-day standard represents a clinically meaningful delay that may adversely affect patient outcomes. Consequently, operational management must emphasise proactive identification and mitigation of risk rather than retrospective evaluation alone. The design objective of the proposed dashboard is therefore not simply to identify breaches after they occur, but to provide leading indicators that enable intervention before delays become clinically significant.
 
 Case study research was rejected because the objective of this study extends beyond understanding operational delays to designing and evaluating a technological intervention intended to address them. Similarly, Action Research was considered unsuitable because it emphasises organisational change through repeated intervention cycles, whereas the primary contribution of this study is the creation and evaluation of an information systems artefact.
 
@@ -19,7 +19,7 @@ Case study research was rejected because the objective of this study extends bey
 The study follows the Design Science Research Methodology (DSRM) proposed by \cite{peffers2007}, which structures DSR into six interrelated activities. These activities are applied iteratively rather than strictly linearly. 
 
 \subsection{Problem Identification and Motivation}
-The problem identification phase was undertaken using a combination of retrospective pathway analysis, operational observations, and literature synthesis. Local cancer waiting time reports and patient tracking data were reviewed to identify recurring delays between MDT outcomes, first oncology consultation, decision-to-treat, and treatment initiation. Findings were triangulated with evidence from the literature review, which demonstrated similar challenges accross NHS organisations. This process established the need for an integrated operational analytics solution capable of identifying bottlenecks before breaches occur. 
+The problem identification phase was undertaken using a combination of retrospective pathway analysis, operational observations, and literature synthesis. Local cancer waiting time reports and patient tracking data were reviewed to identify recurring delays between MDT outcomes, first oncology consultation, decision-to-treat, and treatment initiation. Findings were triangulated with evidence from the literature review, which demonstrated similar challenges across NHS organisations. This process established the need for an integrated operational analytics solution capable of identifying bottlenecks before breaches occur. 
 
 \subsection{Objectives of a Solution}
 Solution objectives were derived through a requirements elicitation process combining literature-derived design requirements, operational needs identified through pathway review, and information requirements associated with national cancer waiting time standards. Requirements were grouped into data integration, operational monitoring, decision support, and usability domains.
@@ -62,7 +62,7 @@ Oncology clinic activity was extracted from the Trust's Patient Administrative S
 
 Radiotherapy operational data comprised referral, CT simulation and treatment events extracted from the local Oncology Information System - Aria for Radiation Oncology. 
 
-Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therfore excluded at this time, but design principles leave including SACT treatments at a later date. 
+Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therefore excluded at this time, but design principles leave including SACT treatments at a later date. 
 
 The selected source systems reflected the operational stages of the post-MDT pathway. Together, these systems captured referral management, clinic scheduling, radiotherapy planning, and treatment delivery activities. However, each system was developed independently and used different data structures, identifiers, and reporting mechanisms. Consequently, substantial transformation and harmonisation activities were required before integrated pathway analysis could be performed. 
 
@@ -89,9 +89,9 @@ The architecture followed a layered design consisting of:
     \item Power BI dashboards.
 \end{itemize}
 
-This seperation of concerns simplified troubleshooting, improved transparency, and preserved data lineage throughout the repository. 
+This separation of concerns simplified troubleshooting, improved transparency, and preserved data lineage throughout the repository. 
 
-The architecture deliberately separated raw operational data from analytical representations. Staging tables preserved source extracts in their original form, intermediate views applied business rules and data-quality controls, and fact tables provided analytics-ready datasets for dashboard consumption. This separationreduced coupling between source systems and reporting outputs while supporting auditability and future extension of the repository (See Figure \ref{fig:LogicalArch}). 
+The architecture deliberately separated raw operational data from analytical representations. Staging tables preserved source extracts in their original form, intermediate views applied business rules and data-quality controls, and fact tables provided analytics-ready datasets for dashboard consumption. This separation reduced coupling between source systems and reporting outputs while supporting auditability and future extension of the repository (See Figure \ref{fig:LogicalArch}). 
 
 \begin{figure}
     \centering
@@ -119,7 +119,7 @@ Although the artefact was developed as a research prototype, several software-en
 
 Logging was implemented throughout the ETL process to support monitoring, troubleshooting, and auditability. All major extractions, transformation and loading activities produced structured log entries allowing operational issues to be investigated retrospectively.
 
-Database credentials and configuration settings were externalised through environment variables rather than being embedded directly within the application code. This approach aligns with principles outlined within the Twelve-Factor App methodology, seperating configuration from code and reducing the risk of credential exposure. 
+Database credentials and configuration settings were externalised through environment variables rather than being embedded directly within the application code. This approach aligns with principles outlined within the Twelve-Factor App methodology, separating configuration from code and reducing the risk of credential exposure. 
 
 Together, these practices improved operational robustness and facilitated deployment across development and production environments without modification to application source code. 
 
@@ -160,7 +160,7 @@ Artefact development followed an iterative process consistent with Design Scienc
 
 The first development cycle focused on radiotherapy operational management. Initial prototypes concentrated on patient tracking and waiting-time performance; however, stakeholder feedback identified a need for greater visibility of future demand and available treatment capacity. This led to the development of capacity-demand forecasting visuals and booking risk indicators. 
 
-The second development cycle focused on oncology referral management. Early versions primarily reported referral volumes and clinic activity. User feedback indicated a stronger operational requirement for active waiting-list management, prompting the addition of patient-group classifications, current booked waits, and referral worklists prioritised by waiting time. 
+The second development cycle focused on oncology referral management. Early versions primarily reported referral volumes and clinic activity. User feedback indicated a stronger operational requirement for active waiting-list management, prompting the addition of patient-group classifications, current booked waits, and referral work-lists prioritised by waiting time. 
 
 The third development cycle focused on integrated pathway analysis. Stakeholders identified a need to understand where delays accumulated across the patient journey rather than within individual operational areas. This resulted in the development of pathway-stage metrics and a cumulative waterfall visual illustrating time spent between referral, triage, clinic attendance, radiotherapy referral, CT simulation, and treatment initiation. 
 
@@ -261,7 +261,7 @@ The study operates within UK GDPR and NHS data governance requirements. All data
 \begin{itemize}
     \item \textbf{Single-site study:} The artefact will be developed and evaluated within a single NHS Trust, which may limit generalisability.
     \item \textbf{Data quality and availability:} Findings depend on the completeness and accuracy of source systems.
-    \item \textbf{Retrospective data:} Restrospective data may not fully represent future operational conditions.
+    \item \textbf{Retrospective data:} Retrospective data may not fully represent future operational conditions.
     \item \textbf{Usability sample size:} Evaluation participants are likely to represent a relatively small operational user population. 
     \item \textbf{Artificial evaluation environment:} Demonstration scenarios may not fully replicate live decision-making environments.
     \item \textbf{DSR limitation:} Evaluation assesses utility and usability rather than directly measuring improvements in patient outcomes.
