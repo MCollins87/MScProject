@@ -6,46 +6,47 @@ A level-1 auxiliary file: 01_Intro.aux
 A level-1 auxiliary file: 02_Literature.aux
 A level-1 auxiliary file: 03_Method.aux
 A level-1 auxiliary file: 04_Results_Analysis.aux
+A level-1 auxiliary file: 05_Discussion.aux
 Database file #1: ./Project.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 39 entries,
+You've used 40 entries,
             3108 wiz_defined-function locations,
-            928 strings with 16393 characters,
-and the built_in function-call counts, 31853 in all, are:
-= -- 2326
-> -- 1875
-< -- 40
-+ -- 723
-- -- 672
-* -- 2704
-:= -- 4725
+            936 strings with 16566 characters,
+and the built_in function-call counts, 32262 in all, are:
+= -- 2357
+> -- 1885
+< -- 42
++ -- 727
+- -- 675
+* -- 2728
+:= -- 4792
 add.period$ -- 35
-call.type$ -- 39
-change.case$ -- 415
-chr.to.int$ -- 43
-cite$ -- 39
-duplicate$ -- 2303
-empty$ -- 2067
-format.name$ -- 769
-if$ -- 6273
+call.type$ -- 40
+change.case$ -- 420
+chr.to.int$ -- 44
+cite$ -- 40
+duplicate$ -- 2343
+empty$ -- 2103
+format.name$ -- 773
+if$ -- 6353
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 474
-newline$ -- 124
-num.names$ -- 158
-pop$ -- 915
+missing$ -- 481
+newline$ -- 127
+num.names$ -- 162
+pop$ -- 926
 preamble$ -- 1
-purify$ -- 376
+purify$ -- 381
 quote$ -- 0
-skip$ -- 1035
+skip$ -- 1050
 stack$ -- 0
-substring$ -- 1215
-swap$ -- 1490
-text.length$ -- 27
+substring$ -- 1226
+swap$ -- 1509
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 348
+type$ -- 357
 warning$ -- 0
-while$ -- 182
+while$ -- 185
 width$ -- 0
-write$ -- 457
+write$ -- 469

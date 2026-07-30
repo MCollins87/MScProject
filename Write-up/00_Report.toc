@@ -1,80 +1,96 @@
-\contentsline {chapter}{\numberline {1}Introduction}{4}{}%
-\contentsline {section}{\numberline {1.1}Problem Statement}{4}{}%
-\contentsline {section}{\numberline {1.2}Research Aim and Objectives}{5}{}%
-\contentsline {subsection}{\numberline {1.2.1}Research Aim}{5}{}%
-\contentsline {subsection}{\numberline {1.2.2}Objectives}{5}{}%
-\contentsline {section}{\numberline {1.3}Research Approach}{6}{}%
-\contentsline {section}{\numberline {1.4}Academic and Practical Significance}{6}{}%
-\contentsline {chapter}{\numberline {2}Literature Review}{8}{}%
-\contentsline {section}{\numberline {2.1}Introduction}{8}{}%
-\contentsline {subsection}{\numberline {2.1.1}Method}{9}{}%
-\contentsline {section}{\numberline {2.2}The NHS Cancer Pathway and MDT Framework}{10}{}%
-\contentsline {subsection}{\numberline {2.2.1}MDTs as the Backbone of UK Cancer Care}{10}{}%
-\contentsline {subsection}{\numberline {2.2.2}Evidence of MDT Operational Pressures}{10}{}%
-\contentsline {subsection}{\numberline {2.2.3}National policy direction and waiting time standards}{11}{}%
-\contentsline {section}{\numberline {2.3}Operational Delays in Cancer Pathways}{11}{}%
-\contentsline {subsection}{\numberline {2.3.1}Diagnosis-to-Treatment Interval (DTI) as a Critical Metric}{11}{}%
-\contentsline {subsection}{\numberline {2.3.2}Hospital/System Factors Influencing Delay}{12}{}%
-\contentsline {subsection}{\numberline {2.3.3}MDT-specific drivers of post-decision delays}{12}{}%
-\contentsline {subsection}{\numberline {2.3.4}Critical synthesis of delay literature}{13}{}%
-\contentsline {section}{\numberline {2.4}Data Fragmentation and the Need for Integrated Data Repositories}{13}{}%
-\contentsline {subsection}{\numberline {2.4.1}Fragmentation Across NHS Systems}{13}{}%
-\contentsline {subsection}{\numberline {2.4.2}Clinical Data Warehouses (CDWs) and the Evolution Toward IDRs}{14}{}%
-\contentsline {subsection}{\numberline {2.4.3}Need for IDRs in NHS Operational Oncology}{15}{}%
-\contentsline {section}{\numberline {2.5}Dashboards, Operational Analytics, and Decision-Support Systems}{15}{}%
-\contentsline {subsection}{\numberline {2.5.1}The Role of Dashboards in Performance Management}{15}{}%
-\contentsline {subsection}{\numberline {2.5.2}Clinical Decision-Support Dashboards and Multimodal Data}{16}{}%
-\contentsline {subsection}{\numberline {2.5.3}Comparative Analysis of Dashboard Implementations}{16}{}%
-\contentsline {subsection}{\numberline {2.5.4}Data Quality and Informatics Challenges}{16}{}%
-\contentsline {subsection}{\numberline {2.5.5}Reactive versus Proactive Operational Management}{16}{}%
-\contentsline {section}{\numberline {2.6}Usability, HCI, and ISO 9241‑110}{17}{}%
-\contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{17}{}%
-\contentsline {section}{\numberline {2.8}Synthesis of Gaps}{18}{}%
-\contentsline {section}{\numberline {2.9}Summary}{19}{}%
-\contentsline {chapter}{\numberline {3}Methodology}{21}{}%
-\contentsline {section}{\numberline {3.1}Overview of Research Design}{21}{}%
-\contentsline {subsection}{\numberline {3.1.1}Justification for Design Science Research}{21}{}%
-\contentsline {section}{\numberline {3.2}Design Science Research Framework}{22}{}%
-\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{22}{}%
-\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{22}{}%
-\contentsline {section}{\numberline {3.3}Design and Development}{23}{}%
-\contentsline {subsection}{\numberline {3.3.1}Requirements Elicitation}{23}{}%
-\contentsline {subsection}{\numberline {3.3.2}Source System Analysis}{23}{}%
-\contentsline {subsection}{\numberline {3.3.3}Data Integration Strategy}{24}{}%
-\contentsline {subsection}{\numberline {3.3.4}ETL Architecture}{24}{}%
-\contentsline {subsection}{\numberline {3.3.5}Data Harmonisation and Business Rules}{25}{}%
-\contentsline {subsection}{\numberline {3.3.6}Software Engineering and Operational Design}{27}{}%
-\contentsline {subsection}{\numberline {3.3.7}Pathway Data Model}{27}{}%
-\contentsline {subsection}{\numberline {3.3.8}Dashboard Development}{29}{}%
-\contentsline {subsection}{\numberline {3.3.9}Iterative Artefact Refinement}{29}{}%
-\contentsline {subsection}{\numberline {3.3.10}Data Quality Management}{30}{}%
-\contentsline {section}{\numberline {3.4}Design Principles}{31}{}%
-\contentsline {section}{\numberline {3.5}Evaluation Strategy}{32}{}%
-\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{32}{}%
-\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{32}{}%
-\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{32}{}%
-\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{32}{}%
-\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{32}{}%
-\contentsline {subsection}{\numberline {3.6.1}Research Limitations}{33}{}%
-\contentsline {section}{\numberline {3.7}Summary}{33}{}%
-\contentsline {chapter}{\numberline {4}Results and Analysis}{34}{}%
-\contentsline {section}{\numberline {4.1}Introduction}{34}{}%
-\contentsline {section}{\numberline {4.2}Repository Development Results}{34}{}%
-\contentsline {section}{\numberline {4.3}Oncology Referral Analysis}{35}{}%
-\contentsline {subsection}{\numberline {4.3.1}Referral Workload}{35}{}%
-\contentsline {subsection}{\numberline {4.3.2}Booking and Clinic Lead Times}{35}{}%
-\contentsline {subsection}{\numberline {4.3.3}Future Booked Waits}{36}{}%
-\contentsline {subsection}{\numberline {4.3.4}Incomplete Outcome Recording}{36}{}%
-\contentsline {section}{\numberline {4.4}Radiotherapy Service Analysis}{36}{}%
-\contentsline {subsection}{\numberline {4.4.1}Operational Workload}{36}{}%
-\contentsline {subsection}{\numberline {4.4.2}Capacity Utilisation}{36}{}%
-\contentsline {subsection}{\numberline {4.4.3}Patient Risk Stratification}{37}{}%
-\contentsline {section}{\numberline {4.5}End-to-End Pathway Analysis}{38}{}%
-\contentsline {subsection}{\numberline {4.5.1}Pathway Duration}{38}{}%
-\contentsline {subsection}{\numberline {4.5.2}Bottleneck Identification}{38}{}%
-\contentsline {subsection}{\numberline {4.5.3}Temporal Trends}{39}{}%
-\contentsline {subsection}{\numberline {4.5.4}Research Question 1}{39}{}%
-\contentsline {section}{\numberline {4.6}Evaluation of Design Principles}{40}{}%
-\contentsline {section}{\numberline {4.7}Summary}{40}{}%
-\contentsline {chapter}{References}{41}{}%
-\contentsline {chapter}{List of Acronyms}{46}{}%
+\contentsline {chapter}{Acknowledgements}{2}{section*.1}%
+\contentsline {chapter}{List of Acronyms}{7}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Introduction}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Problem Statement}{9}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Research Aim and Objectives}{10}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Research Aim}{10}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objectives}{10}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Research Approach}{11}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Academic and Practical Significance}{11}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Literature Review}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Method}{14}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}The NHS Cancer Pathway and MDT Framework}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}MDTs as the Backbone of UK Cancer Care}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Evidence of MDT Operational Pressures}{15}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}National policy direction and waiting time standards}{16}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Operational Delays in Cancer Pathways}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Diagnosis-to-Treatment Interval (DTI) as a Critical Metric}{16}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Hospital/System Factors Influencing Delay}{17}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}MDT-specific drivers of post-decision delays}{17}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Critical synthesis of delay literature}{18}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}Data Fragmentation and the Need for Integrated Data Repositories}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Fragmentation Across NHS Systems}{18}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Clinical Data Warehouses (CDWs) and the Evolution Toward IDRs}{19}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Need for IDRs in NHS Operational Oncology}{20}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Dashboards, Operational Analytics, and Decision-Support Systems}{20}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}The Role of Dashboards in Performance Management}{20}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Clinical Decision-Support Dashboards and Multimodal Data}{21}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Comparative Analysis of Dashboard Implementations}{21}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}Data Quality and Informatics Challenges}{21}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Reactive versus Proactive Operational Management}{21}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Usability, HCI, and ISO 9241‑110}{22}{section.2.6}%
+\contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{22}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Synthesis of Gaps}{23}{section.2.8}%
+\contentsline {section}{\numberline {2.9}Summary}{24}{section.2.9}%
+\contentsline {chapter}{\numberline {3}Methodology}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview of Research Design}{26}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Justification for Design Science Research}{26}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Design Science Research Framework}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{27}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Design and Development}{28}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Requirements Elicitation}{28}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Source System Analysis}{28}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Data Integration Strategy}{29}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}ETL Architecture}{29}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Data Harmonisation and Business Rules}{30}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Software Engineering and Operational Design}{32}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Pathway Data Model}{32}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Dashboard Development}{34}{subsection.3.3.8}%
+\contentsline {subsection}{\numberline {3.3.9}Iterative Artefact Refinement}{34}{subsection.3.3.9}%
+\contentsline {subsection}{\numberline {3.3.10}Data Quality Management}{35}{subsection.3.3.10}%
+\contentsline {section}{\numberline {3.4}Design Principles}{36}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Evaluation Strategy}{37}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{37}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{37}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{37}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{37}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{37}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Research Limitations}{38}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.7}Summary}{38}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Results and Analysis}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Repository Development Results}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Oncology Referral Analysis}{40}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Referral Workload}{40}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Booking and Clinic Lead Times}{40}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Future Booked Waits}{41}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Incomplete Outcome Recording}{41}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Radiotherapy Service Analysis}{41}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Operational Workload}{41}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Capacity Utilisation}{42}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Patient Risk Stratification}{42}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}End-to-End Pathway Analysis}{43}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Pathway Duration}{43}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Bottleneck Identification}{44}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Temporal Trends}{44}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Research Question 1}{44}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Evaluation of Design Principles}{45}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Summary}{45}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Discussion and Conclusions}{46}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{46}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Discussion of Research Question 1}{46}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Discussion of Research Question 2}{47}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Artefact Evaluation}{48}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Evaluation of Design Principles}{49}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Reflections and Lessons Learned}{50}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Limitations}{50}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Future Work}{51}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Integration of Digital Referral Pathways}{51}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}CT-to-Treatment Decomposition}{51}{subsection.5.8.2}%
+\contentsline {subsection}{\numberline {5.8.3}Clinic Capacity Modelling}{51}{subsection.5.8.3}%
+\contentsline {subsection}{\numberline {5.8.4}SACT Integration}{52}{subsection.5.8.4}%
+\contentsline {subsection}{\numberline {5.8.5}Predictive Analytics}{52}{subsection.5.8.5}%
+\contentsline {section}{\numberline {5.9}Conclusion}{52}{section.5.9}%
+\contentsline {chapter}{References}{53}{section.5.9}%

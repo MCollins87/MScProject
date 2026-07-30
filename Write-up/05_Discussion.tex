@@ -7,11 +7,13 @@ This chapter discusses the findings presented in Chapter \ref{results} in relati
 
 The primary objective of this study was to improve visibility of delays occurring between MDT outcome and treatment initiation. Analysis of the integrated pathway demonstrated that delays were not distributed evenly across the pathway. Rather, two stages accounted for the majority of elapsed time: triage-to-clinic attendance (8 days) and CT simulation-to-treatment initiation (16 days). 
 
-The triage-to-clinic interval represents a period during which referrals are reviewed, prioritised, booked, and ultimately seen by an oncologist. Although the observed interval remained well within national cancer waiting time standards, it nevertheless represented a meaningful proportion of the overall pathway duration. This finding suggests that clinic access capacity remains an important determinant of pathway flow and warrants continued operational monitoring. 
+The triage-to-clinic interval represents a period during which referrals are reviewed, prioritised, booked, and ultimately seen by an oncologist. Although the observed interval remained well within national cancer waiting time standards, it nevertheless represented a meaningful proportion of the overall pathway duration. This finding suggests that clinic access remains an important determinant of pathway flow and warrants continued operational monitoring. 
 
 The CT simulation-to-treatment interval represented the largest component of the pathway. However, unlike other pathway stages, this interval does not correspond to a single operational activity. Instead, it encompasses multiple planning processes including target contouring, treatment planning, peer review, quality assurance activities, and treatment booking. Consequently, the current analysis identifies where time accumulates but cannot yet determine which individual planning activities contribute most significantly to delay. 
 
-These findings support the argument presented within the literature that aggregated treatment interval metrics provide limited understanding of operational bottlenecks. By decomposing the pathway into canonical events, the artefact provided substantially greater visibility than traditional compliance reporting.
+These findings support the argument presented within the literature that aggregated treatment interval metrics provide limited understanding of operational bottlenecks. Studies including \cite{hanna2020}, \cite{sharma2016}, and \cite{villemure-poliquin2025} demonstrate the clinical importance of reducing diagnosis-to-treatment intervals. However, such studies typically evaluate the pathway as a single interval and therefore provide limited insight into where delays actually occur. 
+
+By decomposing the pathway into canonical operational events, the artefact developed in this study provides a more granular understanding of delay accumulation. This addresses a gap identified in the literature, where operational managers often lack visibility of downstream workflow stages following MDT decision-making \citep{soukup2022, law2024}. Rather than simply measuring compliance with national standards, the repository enables identification of specific pathway stages where operational intervention may have the greatest impact.  
 
 \section{Discussion of Research Question 2}
 \textbf{What operational factors are associated with delay?}
@@ -22,7 +24,19 @@ First, increasing future clinic waits were observed despite relatively short his
 
 Second, data-quality issues emerged as an operational factor in their own right. A substantial number of clinic appointments lacked recorded outcomes, while duplicate referral records and inconsistent pathway representations required extensive harmonisation during ETL processing. These findings indicate that administrative recording practices can influence both operational visibility and service-management effectiveness. 
 
+The identified data-quality issues were not primarily attributable to technical system failures but were frequently associated with manual administrative processes, retrospective data entry, and the use of locally maintained operational tracking systems. This observation suggests that limitations in operational visibility may arise as much from process design as from analytical capability. 
+
+Although implementation of digital referral processes was outside the scope of the present study, the findings provide supporting evidence for ongoing organisational initiatives seeking to replace manual referral-management activities with structured electronic workflows. At the time of writing, the first Urology-to-Oncology electronic referral pathway has recently been introduced within the organisation. Future integration of these structured referral datasets may reduce transcription errors, improve data completeness, and enhance pathway visibility. 
+
+More broadly, these findings are aligned with the strategic direction described within the NHS 10 Year Health Plan for England, which advocates a transition from analogue to digital working practices and identifies reduction of administrative burden as a key enabler of service transformation. The data-quality challenges identified during repository development therefore provide a practical example of how structured digital data capture may improve both operational efficiency and analytical capability. \citep{DHSC2025} 
+
+The importance of these findings is consistent with observations from repository and data-integration literature. \cite{gagalova2020} highlight data harmonisation as a recurring challenge in healthcare repositories, while \cite{varma2026} identify inconsistencies between operational cancer datasets arising from differing definitions and recording practices. Similarly, the present study found that substantial effort was required to reconcile operational data before reliable pathway metrics could be produced.
+
 Third, radiotherapy demand was observed to operate close to departmental planning thresholds. Although utilisation remained within operationally manageable levels, average projected utilisation exceeded the internal planning threshold of 80\%. This finding highlights the importance of balancing efficiency with sufficient flexibility to accommodate urgent treatments and unplanned events.
+
+This finding is consistent with the literature gap identified in Chapter \ref{lit}, where operational delays are frequently attributed to organisational factors but are rarely examined through integrated operational datasets capable of exposing underlying workflow and information-management challenges.
+
+These findings suggest that operational factors influencing pathway performance extend beyond capacity and scheduling constraints to include data quality, recording practices, and information-management processes.
 
 \section{Artefact Evaluation}
 The artefact successfully achieved its primary objective of providing integrated operational visibility across previously disconnected stages of the post-MDT oncology pathway. 
@@ -32,6 +46,8 @@ From a technical perspective, the repository successfully integrated data from m
 From an operational perspective, the dashboard suite provided users with visibility of referral activity, clinic performance, radiotherapy capacity, and end-to-end pathway progression. The separation of functionality across multiple dashboards appeared to support task-focused operational workflows without overwhelming users with excessive information. 
 
 Importantly, the development process demonstrated that substantial value can be obtained from relatively lightweight integration architectures. Rather than replacing existing systems, the artefact created a unified analytical layer across existing operational data sources.
+
+The artefact also demonstrated how a relatively lightweight repository can deliver operational value without the complexity associated with large-scale enterprise data warehouses. In contrast to many oncology repositories described within the literature, which are designed primarily for research, genomics, or population-health applications, the present repository was developed specifically to support operational workflow management. This distinction represents a practical contribution to healthcare informatics and illustrates how established repository principles can be applied within everyday NHS operational environments. 
 
 \section{Evaluation of Design Principles}
 The Design Principles developed in Chapter \ref{method} were intended to represent transferable knowledge extending beyond the specific implementation used in this study. 
@@ -48,12 +64,18 @@ DP6 was supported through iterative stakeholder engagement and the creation of t
 
 Collectively, the evaluation suggests that all six design principles remain valid and may have applicability beyond the specific organisational setting studied.
 
+The design principles developed throughout this study are consistent with observations from dashboard, usability, and operational analytics literature. In particular, the importance of proactive risk identification aligns with concerns raised in the literature regarding the limitations of retrospective performance reporting. Similarly, the emphasis on capacity-aware decision support reflects the need for actionable operational intelligence rather than passive presentation of performance data alone.
+
+The evaluation therefore provides preliminary evidence that these principles may have applicability beyond the specific organisational context investigated during this study. 
+
 \section{Reflections and Lessons Learned}
 Several important lessons emerged during the development process. 
 
 The most significant lesson related to data quality. Initial assumptions suggested that the primary challenge would involve technical integration of multiple systems. In practice, the greater challenge involved understanding operational processes and interpreting inconsistently recorded data. 
 
 The project also highlighted the value of Design Science Research for healthcare informatics projects. The iterative nature of the methodology enabled technical development to remain aligned with operational requirements while simultaneously generating transferable design knowledge. 
+
+An additional lesson concerned the relationship between operational processes and data quality. Initially, data-quality issues were viewed primarily as technical challenges requiring harmonisation within the repository. However, analysis demonstrated that many issues originated from manual administrative workflows rather than technical limitations. This shifted the focus from data correction towards consideration of process redesign and digital data capture, highlighting the close relationship between operational practice and analytical quality.
 
 Finally, the study reinforced the importance of stakeholder engagement. Several dashboard features and pathway metrics evolved considerably following operational feedback. This iterative refinement improved both the utility and relevance of the final artefact.
 
@@ -70,15 +92,23 @@ Third, the CT simulation-to-treatment interval represents an aggregation of mult
 Finally, evaluation focused primarily on operational utility and usability rather than direct patient outcomes. Consequently, although the artefact provides improved operational visibility, the extent to which it contributes to improved clinical outcomes remains outside the scope of the present study.
 
 \section{Future Work}
-\subsection{Clinic Capacity Modelling}
-Future development should incorporate clinic-capacity modelling and appointment-type classification to better understand demand distribution across new-patient, follow-up, and review clinics. This would provide greater visibility of capacity utilisation and allow more detailed investigation of factors influencing access to first oncology appointments.
 
-\subsection{Digital Referral Forms}
 
-The project identified several data-quality issues attributable to manually maintained processes and retrospective transcription of referral information. Future work should investigate the implementation of structured digital referral forms containing standardised mandatory fields and validation rules. Such an approach may improve data quality while reducing ETL complexity.
+\subsection{Integration of Digital Referral Pathways}
+
+Several data-quality issues identified during repository development were associated with manual data entry, transcription, and the use of locally maintained operational tracking systems. Structured digital referral processes have the potential to improve data completeness, reduce transcription errors, and increase consistency of pathway-event recording. 
+
+At the time of writing, organisational work is already underway to replace manual referral processes with electronic referral forms, with the first Urology-to-Oncology referral pathway becoming operational during the final stages of this project. This development represents a positive step towards capturing structured referral data at source and reducing reliance on retrospective administrative data entry. 
+
+Future work should focus on integrating these emerging digital referral datasets into the Integrated Data Repository. Similar to the planned integration of Systemic Anti-Cancer Therapy (SACT) data following the regional system upgrade, incorporation of structured referral data would improve data quality, enhance pathway visibility, and reduce the need for downstream data harmonisation. As additional tumour pathways adopt electronic referral processes, the repository architecture developed during this study provides a foundation for incorporating these new data sources into a unified operational analytics platform.
+
+The recommendation to integrate emerging digital referral datasets is also consistent with the wider strategic direction described within the NHS 10 Year Health Plan for England \citep{DHSC2025}. In particular, the plan identifies a transition from analogue to digital ways of working and the reduction of administrative burden through improved use of technology. The data-quality issues identified during this study provide practical evidence of the challenges associated with manually maintained operational processes and further support the case for structured digital data capture at source.
 
 \subsection{CT-to-Treatment Decomposition}
 The current pathway model treats CT simulation-to-treatment as a single interval. Future repository development should introduce additional canonical events representing contouring, treatment planning, peer review, quality assurance, and treatment booking activities. This would provide a more granular understanding of where delays occur within the treatment-planning process.
+
+\subsection{Clinic Capacity Modelling}
+Future development should incorporate clinic-capacity modelling and appointment-type classification to better understand demand distribution across new-patient, follow-up, and review clinics. This would provide greater visibility of capacity utilisation and allow more detailed investigation of factors influencing access to first oncology appointments.
 
 \subsection{SACT Integration}
 A key future enhancement involves integration of Systemic Anti-Cancer Therapy (SACT) data following completion of the planned Cancer Network-wide system upgrade. Incorporating SACT treatment events would enable end-to-end analysis of all major treatment modalities and provide a more comprehensive representation of post-MDT oncology pathways.
@@ -93,4 +123,6 @@ The repository identified that delays are concentrated primarily within the tria
 
 Beyond the artefact itself, the study contributes a set of evaluated design principles for operational oncology analytics that may be transferable to other healthcare organisations facing similar challenges relating to fragmented data and pathway visibility. 
 
-The findings therefore contribute both practical value for operational cancer services and academic value through the generation of reusable design knowledge for healthcare informatics.
+In contrast to many oncology data repositories described within the literature, the artefact was designed specifically to support operational workflow management rather than research data reuse. The study therefore contributes both a practical solution and evidence regarding the application of Design Science Research within NHS operational analytics.
+
+The findings therefore contribute both practical value for operational cancer services and academic value through the generation of reusable design knowledge for healthcare operational analytics.

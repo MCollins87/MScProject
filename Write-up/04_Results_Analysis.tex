@@ -14,14 +14,18 @@ The use of intermediate integration views allowed business rules to be applied w
 The repository subsequently became the single source of truth for all dashboard metrics and pathway analysis. 
 
 \section{Oncology Referral Analysis}
-\begin{figure}
-    \includegraphics[width=\linewidth]{DB_Onc.png}
+
+\subsection{Referral Workload}
+ Figure \ref{fig:DB_Onc} presents the Oncology Referral Dashboard developed to support management of referral workload, appointment access, and clinic outcome recording. 
+
+ \begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{DB_Onc.png}
     \caption{Operational Oncology Referral Dashboard}
     \label{fig:DB_Onc}
 \end{figure}
 
-\subsection{Referral Workload}
-Analysis of the oncology referral dashboard identified 23 active oncology referrals at the time of analysis. While this represents a manageable operational workload, variation was observed in waiting times between referral and clinic attendance. 
+ Analysis of the oncology referral dashboard identified 23 active oncology referrals at the time of analysis. While this represents a manageable operational workload, variation was observed in waiting times between referral and clinic attendance. 
 
 The distribution of patient waits demonstrated that the majority of patients were clustered within the first three weeks following referral. Smaller numbers of patients remained on the waiting list beyond six weeks, suggesting that the majority of referrals progressed through the booking process relatively efficiently.
 
@@ -47,12 +51,19 @@ The dashboard identified 275 historical clinic appointments without recorded out
 This finding represents a significant data-quality issue because pathway progression, attendance analysis, and downstream performance reporting depend upon accurate recording of appointment outcomes. The presence of a large number of unresolved appointments highlights the importance of integrated operational monitoring and demonstrates how the artefact can reveal process weaknesses that may not be visible through conventional reporting. 
 
 \section{Radiotherapy Service Analysis}
-\begin{figure}
-    \includegraphics[width=\linewidth]{DB_RT.png}
+
+
+\subsection{Operational Workload}
+
+Figure \ref{fig:DB_RT} illustrates the Radiotherapy Service Health Dashboard developed to support monitoring of utilisation, demand forecasting, and patient risk status.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{DB_RT.png}
     \caption{Radiotherapy Capacity and Demand Dashboard}
     \label{fig:DB_RT}
 \end{figure}
-\subsection{Operational Workload}
+
 The radiotherapy dashboard identified 204 active patients undergoing management within the radiotherapy pathway.
 
 In addition, 32 future referrals were predicted to enter the service under a 62-day pathway, defined as oncology referrals booked into Clinical Oncology clinic. This provides operational managers with advance visibility of future demand and supports proactive planning of treatment capacity. 
@@ -78,13 +89,20 @@ Although the majority of patients remained within the recommended timeframes, th
 Rather than identifying breaches retrospectively, the dashboard allows operational teams to focus attention on patients most likely to experience future delays. 
 
 \section{End-to-End Pathway Analysis}
-\begin{figure}
-    \includegraphics[width=\linewidth]{DB_Overview.png}
+
+
+\subsection{Pathway Duration}
+
+Figure \ref{fig:DB_Over} presents the integrated pathway dashboard, combining referral, clinic, and radiotherapy data to visualise pathway progression and identify bottlenecks.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.85\textwidth]{DB_Overview.png}
     \caption{Integrated Post-MDT Pathway Dashboard}
     \label{fig:DB_Over}
 \end{figure}
-\subsection{Pathway Duration}
-The integrated pathway dashboard enabled analysis of patient progression from referral through to treatment initiation.
+
+The integrated pathway dashboard (Figure \ref{fig:DB_Over}) enabled analysis of patient progression from referral through to treatment initiation.
 
 The median pathway duration was 37 days and was composed of five principal operational stages:
 
@@ -103,12 +121,14 @@ The median pathway duration was 37 days and was composed of five principal opera
         \textbf{Total} & \textbf{37} \\
         \hline
     \end{tabular}
+    \caption{Median duration between canonical events in the Radiotherapy post-MDT pathway}
+    \label{tab:path_dur}
 \end{table}
 
 \subsection{Bottleneck Identification}
-The largest delay occurred between CT simulation and treatment commencement, accounting for 16 days of the overall pathway.
+The cumulative waterfall visual shown in Figure \ref{fig:DB_Over} demonstrates the largest delay occurred between CT simulation and treatment commencement, accounting for 16 days of the overall pathway.
 
-The second largest delay occurred between triage and first clinic attendance, accounting for 8 days.
+The second-largest delay occurred between triage and first clinic attendance, accounting for 8 days.
 
 Together these two stages represented approximately two-thirds of the total pathway duration, suggesting that operational improvement efforts should be concentrated in these areas.
 
@@ -159,6 +179,8 @@ These stages therefore represent the most significant opportunities for operatio
         DP6: Task-Oriented Design & Separate referral, radiotherapy and pathway dashboards aligned to operational workflows \\
         \hline
     \end{tabular}
+    \caption{Artefact evidence of Design Principles}
+    \label{tab:DP-Art}
 \end{table}
 
 The evaluation suggests that all six design principles were successfully implemented within the final artefact.
@@ -168,6 +190,6 @@ Particularly strong support was observed for DP1 and DP2. Operational users were
 \section{Summary}
 The developed IDR successfully integrated multiple operational datasets and enabled detailed analysis of post-MDT oncology workflows. Repository development exposed several data quality challenges while establishing a unified analytical platform for operational decision support.
 
-Analysis of oncology referrals demonstrated relatively efficient referral processing but highlighted growing pressure on future clinic capacity. Radiotherapy analysis identified manageable overall utilisation but a small cohort of higher-risk patients requiring ongoing monitoring.
+Analysis of oncology referrals demonstrated relatively efficient referral processing while also highlighting the importance of distinguishing first-appointment activity from ongoing follow-up workload.
 
 End-to-end pathway analysis demonstrated that the greatest delays occur between CT simulation and treatment initiation, with an additional contribution arising between triage and first clinic attendance. These findings provide evidence-based targets for future service improvement initiatives and demonstrate the practical utility of the developed artefact for operational oncology management.

@@ -16,6 +16,7 @@
 \usepackage{amssymb} % for additional fonts and symbols
 \usepackage{acronym} % for list of acronyms
 \usepackage{draftwatermark}
+\usepackage{hyperref}
 \SetWatermarkText{DRAFT}
 \SetWatermarkScale{5}
 \raggedbottom
@@ -29,33 +30,76 @@
 % Title Page
 \begin{titlepage}
     \centering
-    {\Large University of Essex Online\par}
-    \vspace{1.5cm}
-    {\Huge\bfseries Post-MDT Oncology Workflow Bottlenecks: A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start.\par}
-    \vspace{2cm}
-    {\Large Mark Collins}
-    \vfill
-    A dissertation submitted in partial fulfilment\\
-    of the requirements for the degree of\\
-    Master of Science (MSc) in Enterprise IT Management\\
+    % Logo
+    \includegraphics[width=0.35\textwidth]{logo.png}\\
     \vspace{1cm}
-    {\large \today\par}
+    {\Large\textsc{University of Essex Online}\par}
+    \vspace{1.5cm}
+    {\Huge\bfseries Post-MDT Oncology Workflow Bottlenecks:\\[0.4cm] 
+    A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start.}\\
+    \vspace{2cm}
+    {\Large Mark Collins}\\[0.5cm]
+    {\large Student ID: 12696434}\\[1cm]
+    \vspace{1cm}
+    \rule{0.8\textwidth}{0.5pt}\\
+    \vspace{0.5cm}
+    {\large A dissertation submitted in partial fulfilment of the requirements for the degree of\\[0.3cm]
+    \textbf{Master of Science (MSc)} \\ Enterprise IT Management}
+    \vspace{1cm}
+    \rule{0.8\textwidth}{0.5pt}
+    \vfill
+    {\large Submitted: \today}
 \end{titlepage}
+
+\begin{abstract}
+    Delays between multidisciplinary team (MDT) decision-making and treatment initiation remain a significant challenge within National Health Service (NHS) cancer pathways. Operational data relevant to these workflows are frequently distributed across multiple systems, limiting visibility of bottlenecks and reducing the ability of service managers to intervene proactively. This study applied a Design Science Research (DSR) methodology to design, develop, and evaluate an Integrated Data Repository (IDR) and decision-support dashboard suite for post-MDT oncology pathway management within Portsmouth Hospitals University NHS Trust. 
+    
+    The artefact integrated oncology referral, outpatient clinic, and radiotherapy datasets using an automated extract-transform-load (ETL) architecture implemented in Python and PostgreSQL. A layered repository design incorporating staging, transformation, and analytics-ready reporting layers was developed to support pathway analysis and operational reporting. Three Power BI dashboards were produced to support referral management, radiotherapy service management, and end-to-end pathway monitoring. 
+    
+    Analysis of integrated pathway data identified a median post-MDT pathway duration of 37 days. The largest delay occurred between CT simulation and treatment initiation (16 days), followed by the interval between triage and first oncology clinic attendance (8 days). Repository development also identified previously unrecognised operational data-quality issues including duplicate referral records, incomplete clinic outcome recording, and inconsistencies between operational systems. The developed dashboards provided visibility of active pathway risks, radiotherapy capacity utilisation, and operational bottlenecks not readily observable through existing reporting processes. 
+    
+    The study contributes both a practical artefact and a set of evaluated design principles for operational oncology analytics. Findings demonstrate that meaningful improvements in operational visibility can be achieved through lightweight data integration approaches without replacing existing clinical systems. Future work should focus on integration of structured digital referrals, Systemic Anti-Cancer Therapy (SACT) datasets, clinic-capacity modelling, and further decomposition of treatment-planning workflows.
+\end{abstract}
+
+\clearpage 
+\phantomsection 
+\addcontentsline{toc}{chapter}{Acknowledgements} 
+\vspace*{\fill} 
+\begin{center} 
+    {\bfseries Acknowledgements} 
+\end{center} 
+\vspace{0.8cm} 
+
+I would like to express my sincere gratitude to my supervisor, Adrian Euler, for his guidance, encouragement, and constructive feedback throughout this research project. His support and expertise were invaluable in shaping both the direction and quality of this dissertation. 
+
+I am also grateful to colleagues within Portsmouth Hospitals University NHS Trust who generously shared their knowledge and expertise of operational oncology workflows and participated in the evaluation of the developed artefact. Their insights provided essential real-world context and helped ensure the practical relevance of this study. 
+
+Finally, I would like to express my deepest appreciation to my family for their unwavering support, patience, and encouragement throughout the past two years of study. In particular, I am profoundly grateful to my wife, Abi, whose constant belief in me, understanding, and support made the completion of this programme possible. 
+\vspace*{\fill} 
+\clearpage
+
 
 \setcounter{tocdepth}{1}
 \tableofcontents
+\clearpage
+\listoffigures
+\clearpage
+\listoftables
+\clearpage
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\input{acronym}
 
 \include{01_Intro}
 \include{02_Literature}
 \include{03_Method}
 \include{04_Results_Analysis}
+\include{05_Discussion}
 
 \addcontentsline{toc}{chapter}{References}
 \bibliography{./Project}
 
-\chapter*{List of Acronyms}
-\addcontentsline{toc}{chapter}{List of Acronyms}
-\input{acronym}
+
 
 \end{document}
     

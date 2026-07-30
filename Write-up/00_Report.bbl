@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
@@ -77,6 +77,11 @@ Conway, Alicia-Marie, Concannon, Matthew, Brown, Steven, Hussain, Humera,
 Dawson, Christian~W. (2015) \textit{Projects in {{Computing}} and {{Information
   Systems}}: {{A Student}}'s {{Guide}}}, 3rd ed., Pearson, Harlow
 
+\bibitem[{{Department of Health and Social Care}(2025)}]{DHSC2025}
+{Department of Health and Social Care} (2025) \textit{Fit for the Future: The
+  10 Year Health Plan for England}, Tech. Rep. CP 1350, Department of Health
+  and Social Care, London
+
 \bibitem[{Gagalova \textit{et~al.}(2020)Gagalova, Elizalde, {Portales-Casamar}
   and G{\"o}rges}]{gagalova2020}
 Gagalova, Kristina~K., Elizalde, M. Angelica~Leon, {Portales-Casamar}, Elodie
@@ -129,8 +134,8 @@ Hevner, Alan~R, March, Salvatore~T, Park, Jinsoo and Ram, Sudha (2004)
   \enquote{Design {{Science}} in {{Information Systems Research}},} \textit{MIS
   Quarterly}, 28(1)
 
-\bibitem[{Hunkirchen()}]{hunkirchen}
-Hunkirchen, Peter () \enquote{Guidelines and {{Standards}},}
+\bibitem[{Hunkirchen(n.d.)}]{hunkirchen}
+Hunkirchen, Peter (n.d.) \enquote{Guidelines and {{Standards}},}
   https://www.usability-ux.fit.fraunhofer.de/en/guidelines-and-standards.html
 
 \bibitem[{{International Organization for
