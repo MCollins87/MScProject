@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.30)  30 JUL 2026 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.30)  30 JUL 2026 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -699,87 +699,87 @@ Chapter 3.
 
 
 ]
-Overfull \hbox (1.2259pt too wide) in paragraph at lines 14--15
+Overfull \hbox (1.2259pt too wide) in paragraph at lines 28--29
 []\OT1/cmr/m/n/12 Unlike tra-di-tional continuous-improvement ap-proaches such 
 as Plan-Do-Check-Act (PDCA),
  []
 
-
-Overfull \hbox (0.26755pt too wide) in paragraph at lines 25--26
+[27]
+Overfull \hbox (0.26755pt too wide) in paragraph at lines 39--40
 \OT1/cmr/m/n/12 Solution ob-jec-tives were de-rived through a re-quire-ments el
 ic-i-ta-tion pro-cess com-bin-ing literature-
  []
 
-[27]
-Overfull \hbox (25.42563pt too wide) in paragraph at lines 44--45
+[28]
+Overfull \hbox (25.42563pt too wide) in paragraph at lines 58--59
 \OT1/cmr/m/n/12 Initial re-quire-ments were gath-ered through dis-cus-sions wit
 h op-er-a-tional man-agers within Portsmouth
  []
 
-[28]
-Overfull \hbox (1.20238pt too wide) in paragraph at lines 79--80
+[29]
+Overfull \hbox (1.20238pt too wide) in paragraph at lines 93--94
 \OT1/cmr/m/n/12 greSQL. In-di-vid-ual ETL pro-cesses were cre-ated for each sou
 rce dataset and or-ches-trated through
  []
 
-[29]
-<LogicalArchitecture.png, id=630, 845.1575pt x 1909.1325pt>
+[30]
+<LogicalArchitecture.png, id=641, 845.1575pt x 1909.1325pt>
 File: LogicalArchitecture.png Graphic file (type png)
 <use LogicalArchitecture.png>
-Package pdftex.def Info: LogicalArchitecture.png  used on input line 98.
+Package pdftex.def Info: LogicalArchitecture.png  used on input line 112.
 (pdftex.def)             Requested size: 290.22107pt x 655.59268pt.
- [30] [31 <./LogicalArchitecture.png>]
-<RTPathwayDataLineage.png, id=642, 452.69125pt x 804.00375pt>
+ [31] [32 <./LogicalArchitecture.png>]
+<RTPathwayDataLineage.png, id=652, 452.69125pt x 804.00375pt>
 File: RTPathwayDataLineage.png Graphic file (type png)
 <use RTPathwayDataLineage.png>
-Package pdftex.def Info: RTPathwayDataLineage.png  used on input line 131.
+Package pdftex.def Info: RTPathwayDataLineage.png  used on input line 145.
 (pdftex.def)             Requested size: 362.77264pt x 644.29575pt.
- [32] [33 <./RTPathwayDataLineage.png>] [34]
-Overfull \hbox (8.00081pt too wide) in paragraph at lines 173--174
+ [33] [34 <./RTPathwayDataLineage.png>] [35]
+Overfull \hbox (8.00081pt too wide) in paragraph at lines 187--188
 \OT1/cmr/m/n/12 Exploratory anal-y-sis iden-ti-fied sev-eral data-quality chal-
 lenges in-clud-ing du-pli-cate re-fer-ral records,
  []
 
-[35] [36] [37]) [38]
+[36] [37] [38]) [39]
 \openout2 = `04_Results_Analysis.aux'.
 
  (./04_Results_Analysis.tex
 Chapter 4.
-[39
+[40
 
 
 
 
 ]
-<DB_Onc.png, id=701, 1418.29875pt x 793.96625pt>
+<DB_Onc.png, id=711, 1418.29875pt x 793.96625pt>
 File: DB_Onc.png Graphic file (type png)
 <use DB_Onc.png>
 Package pdftex.def Info: DB_Onc.png  used on input line 23.
 (pdftex.def)             Requested size: 411.14528pt x 230.1595pt.
- [40 <./DB_Onc.png>]
-<DB_RT.png, id=710, 1418.29875pt x 793.96625pt>
+ [41 <./DB_Onc.png>]
+<DB_RT.png, id=720, 1418.29875pt x 793.96625pt>
 File: DB_RT.png Graphic file (type png)
 <use DB_RT.png>
 Package pdftex.def Info: DB_RT.png  used on input line 62.
 (pdftex.def)             Requested size: 411.14528pt x 230.1595pt.
- [41] [42 <./DB_RT.png>]
-<DB_Overview.png, id=731, 1418.29875pt x 793.96625pt>
+ [42] [43 <./DB_RT.png>]
+<DB_Overview.png, id=741, 1418.29875pt x 793.96625pt>
 File: DB_Overview.png Graphic file (type png)
 <use DB_Overview.png>
 Package pdftex.def Info: DB_Overview.png  used on input line 100.
 (pdftex.def)             Requested size: 411.14528pt x 230.1595pt.
- [43 <./DB_Overview.png>]
-[44]) [45]
+ [44 <./DB_Overview.png>]
+[45]) [46]
 \openout2 = `05_Discussion.aux'.
 
  (./05_Discussion.tex
 Chapter 5.
-[46
+[47
 
 
 
 
-] [47] [48] [49] [50] [51]) [52] (./00_Report.bbl [53
+] [48] [49] [50] [51] [52]) [53] (./00_Report.bbl [54
 
 
 
@@ -804,7 +804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--140
 ://www.usability-
  []
 
-[54] [55]
+[55] [56]
 Underfull \hbox (badness 10000) in paragraph at lines 213--216
 []\OT1/cmr/m/n/12 NHS Dig-i-tal (2026) `Can-cer Wait-ing Times Data Col-lec-tio
 n (CWT),'
@@ -816,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--216
 d-data-sets/data-
  []
 
-[56]) [57] (./00_Report.aux (./01_Intro.aux) (./02_Literature.aux)
+[57]) [58] (./00_Report.aux (./01_Intro.aux) (./02_Literature.aux)
 (./03_Method.aux) (./04_Results_Analysis.aux) (./05_Discussion.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -834,13 +834,13 @@ Package rerunfilecheck Info: File `00_Report.out' has not changed.
 (rerunfilecheck)             Checksum: 9FA6D642A12E3341E9FDBA89D14D1432;7895.
  ) 
 Here is how much of TeX's memory you used:
- 11717 strings out of 474222
- 180427 string characters out of 5748732
+ 11723 strings out of 474222
+ 180527 string characters out of 5748732
  1936975 words of memory out of 5000000
- 33515 multiletter control sequences out of 15000+600000
+ 33518 multiletter control sequences out of 15000+600000
  565992 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,13n,79p,976b,676s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69i,13n,79p,976b,678s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
@@ -849,10 +849,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm1200.pfb>
-Output written on 00_Report.pdf (58 pages, 915131 bytes).
+Output written on 00_Report.pdf (59 pages, 917935 bytes).
 PDF statistics:
- 975 PDF objects out of 1000 (max. 8388607)
- 874 compressed objects within 9 object streams
- 262 named destinations out of 1000 (max. 500000)
+ 986 PDF objects out of 1000 (max. 8388607)
+ 884 compressed objects within 9 object streams
+ 265 named destinations out of 1000 (max. 500000)
  393 words of extra memory for PDF output out of 10000 (max. 10000000)
 

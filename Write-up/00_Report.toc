@@ -35,62 +35,63 @@
 \contentsline {section}{\numberline {2.9}Summary}{24}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Methodology}{26}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of Research Design}{26}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Justification for Design Science Research}{26}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Design Science Research Framework}{27}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{27}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{27}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.1.1}Research Philosophy and Methodological Positioning}{26}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Justification for Design Science Research}{27}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Design Science Research Framework}{28}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Problem Identification and Motivation}{28}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Objectives of a Solution}{28}{subsection.3.2.2}%
 \contentsline {section}{\numberline {3.3}Design and Development}{28}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Requirements Elicitation}{28}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Source System Analysis}{28}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Data Integration Strategy}{29}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}ETL Architecture}{29}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Data Harmonisation and Business Rules}{30}{subsection.3.3.5}%
-\contentsline {subsection}{\numberline {3.3.6}Software Engineering and Operational Design}{32}{subsection.3.3.6}%
-\contentsline {subsection}{\numberline {3.3.7}Pathway Data Model}{32}{subsection.3.3.7}%
-\contentsline {subsection}{\numberline {3.3.8}Dashboard Development}{34}{subsection.3.3.8}%
-\contentsline {subsection}{\numberline {3.3.9}Iterative Artefact Refinement}{34}{subsection.3.3.9}%
-\contentsline {subsection}{\numberline {3.3.10}Data Quality Management}{35}{subsection.3.3.10}%
+\contentsline {subsection}{\numberline {3.3.1}Requirements Elicitation}{29}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Source System Analysis}{29}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Data Integration Strategy}{30}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}ETL Architecture}{30}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Data Harmonisation and Business Rules}{31}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Software Engineering and Operational Design}{33}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Pathway Data Model}{33}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Dashboard Development}{35}{subsection.3.3.8}%
+\contentsline {subsection}{\numberline {3.3.9}Iterative Artefact Refinement}{35}{subsection.3.3.9}%
+\contentsline {subsection}{\numberline {3.3.10}Data Quality Management}{36}{subsection.3.3.10}%
 \contentsline {section}{\numberline {3.4}Design Principles}{36}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Evaluation Strategy}{37}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{37}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{37}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{37}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{37}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{37}{section.3.6}%
+\contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{38}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{38}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Technical Validity}{38}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{38}{subsection.3.5.4}%
+\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{38}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Research Limitations}{38}{subsection.3.6.1}%
-\contentsline {section}{\numberline {3.7}Summary}{38}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Results and Analysis}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{39}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Repository Development Results}{39}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Oncology Referral Analysis}{40}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Referral Workload}{40}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Booking and Clinic Lead Times}{40}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Future Booked Waits}{41}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.4}Incomplete Outcome Recording}{41}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Radiotherapy Service Analysis}{41}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Operational Workload}{41}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Capacity Utilisation}{42}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Patient Risk Stratification}{42}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}End-to-End Pathway Analysis}{43}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Pathway Duration}{43}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Bottleneck Identification}{44}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Temporal Trends}{44}{subsection.4.5.3}%
-\contentsline {subsection}{\numberline {4.5.4}Research Question 1}{44}{subsection.4.5.4}%
-\contentsline {section}{\numberline {4.6}Evaluation of Design Principles}{45}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Summary}{45}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Discussion and Conclusions}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{46}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Discussion of Research Question 1}{46}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Discussion of Research Question 2}{47}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Artefact Evaluation}{48}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Evaluation of Design Principles}{49}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Reflections and Lessons Learned}{50}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Limitations}{50}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Future Work}{51}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Integration of Digital Referral Pathways}{51}{subsection.5.8.1}%
-\contentsline {subsection}{\numberline {5.8.2}CT-to-Treatment Decomposition}{51}{subsection.5.8.2}%
-\contentsline {subsection}{\numberline {5.8.3}Clinic Capacity Modelling}{51}{subsection.5.8.3}%
-\contentsline {subsection}{\numberline {5.8.4}SACT Integration}{52}{subsection.5.8.4}%
-\contentsline {subsection}{\numberline {5.8.5}Predictive Analytics}{52}{subsection.5.8.5}%
-\contentsline {section}{\numberline {5.9}Conclusion}{52}{section.5.9}%
-\contentsline {chapter}{References}{53}{section.5.9}%
+\contentsline {section}{\numberline {3.7}Summary}{39}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Results and Analysis}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Repository Development Results}{40}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Oncology Referral Analysis}{41}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Referral Workload}{41}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Booking and Clinic Lead Times}{41}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Future Booked Waits}{42}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Incomplete Outcome Recording}{42}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Radiotherapy Service Analysis}{42}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Operational Workload}{42}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Capacity Utilisation}{43}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Patient Risk Stratification}{43}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}End-to-End Pathway Analysis}{44}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Pathway Duration}{44}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Bottleneck Identification}{45}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Temporal Trends}{45}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}Research Question 1}{45}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}Evaluation of Design Principles}{46}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Summary}{46}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Discussion and Conclusions}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Discussion of Research Question 1}{47}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Discussion of Research Question 2}{48}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Artefact Evaluation}{49}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Evaluation of Design Principles}{50}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Reflections and Lessons Learned}{51}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Limitations}{51}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Future Work}{52}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Integration of Digital Referral Pathways}{52}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}CT-to-Treatment Decomposition}{52}{subsection.5.8.2}%
+\contentsline {subsection}{\numberline {5.8.3}Clinic Capacity Modelling}{52}{subsection.5.8.3}%
+\contentsline {subsection}{\numberline {5.8.4}SACT Integration}{53}{subsection.5.8.4}%
+\contentsline {subsection}{\numberline {5.8.5}Predictive Analytics}{53}{subsection.5.8.5}%
+\contentsline {section}{\numberline {5.9}Conclusion}{53}{section.5.9}%
+\contentsline {chapter}{References}{54}{section.5.9}%
