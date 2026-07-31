@@ -55,6 +55,8 @@ Both components were developed iteratively, guided by explicit design principles
 
 \subsection{Requirements Elicitation}
 
+Requirements were elicited through discussions with operational managers, radiotherapy service managers, and clinical stakeholders involved in post-MDT pathway management.
+
 Initial requirements were gathered through discussions with operational managers within Portsmouth Oncology Centre, review of existing reporting processes, and analysis of pathway-monitoring activities. Particular attention was paid to identifying operational questions that could not be answered efficiently using existing systems. 
 
 Key requirements included:
@@ -79,6 +81,20 @@ Radiotherapy operational data comprised referral, CT simulation and treatment ev
 Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therefore excluded at this time, but design principles leave including SACT treatments at a later date. 
 
 The selected source systems reflected the operational stages of the post-MDT pathway. Together, these systems captured referral management, clinic scheduling, radiotherapy planning, and treatment delivery activities. However, each system was developed independently and used different data structures, identifiers, and reporting mechanisms. Consequently, substantial transformation and harmonisation activities were required before integrated pathway analysis could be performed. 
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{7cm}|p{7cm}|}
+        \hline
+        \textbf{Source} & \textbf{Purpose} \\
+        \hline
+        Sharepoint Referral Register & Oncology Referrals \\
+        PAS & Clinic Activity \\
+        Aria RO & RT workflow \\
+        \hline
+    \end{tabular}
+    \caption{Source Systems Summary}
+\end{table}
 
 \subsection{Data Integration Strategy}
 
@@ -129,7 +145,7 @@ Several previously unrecognised data-quality issues were identified during explo
 
 \subsection{Software Engineering and Operational Design}
 
-Although the artefact was developed as a research prototype, several software-engineering practices were incorporated to improve reliability and maintainability.
+Although the artefact was developed as a research prototype, several software-engineering practices were incorporated to improve reliability and maintainability.reness without visible operational levers does not support 
 
 Logging was implemented throughout the ETL process to support monitoring, troubleshooting, and auditability. All major extractions, transformation and loading activities produced structured log entries allowing operational issues to be investigated retrospectively.
 
@@ -245,14 +261,11 @@ Evaluation combines formative and summative methods across four dimensions.
 \end{itemize}
 
 \subsection{Utility and Effectiveness}
+
 \begin{itemize}
-    \item Task-based experiment with operational users
-    \item Primary measures:
-    \begin{itemize}
-        \item time-to-answer key operational questions,
-        \item accuracy of breach-risk identification,
-        \item decision quality in constrained scheduling scenarios
-    \end{itemize}
+    \item SUS
+    \item Stakeholder feedback
+    \item Design principle validation
 \end{itemize}
 
 \subsection{Technical Validity}

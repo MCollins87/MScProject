@@ -1,0 +1,48 @@
+\chapter{Example ETL and Business Rules}\label{appendix:etl}
+
+\section{Identifier Standardisation}
+NHS numbers were standardised during transformation to remove formatting inconsistencies and improve matching across source systems. 
+
+\begin{verbatim} 
+    REPLACE(nhs_number,' ','') 
+\end{verbatim}
+
+\section{Referral Consolidation Logic} 
+
+The oncology referral register contained multiple administrative records relating to individual referral episodes. Intermediate integration views consolidated these records into a single analytical representation. 
+
+\begin{verbatim} 
+    Multiple referral updates 
+    ↓ 
+    Business-rule consolidation 
+    ↓ 
+    Single referral episode 
+\end{verbatim}
+
+\section{Radiotherapy Pathway Status Classification} 
+
+\begin{verbatim} 
+    CASE 
+        WHEN has_completed = 1 THEN 'Treated' 
+        WHEN has_cancelled = 1 THEN 'Closed - Cancelled' 
+        WHEN has_active_booking = 1 THEN 'Active' 
+        WHEN booking_completed_date IS NOT NULL 
+            THEN 'Closed - No Treatment' 
+        ELSE 'Awaiting Booking' 
+    END 
+\end{verbatim}
+
+\section{Canonical Pathway Events} 
+
+The repository transformed operational events into standardised pathway milestones: 
+
+\begin{enumerate} 
+    \item Referral Received 
+    \item Oncology Triage 
+    \item First Oncology Clinic 
+    \item Radiotherapy Referral 
+    \item CT Simulation 
+    \item Treatment Commencement 
+\end{enumerate} 
+
+These events provided the basis for interval calculations and pathway analysis.

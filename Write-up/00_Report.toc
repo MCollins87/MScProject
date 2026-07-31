@@ -32,7 +32,7 @@
 \contentsline {section}{\numberline {2.6}Usability, HCI, and ISO 9241‑110}{22}{section.2.6}%
 \contentsline {section}{\numberline {2.7}AI‑Enabled MDT Systems and Emerging Technologies}{22}{section.2.7}%
 \contentsline {section}{\numberline {2.8}Synthesis of Gaps}{23}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Summary}{24}{section.2.9}%
+\contentsline {section}{\numberline {2.9}Summary}{25}{section.2.9}%
 \contentsline {chapter}{\numberline {3}Methodology}{26}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Overview of Research Design}{26}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Research Philosophy and Methodological Positioning}{26}{subsection.3.1.1}%
@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {3.3.1}Requirements Elicitation}{29}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Source System Analysis}{29}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Data Integration Strategy}{30}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}ETL Architecture}{30}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.4}ETL Architecture}{31}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}Data Harmonisation and Business Rules}{31}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}Software Engineering and Operational Design}{33}{subsection.3.3.6}%
 \contentsline {subsection}{\numberline {3.3.7}Pathway Data Model}{33}{subsection.3.3.7}%
@@ -52,13 +52,13 @@
 \contentsline {subsection}{\numberline {3.3.9}Iterative Artefact Refinement}{35}{subsection.3.3.9}%
 \contentsline {subsection}{\numberline {3.3.10}Data Quality Management}{36}{subsection.3.3.10}%
 \contentsline {section}{\numberline {3.4}Design Principles}{36}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Evaluation Strategy}{37}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Evaluation Strategy}{38}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Usability Evaluation}{38}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Utility and Effectiveness}{38}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}Technical Validity}{38}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Design Knowledge Evaluation}{38}{subsection.3.5.4}%
-\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{38}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Research Limitations}{38}{subsection.3.6.1}%
+\contentsline {section}{\numberline {3.6}Ethical and Governance Considerations}{39}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Research Limitations}{39}{subsection.3.6.1}%
 \contentsline {section}{\numberline {3.7}Summary}{39}{section.3.7}%
 \contentsline {chapter}{\numberline {4}Results and Analysis}{40}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{40}{section.4.1}%
@@ -102,4 +102,15 @@
 \contentsline {section}{\numberline {A.2}System Usability Scale Results}{62}{section.A.2}%
 \contentsline {section}{\numberline {A.3}Operational Value Assessment}{62}{section.A.3}%
 \contentsline {section}{\numberline {A.4}Design Principle Validation}{63}{section.A.4}%
-\contentsline {section}{\numberline {A.5}Qualitative Feedback}{63}{section.A.5}%
+\contentsline {section}{\numberline {A.5}Qualitative Feedback}{64}{section.A.5}%
+\contentsline {chapter}{\numberline {B}Integrated Data Repository Architecture}{65}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Repository Layers}{65}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Primary Repository Components}{65}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Source Systems}{65}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Logical Architecture}{65}{section.B.4}%
+\contentsline {chapter}{\numberline {C}Example ETL and Business Rules}{67}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Identifier Standardisation}{67}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Referral Consolidation Logic}{67}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Radiotherapy Pathway Status Classification}{67}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Canonical Pathway Events}{68}{section.C.4}%
+\contentsline {chapter}{\numberline {D}Data Dictionary}{69}{appendix.D}%
