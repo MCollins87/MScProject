@@ -23,11 +23,10 @@ Finally, a mixed-methods approach was adopted. Quantitative methods were used to
 \subsection{Justification for Design Science Research}
 Several methodological approaches were considered. A case study methodology would have enabled detailed examination of post-MDT operational processes but would not have provided a structured framework for the design and evaluation of an intervention. Action Research was also considered because of its focus on organisational change and practitioner involvement. However, Action Research typically requires repeated cycles of intervention and measurement within live operational environments. In cancer pathway management, allowing breaches to occur in order to evaluate an intervention would be ethically and operationally undesirable given the known relationship between treatment delays and patient outcomes. 
 
-Design Science Research was therefore selected because it provides a rigorous framework for designing, developing, and evaluating an artefact intended to solve a real-world organisational problem while simultaneously generating transferable knowledge. DSR has been widely applied within healthcare informatics, clinical decision support, and data integration research where new technological artefacts are required to address operational challenges \citep{hevner2004, peffers2007}.
+Design Science Research was therefore selected because it provides a rigorous framework for designing, developing, and evaluating an artefact intended to solve a real-world organisational problem while simultaneously generating transferable knowledge. DSR has been widely applied within healthcare informatics, clinical decision support, and data integration research where new technological artefacts are required to address operational challenges \citep{harper2023, johnson2020}.
 
 Unlike traditional continuous-improvement approaches such as Plan-Do-Check-Act (PDCA), cancer pathway management cannot rely solely on post hoc measurement of outcomes. A breach of the 31-day or 62-day standard represents a clinically meaningful delay that may adversely affect patient outcomes. Consequently, operational management must emphasise proactive identification and mitigation of risk rather than retrospective evaluation alone. The design objective of the proposed dashboard is therefore not simply to identify breaches after they occur, but to provide leading indicators that enable intervention before delays become clinically significant.
 
-Case study research was rejected because the objective of this study extends beyond understanding operational delays to designing and evaluating a technological intervention intended to address them. Similarly, Action Research was considered unsuitable because it emphasises organisational change through repeated intervention cycles, whereas the primary contribution of this study is the creation and evaluation of an information systems artefact.
 
 \section{Design Science Research Framework}
 The study follows the Design Science Research Methodology (DSRM) proposed by \cite{peffers2007}, which structures DSR into six interrelated activities. These activities are applied iteratively rather than strictly linearly. 
@@ -78,19 +77,19 @@ Oncology clinic activity was extracted from the Trust's Patient Administrative S
 
 Radiotherapy operational data comprised referral, CT simulation and treatment events extracted from the local Oncology Information System - Aria for Radiation Oncology. 
 
-Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therefore excluded at this time, but design principles leave including SACT treatments at a later date. 
+Due to additional projects involving the local Cancer Network, a reliable data source for SACT treatment is not available until January 2027, and was therefore excluded at this time, but design principles allow for the inclusion of SACT treatments at a later date. 
 
 The selected source systems reflected the operational stages of the post-MDT pathway. Together, these systems captured referral management, clinic scheduling, radiotherapy planning, and treatment delivery activities. However, each system was developed independently and used different data structures, identifiers, and reporting mechanisms. Consequently, substantial transformation and harmonisation activities were required before integrated pathway analysis could be performed. 
 
 \begin{table}[h]
     \centering
-    \begin{tabular}{|p{7cm}|p{7cm}|}
+    \begin{tabular}{|p{7cm}|p{4cm}|p{4cm}|}
         \hline
-        \textbf{Source} & \textbf{Purpose} \\
-        \hline
-        Sharepoint Referral Register & Oncology Referrals \\
-        PAS & Clinic Activity \\
-        Aria RO & RT workflow \\
+        \textbf{Source} & \textbf{Refresh Frequency} & \textbf{Purpose} \\
+        \hline\hline
+        Sharepoint Referral Register & Daily & Oncology Referrals \\
+        PAS & Weekly & Clinic Activity \\
+        Aria RO & Daily & RT workflow \\
         \hline
     \end{tabular}
     \caption{Source Systems Summary}
@@ -145,9 +144,7 @@ Several previously unrecognised data-quality issues were identified during explo
 
 \subsection{Software Engineering and Operational Design}
 
-Although the artefact was developed as a research prototype, several software-engineering practices were incorporated to improve reliability and maintainability.reness without visible operational levers does not support 
-
-Logging was implemented throughout the ETL process to support monitoring, troubleshooting, and auditability. All major extractions, transformation and loading activities produced structured log entries allowing operational issues to be investigated retrospectively.
+Although the artefact was developed as a research prototype, several software-engineering practices were incorporated to improve reliability and maintainability. Logging was implemented throughout the ETL process to support monitoring, troubleshooting, and auditability. All major extractions, transformation and loading activities produced structured log entries allowing operational issues to be investigated retrospectively.
 
 Database credentials and configuration settings were externalised through environment variables rather than being embedded directly within the application code. This approach aligns with principles outlined within the Twelve-Factor App methodology, separating configuration from code and reducing the risk of credential exposure. 
 
@@ -227,7 +224,7 @@ The discovery of these data-quality issues highlighted limitations in existing o
 \end{table}
 
 \section{Design Principles} \label{DP}
-Design principles represent the design knowledge contribution of this study. They are formulated using a standard DSR structure: \emph{context, intervention}, and \emph{rationale}. These initial principles are refined following evaluation.
+Design principles represent the design knowledge contribution of this study. They are formulated using a standard DSR structure: \emph{context, intervention}, and \emph{rationale}. These initial principles were refined following evaluation.
 
 \subsubsection*{DP1: Surface Breach Risks as a Leading Indicator}
 If operational teams must prioritise actions in time-constrained cancer pathways, then dashboards should surface leading indicators of breach risk (e.g. days remaining to breach thresholds), because prospective visibility enables earlier and more effective intervention than retrospective compliance metrics. 
@@ -282,6 +279,8 @@ Evaluation combines formative and summative methods across four dimensions.
 
 \section{Ethical and Governance Considerations}
 The study operates within UK GDPR and NHS data governance requirements. All data are de-identified or pseudonymised, with access controls and separation between operational and research use. The project follows university ethics procedures and local Trust information governance guidance.
+
+The study was also informed by principles contained within the BCS Code of conduct, particularly professional responsibility, public interest, information governance, and maintenance of appropriate standards of competence \citep{bcs2022}. 
 
 \subsection{Research Limitations}
 

@@ -7,16 +7,29 @@ NHS numbers were standardised during transformation to remove formatting inconsi
     REPLACE(nhs_number,' ','') 
 \end{verbatim}
 
-\section{Referral Consolidation Logic} 
+\section{Referral Episode Consolidation} 
 
-The oncology referral register contained multiple administrative records relating to individual referral episodes. Intermediate integration views consolidated these records into a single analytical representation. 
+The oncology referral register contained multiple administrative records relating to a single referral episode. Business rules were therefore applied to consolidate multiple records into a single analytical representation. 
+
+\begin{center} 
+Referral Record 1\\ 
+Referral Record 2\\ 
+Referral Record 3\\ 
+$\downarrow$\\ 
+Business-rule consolidation\\ 
+$\downarrow$\\ 
+Single referral episode 
+\end{center}
+
+\section{Incomplete Clinic Outcome Identification} 
+
+One data-quality issue identified during repository development concerned clinic appointments lacking recorded outcomes. These records were flagged during transformation and subsequently reported through operational dashboards. 
 
 \begin{verbatim} 
-    Multiple referral updates 
-    ↓ 
-    Business-rule consolidation 
-    ↓ 
-    Single referral episode 
+    CASE 
+        WHEN appointment_outcome IS NULL
+        THEN 'Missing Outcome' 
+    END 
 \end{verbatim}
 
 \section{Radiotherapy Pathway Status Classification} 

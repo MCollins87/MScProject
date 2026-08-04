@@ -20,7 +20,7 @@ The repository subsequently became the single source of truth for all dashboard 
 
  \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{DB_Onc.png}
+    \includegraphics[width=\textwidth]{DB_Onc.png}
     \caption{Operational Oncology Referral Dashboard}
     \label{fig:DB_Onc}
 \end{figure}
@@ -59,7 +59,7 @@ Figure \ref{fig:DB_RT} illustrates the Radiotherapy Service Health Dashboard dev
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{DB_RT.png}
+    \includegraphics[width=\textwidth]{DB_RT.png}
     \caption{Radiotherapy Capacity and Demand Dashboard}
     \label{fig:DB_RT}
 \end{figure}
@@ -74,6 +74,15 @@ Capacity-demand modelling identified an average projected utilisation of 81.56\%
 Forecast utilisation declined across the later periods of the planning horizon. However, this reduction should be interpreted with caution because future demand is inherently less complete than near-term demand. The model includes patients currently booked for treatment and referrals that have already entered the radiotherapy pathway, but does not yet reflect patients who have not progressed sufficiently through upstream stages of the pathway. Consequently, the later forecasting periods are likely to underestimate true future demand. 
 
 Despite this limitation, the model provides a useful indication of current service pressure and demonstrates that the radiotherapy service is operating at or slightly above its internal planning threshold.
+
+The significance of this finding should be considered in the context of local service demand. According to National Disease Registration Service (NDRS) benchmarking data, shown in figure \ref{fig:RAD20}, Portsmouth Hospitals University NHS Trust delivered the highest numbers of radiotherapy attendances per linear accelerator in England for the financial year 2024/25 \citep{ndrs2026}. Operating close to planned utilisation thresholds therefore reflects both sustained service demand and high equipment productivity. This reinforces the importance of maintaining sufficient operational flexibility to accommodate urgent treatments and unexpected service pressures.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{RAD20.png}
+    \caption{Departmental average number of fractions per linac (RAD20) for financial year 24/25 \citep{ndrs2026}}
+    \label{fig:RAD20}
+\end{figure}
 
 \subsection{Patient Risk Stratification}
 Patient-level risk analysis identified: 
@@ -97,7 +106,7 @@ Figure \ref{fig:DB_Over} presents the integrated pathway dashboard, combining re
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.85\textwidth]{DB_Overview.png}
+    \includegraphics[width=\textwidth]{DB_Overview.png}
     \caption{Integrated Post-MDT Pathway Dashboard}
     \label{fig:DB_Over}
 \end{figure}
@@ -173,7 +182,7 @@ The dashboard suite was evaluated by three senior operational stakeholders repre
     \item Lead Treatment Radiographer
 \end{itemize}
 
-Full evaluation results are presented in Appendix \ref{appendix:evaluation}
+Full evaluation results are presented in Appendix \ref{appendix:evaluation}.
 
 Participants were provided with a demonstration of the Oncology referral Dashboard, Radiotherapy Service Health Dashboard, and Post-MDT Pathway Dashboard. Evaluation focussed on usability, perceived operational value, and validation of design principles developed in Chapter \ref{method}.
 

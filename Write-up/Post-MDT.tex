@@ -1,0 +1,104 @@
+% Define the document class:
+\documentclass[12pt, a4paper, twoside]{report}
+\setcounter{secnumdepth}{4}
+%import packages
+\usepackage{datetime}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+\usepackage{graphicx} % for images
+\usepackage{natbib} % for citation
+\bibliographystyle{ctrH} % custom Cite Them Right Harvard referencing
+\renewcommand{\bibname}{References} % change name of Bibliography to References
+\usepackage{setspace} % allow line spacing to be defined
+\onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
+\usepackage[left=2cm, right=2cm, bottom=2.5cm, top=2cm]{geometry} %define margines
+\usepackage{textcomp} % for additional fonts and symbols
+\usepackage{tabularx} % for tables
+\usepackage{array}
+\usepackage{enumitem} % for numbered lists
+\setlist{topsep=3pt, partopsep=0pt, parsep=0pt, itemsep=0pt}
+\usepackage{amssymb} % for additional fonts and symbols
+\usepackage{acronym} % for list of acronyms
+\usepackage{longtable}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{float}
+\raggedbottom
+
+\title{Post-MDT Oncology Workflow Bottlenecks: A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start}
+\author{Mark Collins}
+\date{\today}
+
+\begin{document}
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    % Logo
+    \includegraphics[width=0.25\textwidth]{logo.png}\\
+    \vspace{1cm}
+    {\Large University of Essex Online\par}
+    \vspace{1.5cm}
+    {\LARGE\bfseries Post-MDT Oncology Workflow Bottlenecks: \par}
+    \vspace{0.6cm} 
+    {\large A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start. \par}
+    \vfill
+    {\Large Mark Collins}\par
+    \vspace{0.3cm}
+    Student ID: 12696434 \par
+    \vspace{1cm}
+    A dissertation submitted in partial fulfilment of the requirements for the degree of \par
+    \vspace{0.3cm}
+    \textbf{Master of Science (MSc)} \\ Enterprise IT Management
+    \vfill
+    {\large Submitted: \monthyeardate\today}
+\end{titlepage}
+
+% Front matter
+\clearpage
+\pagenumbering{roman}
+%TC:ignore
+\include{declaration}
+\include{abstract}
+\include{acknowledgements}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+\clearpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\clearpage
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\clearpage
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms}
+\input{acronym}
+%TC:endignore
+% Main matter
+\cleardoublepage
+\pagenumbering{arabic}
+
+\include{01_Intro}
+\include{02_Literature}
+\include{03_Method}
+\include{04_Results_Analysis}
+\include{05_Discussion}
+%TC:ignore
+\clearpage
+\addcontentsline{toc}{chapter}{References}
+\bibliography{./Project}
+
+\clearpage
+
+\appendix
+\include{11_IDR_Architecture}
+\include{13_Data_Dictionary}
+\include{12_ETL}
+\include{10_Dashboard_Evaluation}
+%TC:endignore
+
+\end{document}
+    

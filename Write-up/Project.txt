@@ -859,7 +859,7 @@ doi = {10.1080/20476965.2023.2175730},
   number = {1-2},
   pages = {35-53},
   keywords = {design science, healthcare, hospitals, patient flow, process improvement, routines},
-  doi = {10.1002/joom.1077},
+  doi = {https://doi.org/10.1002/joom.1077},
   url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/joom.1077},
   eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/joom.1077},
   abstract = {Abstract Improving patient flow in hospitals is a contemporary challenge in the UK National Health Service (NHS). When patients remain in a hospital bed for longer than clinically necessary, hospital performance is dramatically impacted, quality of care is reduced, and elective surgeries are cancelled at great cost to both hospital and patient. This research explains how one UK hospital employed design science research to improve patient flow after other process improvement techniques had failed. The work focused on improving patient flow through the creation of a set of interconnected, temporally paced routines that successfully engaged doctors and nurses in new, outcome-specific ways of working. These routines were both independent and interdependent, were relationally coordinated through time, and systematically and unambiguously engaged all levels of staff at specific temporal junctures. We discover that the successful adoption of these routines was cumulative rather than iterative and was aligned with ongoing efforts supporting the social aspects of change. Through this work, our case hospital saw performance improvements that moved them from being below average to the best in the country, combining improvements in patient care with savings of over £3 million in the first 12 months. The contribution of this research is twofold; first, we explain how the development of outcome-specific routines can facilitate process improvement, and second, we illustrate how design science research can successfully bridge theory and practice to promote swift and even flow in healthcare.}
@@ -1311,7 +1311,7 @@ doi = {10.1080/20476965.2023.2175730},
   year = 2024,
   month = jan,
   institution = {NHS Wales Cancer Network},
-  url = {https://performanceandimprovement.nhs.wales/functions/networks-and-planning/cancer/wcn-documents/clinician-hub/mdtcharter/},
+  url = {https://performanceandimprovement.nhs.wales/functions/networks-and-planning/cancer/wcn-documents/clinician-hub/mdtcharter/}
   urldate = {2026-03-29}
 }
 
@@ -1471,7 +1471,7 @@ doi = {10.1080/20476965.2023.2175730},
   year = 2024,
   month = may,
   institution = {Royal College of Radiologists},
-  url = {https://www.rcr.ac.uk/media/ilkjycjl/rcr-policy_radiotherapy-parliamentary-briefing-royal-college-of-radiologists_may-2024.pdf},
+  url = {https://www.rcr.ac.uk/media/ilkjycjl/rcr-policy_radiotherapy-parliamentary-briefing-royal-college-of-radiologists_may-2024.pdf}
   urldate = {2026-03-30},
   file = {/home/mark/snap/zotero-snap/common/Zotero/storage/85P9TYBQ/rcr-policy_radiotherapy-parliamentary-briefing-royal-college-of-radiologists_may-2024.pdf}
 }
@@ -1967,10 +1967,16 @@ urldate = {2026-07-28}
   file = {/home/mark/snap/zotero-snap/common/Zotero/storage/KGM3EZMK/Zeqiri et al. - 2024 - The impact of social media marketing on brand awareness, brand engagement and purchase intention in.pdf;/home/mark/snap/zotero-snap/common/Zotero/storage/YYCSN8RP/MIP-06-2023-0248.html}
 }
 
+@misc{zotero-item-1226,
+  title = {{{ScienceDirect}}},
+  urldate = {2026-03-18},
+  url = {https://pdf.sciencedirectassets.com/273579/1-s2.0-S1472029926X2001X/1-s2.0-S1472029925002632/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEQaCXVzLWVhc3QtMSJIMEYCIQCPpQfkEe7sJdq2feE8yeeT4PuJi7oBbbN9kCRHMz8UhQIhAP9mjpyg\%2BiM46rOXOPS1tZH039zTtRmKfJbw0ZmjWdtjKrIFCAwQBRoMMDU5MDAzNTQ2ODY1Igy\%2Fk08OyNfC8Jf2jpsqjwX9Nd8dEZwKIuWsOg1E\%2FsmFAuwBbctbUMoTf4A\%2FVonD7tAUm2MsLeGcO3QYVkEkPzVHHKRF0Yb3Hl5046MUY9o6gRgl0\%2FCHZly18I3hTgXVKflZRXrx\%2BC0n3Vzxu46Rg7sFeEpKlIzCufadGOLMVSqr5U4MZSHpHx2dkl532AT6hMgNUp62t\%2BHhk\%2FFfgzY0ao\%2Be\%2Fpw\%2BcTO2CleMSlJggbF0QLZYgOY6p65SacIpq0vmDH7SSMdUMrUtuFIR8famKFQHG5GyrVhCglR8vX9qYyQAnz7PgTYuk6GAVMRgKAuyEwuPZGamtK6O6fFkrbA4fMh0tiEii\%2BdEHEx1M23XTuuwm1R\%2F\%2B2rjUt3osUlBiqPGTJCPLaVjXJ7lUiJFe3TPhK\%2BYdhle39OnK0i9i0wHYG5z4Y00AyK2LyH71Cyb5IL4fNX3RFwU\%2BVa8Xx\%2FZg\%2FRLojBH\%2Ft1uvJJk7HwnlBef34piVU\%2FW6lB89\%2F03wvD0kHlEoI5RRKag4BHoVaBNkC\%2FCmao2TJUs5JVhl8URpdSSBv7oHX1Lr9UdwxgYoIwNBQw9D8sC3qlsp7dbtK96Xp5VJ99Gh4j2khQx3hT\%2BGTtZXr3v4QrZywHxt\%2BuscjfIYIr3sl\%2BVyrbP\%2B4A6rF\%2BZQg2YdKkowCQGm1G9XcAZo6P3uFECb8vapty2cPexsclVtQYKgMMsh2NNt8a6hEmScpQtmYKCJS0xglSqV5LU2lVjcEwtqB6W6IHEvSZR0TnvEI1JXLuTHvhH\%2FMtJju9OxaxIogSB4C\%2FJR6M1hogUEJ3xtTXWHFFQAva7i5SC8mOkCxhhRzYKnyJ\%2BMWPFb8twF2eviXbIZCtf61x0DG32qjIdoU9qlYORbHOIJbgdAIJmmiExMM3z680GOrAB\%2BPGfngz1dYVMPLc\%2FKEt5VV1zWPh\%2FyFCFBVjvCXqiKF9UPoQIuXRbWkKnP3\%2BojIoouRsf\%2BZelif5aGzf\%2Bs8vqtm\%2FocInIIu3skck5SyvKyH9F\%2BC\%2BtXYPdTahJeiQcFp8RrB5Xp0EHo5ctPZlX0X8gqnbAAcyY5kvTrKzcODYOdwkca3qZejUb3YvRz0\%2FbYpT0qhHoeWWOxKb3Q4w8xJwDb14TD9jTs4WdV9wDfEtJZIo\%3D\&X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Date=20260318T202517Z\&X-Amz-SignedHeaders=host\&X-Amz-Expires=300\&X-Amz-Credential=ASIAQ3PHCVTYU437F2O4\%2F20260318\%2Fus-east-1\%2Fs3\%2Faws4\_request\&X-Amz-Signature=7e6b6afe419daadd17cb671fc785789c6a34bae257c0e7605a55bc4867fb545c\&hash=039ba4653d579bdebef29760998d1e3baa2213bf7c1ee15fe37c1e2b435b3fd7\&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61\&pii=S1472029925002632\&tid=spdf-a55b9a43-9599-4a20-bf91-b5eb54c86422\&sid=f161e2926a9668463b4b758-c354bc3b9091gxrqb\&type=client\&tsoh=d3d3LnNjaWVuY2VkaXJlY3QuY29t\&rh=d3d3LnNjaWVuY2VkaXJlY3QuY29t\&ua=01035702045404585559\&rr=9de6f737ce0af667\&cc=gb}
+}
+
 @misc{zotero-item-1264,
   title = {{{IDR Cloud}}},
   urldate = {2026-03-28},
-  url = {https://www.cms.gov/tra/Data_Management/DM_0080_IDRC_Cloud.htm},
+  url = {https://www.cms.gov/tra/Data\_Management/DM\_0080\_IDRC\_Cloud.htm},
   file = {/home/mark/snap/zotero-snap/common/Zotero/storage/9ABRC9GV/DM_0080_IDRC_Cloud.html}
 }
 

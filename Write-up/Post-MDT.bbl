@@ -1,8 +1,17 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{45}
 \newcommand{\enquote}[1]{`#1'}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{URL }
+
+\bibitem[{Ash \textit{et~al.}(2004)Ash, Barrett, Hinks and Squire}]{ash2004}
+Ash, D., Barrett, A., Hinks, A. and Squire, C. (2004) \enquote{Re-audit of
+  radiotherapy waiting times 2003,} \textit{Clinical Oncology}, 16(6), pp.
+  387--394, Available at: \url{https://doi.org/10.1016/j.clon.2004.06.006}
+
+\bibitem[{{British Computer Society}(2022)}]{bcs2022}
+{British Computer Society} (2022) \enquote{{BCS} code of conduct,} Available
+  at: \url{https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf} (Accessed:
+  2026-08-02)
 
 \bibitem[{Butterworth \textit{et~al.}(2025)Butterworth, Young, Drake, Palmer,
   Avgoulea, Ivy, Andriolo, Creppy, Routledge, Adjogatse, Kong, Petkar,
@@ -15,14 +24,20 @@ Butterworth, Victoria, Young, Tom, Drake, Haleema, Palmer, Isabel, Avgoulea,
   Teresa (2025) \enquote{Data-centric {{Artificial Intelligence}} and {{Cancer
   Research}}: {{Construction}} of a {{Real-World Head}} and {{Neck Treatment
   Data Repository}},} \textit{ESMO Real World Data and Digital Oncology}, 9(C),
-  \urlprefix\url{http://dx.doi.org/10.1101/2025.02.12.25322092}
+  Available at: \url{https://doi.org/10.1101/2025.02.12.25322092}
 
 \bibitem[{Buttigieg \textit{et~al.}(2017)Buttigieg, Pace and
   Rathert}]{buttigieg2017}
 Buttigieg, Sandra~C., Pace, Adriana and Rathert, Cheryl (2017)
   \enquote{Hospital performance dashboards: A literature review,}
   \textit{Journal of Health Organization and Management}, 31(3), pp. 385--406,
-  \urlprefix\url{http://dx.doi.org/10.1108/JHOM-04-2017-0088}
+  Available at: \url{https://doi.org/10.1108/JHOM-04-2017-0088}
+
+\bibitem[{Calman and Hine(1995)}]{calman1995}
+Calman, Kenneth and Hine, Deirdre (1995) \textit{A Policy Framework for
+  Commissioning Cancer Services : {{A}} Report by the {{Expert Advisory Group}}
+  on {{Cancer}} to the {{Chief Medical Officers}} of {{England}} and
+  {{Wales}}}, Tech. rep., Department of Health, London
 
 \bibitem[{Chakravarty \textit{et~al.}(2023)Chakravarty, Ton, Scott, Doherty,
   Douglas and Montgomery}]{chakravarty2023}
@@ -30,15 +45,15 @@ Chakravarty, {\relax PD}, Ton, T, Scott, A, Doherty, C, Douglas, {\relax CM}
   and Montgomery, J (2023) \enquote{Outpatient secondary care pathways for head
   and neck cancer referral result in patient delays for cancer treatment,}
   \textit{The Annals of The Royal College of Surgeons of England}, 105(4), pp.
-  352--356, \urlprefix\url{http://dx.doi.org/10.1308/rcsann.2022.0111}
+  352--356, Available at: \url{https://doi.org/10.1308/rcsann.2022.0111}
 
 \bibitem[{Chang \textit{et~al.}(2025)Chang, Kim, Baek, Choi, Lim, Kim and
   Shin}]{chang2025}
 Chang, Jee~Suk, Kim, Hyunwook, Baek, Eun~Sil, Choi, Jeong~Eun, Lim, Joon~Seok,
   Kim, Jin~Sung and Shin, Sang~Joon (2025) \enquote{Continuous multimodal data
   supply chain and expandable clinical decision support for oncology,}
-  \textit{npj Digital Medicine}, 8(1), p. 128,
-  \urlprefix\url{http://dx.doi.org/10.1038/s41746-025-01508-2}
+  \textit{npj Digital Medicine}, 8(1), p. 128, Available at:
+  \url{https://doi.org/10.1038/s41746-025-01508-2}
 
 \bibitem[{{Coca-Pelaz} \textit{et~al.}(2018){Coca-Pelaz}, Takes, Hutcheson,
   Saba, Haigentz, Bradford, {de Bree}, Strojan, Lund, Mendenhall, Nixon, Quer,
@@ -48,8 +63,8 @@ Chang, Jee~Suk, Kim, Hyunwook, Baek, Eun~Sil, Choi, Jeong~Eun, Lim, Joon~Seok,
   Lund, Valerie~J., Mendenhall, William~M., Nixon, Iain~J., Quer, Miquel,
   Rinaldo, Alessandra and Ferlito, Alfio (2018) \enquote{Head and {{Neck
   Cancer}}: {{A Review}} of the {{Impact}} of {{Treatment Delay}} on
-  {{Outcome}},} \textit{Advances in Therapy}, 35(2), pp. 153--160,
-  \urlprefix\url{http://dx.doi.org/10.1007/s12325-018-0663-7}
+  {{Outcome}},} \textit{Advances in Therapy}, 35(2), pp. 153--160, Available
+  at: \url{https://doi.org/10.1007/s12325-018-0663-7}
 
 \bibitem[{Conway \textit{et~al.}(2025)Conway, Concannon, Brown, Hussain,
   Marland, Griffiths, Plummer, Warrington, Bridges, {Lightning-Jones} and
@@ -60,11 +75,16 @@ Conway, Alicia-Marie, Concannon, Matthew, Brown, Steven, Hussain, Humera,
   \enquote{Overcoming data management challenges in oncology research:
   {{Lessons}} from an {{NHS}}, industry, technology start-up and academic
   collaboration,} \textit{European Journal of Cancer}, 228, p. 115705,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.ejca.2025.115705}
+  Available at: \url{https://doi.org/10.1016/j.ejca.2025.115705}
 
 \bibitem[{Dawson(2015)}]{dawson2015}
 Dawson, Christian~W. (2015) \textit{Projects in {{Computing}} and {{Information
-  Systems}}: {{A Student}}'s {{Guide}}}, 3rd ed., Pearson, Harlow
+  Systems}}: {{A Student}}'s {{Guide}}}, 3rd edn., Pearson, Harlow
+
+\bibitem[{{Department of Health and Social Care}(2025)}]{DHSC2025}
+{Department of Health and Social Care} (2025) \textit{Fit for the Future: The
+  10 Year Health Plan for England}, Tech. Rep. CP 1350, Department of Health
+  and Social Care, London
 
 \bibitem[{Gagalova \textit{et~al.}(2020)Gagalova, Elizalde, {Portales-Casamar}
   and G{\"o}rges}]{gagalova2020}
@@ -72,8 +92,8 @@ Gagalova, Kristina~K., Elizalde, M. Angelica~Leon, {Portales-Casamar}, Elodie
   and G{\"o}rges, Matthias (2020) \enquote{What {{You Need}} to {{Know Before
   Implementing}} a {{Clinical Research Data Warehouse}}: {{Comparative Review}}
   of {{Integrated Data Repositories}} in {{Health Care Institutions}},}
-  \textit{JMIR Formative Research}, 4(8), p. e17687,
-  \urlprefix\url{http://dx.doi.org/10.2196/17687}
+  \textit{JMIR Formative Research}, 4(8), p. e17687, Available at:
+  \url{https://doi.org/10.2196/17687}
 
 \bibitem[{Guilbert \textit{et~al.}(2024)Guilbert, Rieu, Delamarre, Laurent,
   Serre, Leroy, Paillard, Le~Buhan, Ribault and Cuggia}]{guilbert2024}
@@ -86,13 +106,13 @@ Guilbert, Baptiste, Rieu, Tristan, Delamarre, Denis, Laurent, Fr{\'e}d{\'e}ric,
   Arriel, Gallos, Parisis, Zoulias, Emmanouil and Andrikopoulou, Elisavet
   (eds.), \enquote{Studies in {{Health Technology}} and {{Informatics}},}
   \textit{Studies in {{Health Technology}} and {{Informatics}}}, vol. 316, IOS
-  Press, pp. 1373--1377, \urlprefix\url{http://dx.doi.org/10.3233/SHTI240667}
+  Press, pp. 1373--1377, Available at: \url{https://doi.org/10.3233/SHTI240667}
 
 \bibitem[{Han \textit{et~al.}(2025)Han, Gao, Qu and Yu}]{han2025}
 Han, Xudong, Gao, Xianglun, Qu, Xiaoyi and Yu, Zhenyu (2025)
   \enquote{Multi-{{Agent Medical Decision Consensus Matrix System}}: {{An
   Intelligent Collaborative Framework}} for {{Oncology MDT Consultations}},}
-  \urlprefix\url{http://dx.doi.org/10.48550/arXiv.2512.14321}
+  Available at: \url{https://doi.org/10.48550/arXiv.2512.14321}
 
 \bibitem[{Hanna \textit{et~al.}(2020)Hanna, King, Thibodeau, Jalink, Paulin,
   {Harvey-Jones}, O'Sullivan, Booth, Sullivan and Aggarwal}]{hanna2020}
@@ -100,37 +120,51 @@ Hanna, Timothy~P., King, Will~D., Thibodeau, Stephane, Jalink, Matthew, Paulin,
   Gregory~A., {Harvey-Jones}, Elizabeth, O'Sullivan, Dylan~E., Booth,
   Christopher~M., Sullivan, Richard and Aggarwal, Ajay (2020)
   \enquote{Mortality due to cancer treatment delay: Systematic review and
-  meta-analysis,} \textit{BMJ}, 371, p. m4087,
-  \urlprefix\url{http://dx.doi.org/10.1136/bmj.m4087}
+  meta-analysis,} \textit{BMJ}, 371, p. m4087, Available at:
+  \url{https://doi.org/10.1136/bmj.m4087}
+
+\bibitem[{Harper and Mustafee(2023)}]{harper2023}
+Harper, Alison and Mustafee, Navonil (2023) \enquote{Participatory design
+  research for the development of real-time simulation models in healthcare,}
+  \textit{Health Systems}, 12(4), pp. 375--386, Available at:
+  \url{https://doi.org/10.1080/20476965.2023.2175730}
 
 \bibitem[{Haward(2006)}]{haward2006}
 Haward, Robert~A. (2006) \enquote{The {{Calman}}--{{Hine}} report: A personal
   retrospective on the {{UK}}'s first comprehensive policy on cancer services,}
-  \textit{The Lancet Oncology}, 7(4), pp. 336--346,
-  \urlprefix\url{http://dx.doi.org/10.1016/S1470-2045(06)70659-3}
+  \textit{The Lancet Oncology}, 7(4), pp. 336--346, Available at:
+  \url{https://doi.org/10.1016/S1470-2045(06)70659-3}
 
 \bibitem[{{HealthOrbit}(2025)}]{healthorbit2025}
 {HealthOrbit} (2025) \enquote{{{AI Solutions}} for {{Real Clinical Workflows}}
-  \textbar{} {{HealthOrbit AI}},} https://healthorbit.ai/
+  \textbar{} {{HealthOrbit AI}},} Available at: \url{https://healthorbit.ai/}
+  (Accessed: 2026-04-03)
 
 \bibitem[{Hevner \textit{et~al.}(2004)Hevner, March, Park and Ram}]{hevner2004}
 Hevner, Alan~R, March, Salvatore~T, Park, Jinsoo and Ram, Sudha (2004)
   \enquote{Design {{Science}} in {{Information Systems Research}},} \textit{MIS
   Quarterly}, 28(1)
 
-\bibitem[{Hunkirchen()}]{hunkirchen}
-Hunkirchen, Peter () \enquote{Guidelines and {{Standards}},}
-  https://www.usability-ux.fit.fraunhofer.de/en/guidelines-and-standards.html
+\bibitem[{Hunkirchen(n.d.)}]{hunkirchen}
+Hunkirchen, Peter (n.d.) \enquote{Guidelines and {{Standards}},} Available at:
+  \url{https://www.usability-ux.fit.fraunhofer.de/en/guidelines-and-standards.html}
+  (Accessed: 2026-04-03)
 
-\bibitem[{{International Organization for
-  Standardization}(2020)}]{internationalorganizationforstandardization2020}
-{International Organization for Standardization} (2020) \enquote{Ergonomics of
-  human-system interaction {{Part}} 110: {{Interaction}} principles,}
+\bibitem[{ISO9241(2020)}]{internationalorganizationforstandardization2020}
+ISO9241 (2020) \enquote{Ergonomics of human-system interaction {{Part}} 110:
+  {{Interaction}} principles,}
+
+\bibitem[{Johnson \textit{et~al.}(2020)Johnson, Burgess and
+  Sethi}]{johnson2020}
+Johnson, Mark, Burgess, Nicola and Sethi, Simon (2020) \enquote{Temporal pacing
+  of outcomes for improving patient flow: Design science research in a national
+  health service hospital,} \textit{Journal of Operations Management}, 66(1-2),
+  pp. 35--53, Available at: \url{https://doi.org/10.1002/joom.1077}
 
 \bibitem[{Johnson(2024)}]{johnson2024}
 Johnson, Peter (2024) \enquote{Updating the {{NHS}} cancer waiting time
-  standards,} \textit{BMJ Oncology}, 3(1),
-  \urlprefix\url{http://dx.doi.org/10.1136/bmjonc-2024-000337}
+  standards,} \textit{BMJ Oncology}, 3(1), Available at:
+  \url{https://doi.org/10.1136/bmjonc-2024-000337}
 
 \bibitem[{Jung \textit{et~al.}(2021)Jung, Jeong, Chang, Park, Sun, Lee, Ahn,
   Ahn and Park}]{jung2021}
@@ -139,15 +173,15 @@ Jung, Hyun~Ae, Jeong, Oksoon, Chang, Dong~Kyung, Park, Sehhoon, Sun,
   (2021) \enquote{Real-time {{autOmatically}} updated data {{warehOuse}} in
   {{healThcare}} ({{ROOT}}): An innovative and automated data collection system
   - {{Jung- Translational Lung Cancer Research}},} \textit{Translational Lung
-  Cancer Research}, 10(10), pp. 3865--3874,
-  \urlprefix\url{http://dx.doi.org/10.21037/tlcr-21-531}
+  Cancer Research}, 10(10), pp. 3865--3874, Available at:
+  \url{https://doi.org/10.21037/tlcr-21-531}
 
 \bibitem[{Law \textit{et~al.}(2024)Law, Hong, Tan, Foo, Lee and Voon}]{law2024}
 Law, Nicholas Lee~Wei, Hong, Lai~Wei, Tan, Shirley Siang~Ning, Foo, Chuan~Jie,
   Lee, Daniel and Voon, Pei~Jye (2024) \enquote{Barriers {{And Challenges Of
   Multidisciplinary Teams In Oncology Management}}: {{A Scoping Review
-  Protocol}},} \textit{BMJ Open}, 14(2), p. e079559,
-  \urlprefix\url{http://dx.doi.org/10.1136/bmjopen-2023-079559}
+  Protocol}},} \textit{BMJ Open}, 14(2), p. e079559, Available at:
+  \url{https://doi.org/10.1136/bmjopen-2023-079559}
 
 \bibitem[{Lim \textit{et~al.}(2025)Lim, Williamson, Green, Lee, Li, Moen,
   Vasanthan, Wharf, Wong, Paleri and Network)}]{lim2025}
@@ -157,7 +191,7 @@ Lim, Alison~E., Williamson, Andrew, Green, Freddie, Lee, Ying~Ki, Li, Lucy,
   {{Factors Influencing}} the {{Compliance With National Head}} and {{Neck
   Cancer Targets}} in the {{United Kingdom}}: {{Results From}} a {{National
   Cohort Study}},} \textit{Clinical Otolaryngology}, 50(4), pp. 739--750,
-  \urlprefix\url{http://dx.doi.org/10.1111/coa.14314}
+  Available at: \url{https://doi.org/10.1111/coa.14314}
 
 \bibitem[{Liu \textit{et~al.}(2026{\natexlab{a}})Liu, Hu, Huang, Niu, Zhang,
   Ma, Lin, Huat, Kwon, Gao, Sun, Ying and Qiang}]{liu2026}
@@ -165,8 +199,8 @@ Liu, Qicai, Hu, Zhichao, Huang, Tao, Niu, Yupeng, Zhang, Xinche, Ma, Shanwu,
   Lin, Chutong, Huat, Goh~Kim, Kwon, Hyeokkoo~Eric, Gao, Feng, Sun, Xianfu,
   Ying, Zhitao and Qiang, Guangliang (2026{\natexlab{a}}) \enquote{{{EvoMDT}}:
   A self-evolving multi-agent system for structured clinical decision-making in
-  multi-cancer,} \textit{npj Digital Medicine}, 9(1), p. 124,
-  \urlprefix\url{http://dx.doi.org/10.1038/s41746-025-02304-8}
+  multi-cancer,} \textit{npj Digital Medicine}, 9(1), p. 124, Available at:
+  \url{https://doi.org/10.1038/s41746-025-02304-8}
 
 \bibitem[{Liu \textit{et~al.}(2026{\natexlab{b}})Liu, Wang, Wang, Zhou, Wang,
   Li, Qiu, Wang and Miao}]{liu2026a}
@@ -174,53 +208,65 @@ Liu, Yunyou, Wang, Fei, Wang, Peng, Zhou, Zhen, Wang, Hongqian, Li, Jingyao,
   Qiu, Yang, Wang, Haidong and Miao, Siwei (2026{\natexlab{b}})
   \enquote{{{AI-MDT}}: An automatic and intelligent multidisciplinary team
   consultations platform for lung cancer diagnosis,} \textit{Journal of Cancer
-  Research and Clinical Oncology}, 152(1), p.~32,
-  \urlprefix\url{http://dx.doi.org/10.1007/s00432-025-06413-5}
+  Research and Clinical Oncology}, 152(1), p.~32, Available at:
+  \url{https://doi.org/10.1007/s00432-025-06413-5}
 
 \bibitem[{Morris \textit{et~al.}(2006)Morris, Haward, Gilthorpe, Craigs and
   Forman}]{morris2006}
 Morris, E, Haward, R~A, Gilthorpe, M~S, Craigs, C and Forman, D (2006)
   \enquote{The impact of the {{Calman}}--{{Hine}} report on the processes and
   outcomes of care for {{Yorkshire}}'s colorectal cancer patients,}
-  \textit{British Journal of Cancer}, 95(8), pp. 979--985,
-  \urlprefix\url{http://dx.doi.org/10.1038/sj.bjc.6603372}
+  \textit{British Journal of Cancer}, 95(8), pp. 979--985, Available at:
+  \url{https://doi.org/10.1038/sj.bjc.6603372}
 
 \bibitem[{Morris \textit{et~al.}(2008)Morris, Haward, Gilthorpe, Craigs and
   Forman}]{morris2008}
 Morris, E., Haward, R.~A., Gilthorpe, M.~S., Craigs, C. and Forman, D. (2008)
   \enquote{The impact of the {{Calman-Hine}} report on the processes and
   outcomes of care for {{Yorkshire}}'s breast cancer patients,} \textit{Annals
-  of Oncology}, 19(2), pp. 284--291,
-  \urlprefix\url{http://dx.doi.org/10.1093/annonc/mdm432}
+  of Oncology}, 19(2), pp. 284--291, Available at:
+  \url{https://doi.org/10.1093/annonc/mdm432}
 
-\bibitem[{{NHS Digital}(2026)}]{NHSDigital2026}
-{NHS Digital} (2026) \enquote{Cancer {{Waiting Times Data Collection}}
-  ({{CWT}}),}
-  https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/cancerwaitingtimescwt
+\bibitem[{{NHS Digital}(2026{\natexlab{a}})}]{NHSDigital2026}
+{NHS Digital} (2026{\natexlab{a}}) \enquote{Cancer {{Waiting Times Data
+  Collection}} ({{CWT}}),} Available at:
+  \url{https://digital.nhs.uk/data-and-information/data-collections-and-data-sets/data-collections/cancerwaitingtimescwt}
+  (Accessed: 2026-03-01)
+
+\bibitem[{{NHS Digital}(2026{\natexlab{b}})}]{ndrs2026}
+{NHS Digital} (2026{\natexlab{b}}) \enquote{{RTDS} quality dashboard,}
+  Available at:
+  \url{https://digital.nhs.uk/ndrs/data/data-outputs/data-quality-and-insights-hub/rtds-hscn-quality-dashboard}
+  (Accessed: 2026-03-01)
 
 \bibitem[{{NHS Wales}(2024)}]{nhswales2024}
-{NHS Wales} (2024) \textit{Multidisciplinary {{Team}} ({{MDT}}) {{Charter}}},
-  Tech. rep., NHS Wales Cancer Network
+{NHS Wales} (2024) \enquote{Multidisciplinary {{Team}} ({{MDT}}) {{Charter}},}
+  Available at:
+  \url{https://performanceandimprovement.nhs.wales/functions/networks-and-planning/cancer/wcn-documents/clinician-hub/mdtcharter/}
+  (Accessed: 2026-03-29)
 
 \bibitem[{Parker(2026)}]{parker2026}
 Parker, Jade (2026) \enquote{Six ways to improve cancer {{MDT}} meetings,}
+  \textit{Oncology Central}
 
 \bibitem[{Peffers \textit{et~al.}(2007)Peffers, Tuunanen, Rothenberger and
-  Chatterjee}]{Peffers2007}
+  Chatterjee}]{peffers2007}
 Peffers, Ken, Tuunanen, Tuure, Rothenberger, Marcus~A. and Chatterjee, Samir
   (2007) \enquote{A design science research methodology for information systems
   research,} \textit{Journal of Management Information Systems}, 24(3), pp.
-  45--77, \urlprefix\url{http://dx.doi.org/10.2753/MIS0742-1222240302}
+  45--77, Available at: \url{https://doi.org/10.2753/MIS0742-1222240302}
 
 \bibitem[{Price \textit{et~al.}(2014)Price, Roche and Wight}]{price2014}
 Price, G, Roche, M and Wight, R (2014) \enquote{The impact of head and neck
   cancer service guidance on surgical workload,} \textit{The Bulletin of the
-  Royal College of Surgeons of England}, 96(9), pp. 300--303,
-  \urlprefix\url{http://dx.doi.org/10.1308/147363514X14042954769195}
+  Royal College of Surgeons of England}, 96(9), pp. 300--303, Available at:
+  \url{https://doi.org/10.1308/147363514X14042954769195}
 
 \bibitem[{{RCR}(2024)}]{rcr2024}
 {RCR} (2024) \textit{Radiotherapy {{Briefing}} - {{May}} 2024}, Briefing
-  {{Paper}}, Royal College of Radiologists
+  {{Paper}}, Royal College of Radiologists, Available at:
+  \url{https://www.rcr.ac.uk/media/ilkjycjl/rcr-policy_radiotherapy-parliamentary-briefing-royal-college-of-radiologists_may-2024.pdf}
+  (Accessed: 2026-03-30)
 
 \bibitem[{Saleh \textit{et~al.}(2024)Saleh, Kaplowitz, Gellman, Flint,
   Holtzman, Mercier and Kolev}]{saleh2024}
@@ -228,8 +274,15 @@ Saleh, Mona, Kaplowitz, Elianna, Gellman, Caroline, Flint, Matthew, Holtzman,
   Sharonne, Mercier, Ann~Marie and Kolev, Valentin (2024)
   \enquote{Diagnosis-to-treatment interval in cervical cancer: {{An}}
   exploratory analysis of the {{SEER}} database,} \textit{Gynecologic
-  Oncology}, 190, pp. S361--S362,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.ygyno.2024.07.541}
+  Oncology}, 190, pp. S361--S362, Available at:
+  \url{https://doi.org/10.1016/j.ygyno.2024.07.541}
+
+\bibitem[{Saunders \textit{et~al.}(2023)Saunders, Lewis and
+  Thornhill}]{saunders2023}
+Saunders, Mark, Lewis, P. and Thornhill, A. (2023) \textit{Research Methods for
+  Business Students}, 9th edn., Pearson, London, Available at:
+  \url{https://www.researchgate.net/publication/240218229_Research_Methods_for_Business_Students}
+  (Accessed: 2026-07-28)
 
 \bibitem[{Sharma \textit{et~al.}(2016)Sharma, Bekelman, Lin, Lukens, Roman,
   Mitra and {Swisher-McClure}}]{sharma2016}
@@ -237,15 +290,15 @@ Sharma, Sonam, Bekelman, Justin, Lin, Alexander, Lukens, J.~Nicholas, Roman,
   Benjamin~R., Mitra, Nandita and {Swisher-McClure}, Samuel (2016)
   \enquote{Clinical impact of prolonged diagnosis to treatment interval
   ({{DTI}}) among patients with oropharyngeal squamous cell carcinoma,}
-  \textit{Oral Oncology}, 56, pp. 17--24,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.oraloncology.2016.02.010}
+  \textit{Oral Oncology}, 56, pp. 17--24, Available at:
+  \url{https://doi.org/10.1016/j.oraloncology.2016.02.010}
 
 \bibitem[{Soltan \textit{et~al.}(2025)Soltan, Patel and Sharma}]{soltan2025}
 Soltan, A. A.~S., Patel, S. and Sharma, J. (2025) \enquote{{{296P The
-  TrustedMDT}} multi-agent ai copilot for tumour boards: {{Protocol}} for a
+  TrustedMDT}} multi-agent {AI} copilot for tumour boards: {{Protocol}} for a
   two-phase evaluation of performance, safety, and feasibility,} \textit{ESMO
-  Real World Data and Digital Oncology}, 10, p. 100492,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.esmorw.2025.100492}
+  Real World Data and Digital Oncology}, 10, p. 100492, Available at:
+  \url{https://doi.org/10.1016/j.esmorw.2025.100492}
 
 \bibitem[{Soukup \textit{et~al.}(2022)Soukup, Lamb, Morbi, Shah, Bali, Asher,
   Gandamihardja, Giordano, Darzi, Sevdalis and Green}]{soukup2022}
@@ -253,13 +306,15 @@ Soukup, Tayana, Lamb, Benjamin~W, Morbi, Abigail, Shah, Nisha~J, Bali, Anish,
   Asher, Viren, Gandamihardja, Tasha, Giordano, Pasquale, Darzi, Ara, Sevdalis,
   Nick and Green, James S~A (2022) \enquote{Cancer multidisciplinary team
   meetings: Impact of logistical challenges on communication and
-  decision-making,} \textit{BJS Open}, 6(4), p. zrac093,
-  \urlprefix\url{http://dx.doi.org/10.1093/bjsopen/zrac093}
+  decision-making,} \textit{BJS Open}, 6(4), p. zrac093, Available at:
+  \url{https://doi.org/10.1093/bjsopen/zrac093}
 
 \bibitem[{{The Royal Wolverhampton NHS
   Trust}(2024)}]{theroyalwolverhamptonnhstrust2024}
 {The Royal Wolverhampton NHS Trust} (2024) \textit{Cancer {{Operational
-  Policy}}}, Policy OP03, The Royal Wolverhampton NHS Trust
+  Policy}}}, Policy OP03, The Royal Wolverhampton NHS Trust, Available at:
+  \url{https://royalwolverhampton.nhs.uk/wp-content/uploads/2024/10/OP_03_PUBLIC_Policy_Printable_Version.pdf}
+  (Accessed: 2026-03-30)
 
 \bibitem[{Varma \textit{et~al.}(2026)Varma, Mayne, Parry, Nathan, {van der
   Meulen}, Bahl, Stewart and Cowling}]{varma2026}
@@ -268,8 +323,8 @@ Varma, Raghav, Mayne, Emily, Parry, Marina~A., Nathan, Arjun, {van der Meulen},
   \enquote{Comparing the national cancer waiting times dataset with other
   linked electronic health records to measure treatment timeliness: {{A}}
   national cohort study of kidney cancer in {{England}},} \textit{Cancer
-  Epidemiology}, 102, p. 103030,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.canep.2026.103030}
+  Epidemiology}, 102, p. 103030, Available at:
+  \url{https://doi.org/10.1016/j.canep.2026.103030}
 
 \bibitem[{{Villemure-Poliquin} \textit{et~al.}(2025){Villemure-Poliquin}, Fu,
   Gaebe, Kwon, Cohen, Ruel, Ayoo, Bailey, Galapin, Hallet and
@@ -278,16 +333,7 @@ Varma, Raghav, Mayne, Emily, Parry, Marina~A., Nathan, Arjun, {van der Meulen},
   Marc, Ruel, Marianne, Ayoo, Kennedy, Bailey, Andrew, Galapin, Madette,
   Hallet, Julie and Eskander, Antoine (2025) \enquote{Delayed diagnosis to
   treatment interval ({{DTI}}) in head \& neck cancers -- {{A}} systematic
-  review and meta-analysis,} \textit{Oral Oncology}, 160, p. 107106,
-  \urlprefix\url{http://dx.doi.org/10.1016/j.oraloncology.2024.107106}
-
-\bibitem[{Yun \textit{et~al.}(2012)Yun, Kim, Min, Park, Won, Kim, Choi, Kim,
-  Park, Kim, Lee, Yoon, Jeong, Noh and Heo}]{yun2012}
-Yun, Y.~H., Kim, Y.~A., Min, Y.~H., Park, S., Won, Y.~J., Kim, D.~Y., Choi,
-  I.~J., Kim, Y.~W., Park, S.~J., Kim, J.~H., Lee, D.~H., Yoon, S.~J., Jeong,
-  S.~Y., Noh, D.~Y. and Heo, D.~S. (2012) \enquote{The influence of hospital
-  volume and surgical treatment delay on long-term survival after cancer
-  surgery,} \textit{Annals of Oncology}, 23(10), pp. 2731--2737,
-  \urlprefix\url{http://dx.doi.org/10.1093/annonc/mds101}
+  review and meta-analysis,} \textit{Oral Oncology}, 160, p. 107106, Available
+  at: \url{https://doi.org/10.1016/j.oraloncology.2024.107106}
 
 \end{thebibliography}

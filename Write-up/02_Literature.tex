@@ -8,7 +8,7 @@ The review is organised around five interrelated themes:
 \begin{enumerate}
     \item MDT operations and evolving pressures on multidisciplinary cancer decision-making;
     \item Operational delays across the cancer pathway, particularly diagnosis-to-treatment intervals (DTI);
-    \item Data fragmentation and the case for IDR's;
+    \item Data fragmentation and the case for IDRs;
     \item Dashboards and performance-monitoring tools to support operational decision-making;
     \item Emerging data trends and the role of ETL, interoperability, AI and multimodal data integration.
 \end{enumerate}
@@ -16,16 +16,18 @@ The review is organised around five interrelated themes:
 Collectively, this literature forms the conceptual foundation (kernel theory) for the artefact developed in this study. The following sections provide a detailed account of these themes, integrating high-quality evidence from the UK, international datasets, clinical oncology, health informatics, and organisational science.
 
 \subsection{Method}
-An iterative literature review was adopted, following the guidance outlined by  \cite{dawson2015} (Figure \ref{fig:LitProc}). An initial search was conducted using Google Scholar and open-access repositories to identify foundational concepts and terminology related to IDR's, cancer pathways, MDT operations, dashboards, and Design Science Research. These preliminary results informed a more structured search strategy applied to ScienceDirect, IEEEXplore, and PubMed.
+An iterative literature review was adopted, following the guidance outlined by  \cite{dawson2015} (Figure \ref{fig:LitProc}). An initial search was conducted using Google Scholar and open-access repositories (arXiv.org) to identify foundational concepts and terminology related to IDRs, cancer pathways, MDT operations, dashboards, and Design Science Research. These preliminary results informed a more structured search strategy applied to ScienceDirect, IEEEXplore, and PubMed.
 
 Searches were limited to peer-reviewed journals, systematic reviews, national audits, and authoritative policy documents published primarily between 2010 and 2026, with earlier seminal works retained where conceptually relevant (e.g. JCCO report \citep{ash2004}, the Calman-Hine report \citep{calman1995} and Design Science Research foundations). Studies were included if they addressed MDT processes, oncology pathway delays, health data integration, dashboards, usability standards, or operational analytics. Articles focused exclusively in molecular biology, single-modality clinical trials, or non-healthcare data systems were excluded. 
 
 Approximately 90 sources were reviewed during the process, with around 55 core studies retained for detailed analysis based on relevance, methodological quality, and applicability to NHS operational contexts. Backward citation tracking was used to identify influential seed papers and ensure conceptual completeness.
 
 \begin{figure}
-    \includegraphics[width=\linewidth]{LitProc.png}
-    \caption{Iterative literate review process \citep{dawson2015}}
+\begin{centering}
+    \includegraphics[width=0.75\linewidth]{LitProc.png}
+    \caption{Iterative literature review process \citep{dawson2015}}
     \label{fig:LitProc}
+\end{centering}
 \end{figure}
 
 \section{The NHS Cancer Pathway and MDT Framework}
@@ -53,6 +55,13 @@ Large-scale cohort studies such as \cite{lim2025} quantify poor compliance with 
 \subsection{National policy direction and waiting time standards}
 
 NHS England's 2024/25 planning guidance emphasises compliance with the Faster Diagnosis Standard (FDS) and cancer treatment timeliness metrics. Persistent waiting-time challenges, data-quality requirements, and the need for integrated pathway oversight tools are highlighted \citep{parker2026}. Radiotherapy services face particular strain: the Royal College of Radiologists reported over 2,300 breaches of the 31‑day standard in October 2023 \citep{rcr2024}. Hidden waits—such as 20‑week delays between surgery and radiotherapy—are not systematically captured, further illustrating limitations in operational visibility.
+
+\subsection{Radiotherapy Waiting-Time Recommendations}
+
+In addition to national Cancer Waiting Time standards, radiotherapy services have historically been supported by recommendations published by the Joint Council for Clinical Oncology (JCCO). The JCCO framework recognises that clinically meaningful delay may occur within treatment planning and booking processes that are not always visible within national waiting-time metrics. \cite{ash2004} demonstrated substantial variation in radiotherapy waiting times across the United Kingdom and highlighted the importance of monitoring elapsed time between referral and treatment delivery. 
+
+Unlike national cancer waiting-time standards, which primarily support performance monitoring and accountability, JCCO recommendations provide a clinically focused perspective on the timeliness of radiotherapy delivery. This distinction is important because patients may remain compliant with national targets while still experiencing delays that affect operational performance and service quality. Consequently, both national standards and clinically derived radiotherapy targets have relevance when designing operational analytics for radiotherapy services.
+
 
 \section{Operational Delays in Cancer Pathways}
 
@@ -229,7 +238,7 @@ Importantly, the effectiveness of AI applications appears dependent upon the exi
 
 The literature reveals a common pattern across otherwise diverse research domains. Studies examining MDT performance identify increasing operational pressure but provide limited visibility of downstream workflow delays. Research linking treatment delays to survival demonstrates the importance of timely treatment but offers limited guidance regarding how delays should be managed operationally. Similarly, data repository research demonstrates integration capability while dashboard studies emphasise information presentation; however, few studies combine these strands into a coherent operational solution.
 
-The literature review identifies four principle gaps.
+The literature review identifies four principal gaps.
 
 \textbf{Gap 1: Limited visibility of post-MDT workflow delays.}
 While existing studies identify treatment delays and MDT inefficiencies, few provide mechanisms for analysing delay accumulation between MDT outcome and treatment initiation. This gap directly informs Objective 1 (identify and quantify post-MDT pathway delays) and Objective 2 (determine operational factors associated with delay).

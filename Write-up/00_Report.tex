@@ -2,17 +2,22 @@
 \documentclass[12pt, a4paper, twoside]{report}
 \setcounter{secnumdepth}{4}
 %import packages
+\usepackage{datetime}
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
 \usepackage{graphicx} % for images
 \usepackage{natbib} % for citation
 \bibliographystyle{ctrH} % custom Cite Them Right Harvard referencing
 \renewcommand{\bibname}{References} % change name of Bibliography to References
 \usepackage{setspace} % allow line spacing to be defined
 \onehalfspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5\baselineskip}
 \usepackage[left=2cm, right=2cm, bottom=2.5cm, top=2cm]{geometry} %define margines
 \usepackage{textcomp} % for additional fonts and symbols
 \usepackage{tabularx} % for tables
 \usepackage{array}
 \usepackage{enumitem} % for numbered lists
+\setlist{topsep=3pt, partopsep=0pt, parsep=0pt, itemsep=0pt}
 \usepackage{amssymb} % for additional fonts and symbols
 \usepackage{acronym} % for list of acronyms
 \usepackage{longtable}
@@ -29,26 +34,54 @@
 % Title Page
 \begin{titlepage}
     \centering
+    \vspace*{1cm}
     % Logo
-    \includegraphics[width=0.35\textwidth]{logo.png}\\
+    \includegraphics[width=0.25\textwidth]{logo.png}\\
     \vspace{1cm}
-    {\Large\textsc{University of Essex Online}\par}
+    {\Large University of Essex Online\par}
     \vspace{1.5cm}
-    {\Huge\bfseries Post-MDT Oncology Workflow Bottlenecks:\\[0.4cm] 
-    A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start.}\\
-    \vspace{2cm}
-    {\Large Mark Collins}\\[0.5cm]
-    {\large Student ID: 12696434}\\[1cm]
-    \vspace{1cm}
-    \rule{0.8\textwidth}{0.5pt}\\
-    \vspace{0.5cm}
-    {\large A dissertation submitted in partial fulfilment of the requirements for the degree of\\[0.3cm]
-    \textbf{Master of Science (MSc)} \\ Enterprise IT Management}
-    \vspace{1cm}
-    \rule{0.8\textwidth}{0.5pt}
+    {\LARGE\bfseries Post-MDT Oncology Workflow Bottlenecks: \par}
+    \vspace{0.6cm} 
+    {\large A Design-Science Study of an NHS Integrated Data Repository and Decision-Support Dashboard to Reduce Delays from MDT Outcome to Treatment Start. \par}
     \vfill
-    {\large Submitted: \today}
+    {\Large Mark Collins}\par
+    \vspace{0.3cm}
+    Student ID: 12696434 \par
+    \vspace{1cm}
+    A dissertation submitted in partial fulfilment of the requirements for the degree of \par
+    \vspace{0.3cm}
+    \textbf{Master of Science (MSc)} \\ Enterprise IT Management
+    \vfill
+    {\large Submitted: \monthyeardate\today}
 \end{titlepage}
+
+% Front matter
+\clearpage
+\pagenumbering{roman}
+
+
+\clearpage 
+\phantomsection 
+\addcontentsline{toc}{chapter}{Declaration} 
+\vspace*{\fill} 
+\begin{center} 
+    {\bfseries Declaration} 
+\end{center} 
+\vspace{0.8cm} 
+
+I hereby declare that:
+\begin{itemize}
+	\item  This is my own work and there is no involvement from a third party. Where someone else’s ideas are used, I have referenced and paraphrased those materials. This includes the use of generative AI tools: where I have used generative AI, I have referenced the tool, stated what it has been used for and given a link to the chat and prompts used. I have read and understood the University of Essex Online Integrity guidelines and declare that this assignment conforms to the rules and regulations. For full details see your Student Handbook (Academic honesty and good academic practice). 
+	\item Does not use documentation or data, which is not freely accessible to the public without permission. In addition, where information may identify stakeholders (participants, employees, patients, etc) this has been anonymised. 
+\end{itemize}
+
+\begin{flushright}
+Mark Collins \\
+\monthyeardate\today
+\end{flushright}
+
+\vspace*{\fill} 
+\clearpage
 
 \begin{abstract}
     Delays between multidisciplinary team (MDT) decision-making and treatment initiation remain a significant challenge within National Health Service (NHS) cancer pathways. Operational data relevant to these workflows are frequently distributed across multiple systems, limiting visibility of bottlenecks and reducing the ability of service managers to intervene proactively. This study applied a Design Science Research (DSR) methodology to design, develop, and evaluate an Integrated Data Repository (IDR) and decision-support dashboard suite for post-MDT oncology pathway management within Portsmouth Hospitals University NHS Trust. 
@@ -81,13 +114,19 @@ Finally, I would like to express my deepest appreciation to my family for their 
 \setcounter{tocdepth}{1}
 \tableofcontents
 \clearpage
+\addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
 \clearpage
+\addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
 \clearpage
 \chapter*{List of Acronyms}
 \addcontentsline{toc}{chapter}{List of Acronyms}
 \input{acronym}
+
+% Main matter
+\cleardoublepage
+\pagenumbering{arabic}
 
 \include{01_Intro}
 \include{02_Literature}
@@ -102,10 +141,9 @@ Finally, I would like to express my deepest appreciation to my family for their 
 \clearpage
 
 \appendix
-\include{10_Dashboard_Evaluation}
 \include{11_IDR_Architecture}
-\include{12_ETL}
 \include{13_Data_Dictionary}
-
+\include{12_ETL}
+\include{10_Dashboard_Evaluation}
 \end{document}
     
