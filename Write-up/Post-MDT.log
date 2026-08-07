@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.30)  6 AUG 2026 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.30)  7 AUG 2026 11:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1040,17 +1040,17 @@ val of 15 days pro-vides the first evidence-
 
 
 
-] [54]
+]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-40.
+36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
- [55] [56] [57])
-[58]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
+ [54] [55] [56])
+[57]
 \openout2 = `11_IDR_Architecture.aux'.
 
  (./11_IDR_Architecture.tex
@@ -1068,7 +1068,7 @@ Underfull \hbox (badness 1910) in paragraph at lines 35--35
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [59
+) [58
 
 
 
@@ -1078,7 +1078,7 @@ as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.97 \include{11_IDR_Architecture}
-                                  ] [60
+                                  ] [59
 pdfTeX warning (ext4): destination with the same identifier (name{table.A.2}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1094,7 +1094,7 @@ Underfull \hbox (badness 1406) in paragraph at lines 17--18
 []|\OT1/cmr/m/n/12 Earliest clin-i-cally agreed decision-to-treat
  []
 
-) [61
+) [60
 
 
 
@@ -1110,12 +1110,12 @@ l.98 \include{13_Data_Dictionary}
 
  (./12_ETL.tex
 Appendix C.
-[62
+[61
 
 
 
 
-]) [63]
+]) [62]
 \openout2 = `10_Dashboard_Evaluation.aux'.
 
  (./10_Dashboard_Evaluation.tex
@@ -1123,7 +1123,7 @@ Appendix D.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[64
+[63
 
 
 
@@ -1140,7 +1140,7 @@ as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.78 \clearpage
-               ] [65
+               ] [64
 pdfTeX warning (ext4): destination with the same identifier (name{table.D.3}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
@@ -1152,7 +1152,7 @@ as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.78 \clearpage
-               ]) [66
+               ]) [65
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{table.D.5}) h
@@ -1177,13 +1177,13 @@ Package rerunfilecheck Info: File `Post-MDT.out' has not changed.
 (rerunfilecheck)             Checksum: 8FFFE927B7B40B5DB0D5F0DFEFB4D7ED;11911.
  ) 
 Here is how much of TeX's memory you used:
- 13045 strings out of 474222
- 202383 string characters out of 5748732
- 1948975 words of memory out of 5000000
- 34689 multiletter control sequences out of 15000+600000
+ 13043 strings out of 474222
+ 202368 string characters out of 5748732
+ 1951975 words of memory out of 5000000
+ 34688 multiletter control sequences out of 15000+600000
  566297 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1051b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,1051b,679s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texliv
@@ -1191,10 +1191,10 @@ e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfrm1200.pfb>
-Output written on Post-MDT.pdf (78 pages, 1074194 bytes).
+Output written on Post-MDT.pdf (77 pages, 1072653 bytes).
 PDF statistics:
- 1281 PDF objects out of 1440 (max. 8388607)
- 1155 compressed objects within 12 object streams
- 333 named destinations out of 1000 (max. 500000)
+ 1270 PDF objects out of 1440 (max. 8388607)
+ 1145 compressed objects within 12 object streams
+ 332 named destinations out of 1000 (max. 500000)
  582 words of extra memory for PDF output out of 10000 (max. 10000000)
 

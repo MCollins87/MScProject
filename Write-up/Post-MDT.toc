@@ -102,21 +102,21 @@
 \contentsline {subsection}{\numberline {5.8.5}Predictive Analytics}{52}{subsection.5.8.5}%
 \contentsline {section}{\numberline {5.9}Conclusion}{52}{section.5.9}%
 \contentsline {chapter}{References}{53}{section.5.9}%
-\contentsline {chapter}{\numberline {A}Integrated Data Repository Architecture}{59}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Repository Layers}{59}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Primary Repository Components}{59}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Source Systems}{60}{section.A.3}%
-\contentsline {section}{\numberline {A.4}Logical Architecture}{60}{section.A.4}%
-\contentsline {chapter}{\numberline {B}Data Dictionary}{61}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Example ETL and Business Rules}{62}{appendix.C}%
-\contentsline {section}{\numberline {C.1}Identifier Standardisation}{62}{section.C.1}%
-\contentsline {section}{\numberline {C.2}Referral Episode Consolidation}{62}{section.C.2}%
-\contentsline {section}{\numberline {C.3}Incomplete Clinic Outcome Identification}{63}{section.C.3}%
-\contentsline {section}{\numberline {C.4}Radiotherapy Pathway Status Classification}{63}{section.C.4}%
-\contentsline {section}{\numberline {C.5}Canonical Pathway Events}{63}{section.C.5}%
-\contentsline {chapter}{\numberline {D}Dashboard Evaluation Results}{64}{appendix.D}%
-\contentsline {section}{\numberline {D.1}Participants}{64}{section.D.1}%
-\contentsline {section}{\numberline {D.2}System Usability Scale Results}{64}{section.D.2}%
-\contentsline {section}{\numberline {D.3}Operational Value Assessment}{64}{section.D.3}%
-\contentsline {section}{\numberline {D.4}Design Principle Validation}{65}{section.D.4}%
-\contentsline {section}{\numberline {D.5}Qualitative Feedback}{66}{section.D.5}%
+\contentsline {chapter}{\numberline {A}Integrated Data Repository Architecture}{58}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Repository Layers}{58}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Primary Repository Components}{58}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Source Systems}{59}{section.A.3}%
+\contentsline {section}{\numberline {A.4}Logical Architecture}{59}{section.A.4}%
+\contentsline {chapter}{\numberline {B}Data Dictionary}{60}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Example ETL and Business Rules}{61}{appendix.C}%
+\contentsline {section}{\numberline {C.1}Identifier Standardisation}{61}{section.C.1}%
+\contentsline {section}{\numberline {C.2}Referral Episode Consolidation}{61}{section.C.2}%
+\contentsline {section}{\numberline {C.3}Incomplete Clinic Outcome Identification}{62}{section.C.3}%
+\contentsline {section}{\numberline {C.4}Radiotherapy Pathway Status Classification}{62}{section.C.4}%
+\contentsline {section}{\numberline {C.5}Canonical Pathway Events}{62}{section.C.5}%
+\contentsline {chapter}{\numberline {D}Dashboard Evaluation Results}{63}{appendix.D}%
+\contentsline {section}{\numberline {D.1}Participants}{63}{section.D.1}%
+\contentsline {section}{\numberline {D.2}System Usability Scale Results}{63}{section.D.2}%
+\contentsline {section}{\numberline {D.3}Operational Value Assessment}{63}{section.D.3}%
+\contentsline {section}{\numberline {D.4}Design Principle Validation}{64}{section.D.4}%
+\contentsline {section}{\numberline {D.5}Qualitative Feedback}{65}{section.D.5}%
